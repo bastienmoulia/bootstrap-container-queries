@@ -1,0 +1,32 @@
+{
+  "name": "bootstrap-container-queries",
+  "version": "1.0.0",
+  "description": "Container queries for bootstrap",
+  "main": "scss/bootstrap-container-queries.scss",
+  "scripts": {
+    "start": "npm run watch & npm run serve",
+    "build": "sass ./scss:./dist --style=compressed",
+    "serve": "http-server ./docs -o -c-1",
+    "watch": "sass --watch ./scss:./docs",
+    "prettier": "prettier . --write",
+    "stylelint": "stylelint 'scss/*.scss' --fix"
+  },
+  "keywords": [
+    "container",
+    "queries",
+    "bootstrap"
+  ],
+  "author": "Bastien Moulia",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "prettier": "^3.2.5",
+    "sass": "^1.72.0",
+    "stylelint": "^16.2.1",
+    "stylelint-config-prettier-scss": "^1.0.0",
+    "stylelint-config-standard-scss": "^13.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
