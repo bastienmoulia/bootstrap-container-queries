@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.1.0] - 2024-03-22
+
+### Added
+
+- Normal and compressed versions of the CSS file in dist.
+
+### Fixed
+
+- Fixed import of the library by adding export in the package.json
+- Move the bootstrap import from the main scss file into another for the build
+
 ## [1.0.0] - 2024-03-21
 
 ### Added

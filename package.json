@@ -1,15 +1,15 @@
 {
   "name": "bootstrap-container-queries",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Container queries for bootstrap",
   "main": "scss/bootstrap-container-queries.scss",
   "scripts": {
-    "start": "npm run watch & npm run serve",
-    "build": "sass ./scss:./dist --style=compressed",
+    "start": "npm run watch && npm run serve",
+    "build": "sass scss/build.scss dist/bootstrap-container-queries.min.css --style=compressed && sass scss/build.scss dist/bootstrap-container-queries.css",
     "serve": "http-server ./docs -o -c-1",
-    "watch": "sass --watch ./scss:./docs",
+    "watch": "sass scss/build.scss docs/style.css --watch",
     "prettier": "prettier . --write",
-    "stylelint": "stylelint 'scss/*.scss' --fix"
+    "stylelint": "stylelint '**/*.scss' --fix"
   },
   "keywords": [
     "container",
@@ -18,6 +18,17 @@
   ],
   "author": "Bastien Moulia",
   "license": "MIT",
+  "exports": {
+    "./scss/bootstrap-container-queries": {
+      "style": "./scss/bootstrap-container-queries.scss"
+    },
+    "./dist/bootstrap-container-queries.css": {
+      "style": "./dist/bootstrap-container-queries.css"
+    },
+    "./dist/bootstrap-container-queries.min.css": {
+      "style": "./dist/bootstrap-container-queries.min.css"
+    }
+  },
   "devDependencies": {
     "http-server": "^14.1.1",
     "prettier": "^3.2.5",

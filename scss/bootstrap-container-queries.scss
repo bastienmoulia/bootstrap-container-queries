@@ -1,6 +1,3 @@
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
 @import "./breakpoints";
 
 .bcq {
@@ -43,7 +40,6 @@ $cq-utilities: (
         "map" and
         (map-get($utility, responsive) or $infix == "")
       {
-        @debug "generate-utility";
         @include generate-utility($utility, $infix);
       }
     }
