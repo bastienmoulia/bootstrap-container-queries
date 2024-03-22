@@ -11,13 +11,33 @@
   }
 }
 
-$cq-utilities: (
+$bcq-utilities: (
   "container-queries-display": (
     responsive: true,
     property: display,
     class: bcq-d,
     values: inline inline-block block grid inline-grid table table-row
       table-cell flex inline-flex none,
+  ),
+  "container-queries-text-align": (
+    responsive: true,
+    property: text-align,
+    class: bcq-text,
+    values: (
+      start: left,
+      end: right,
+      center: center,
+    )
+  ),
+  "container-queries-float": (
+    responsive: true,
+    property: float,
+    class: bcq-float,
+    values: (
+      start: left,
+      end: right,
+      none: none,
+    )
   ),
 );
 
@@ -33,7 +53,7 @@ $cq-utilities: (
     }
 
     // Loop over each utility property
-    @each $key, $utility in $cq-utilities {
+    @each $key, $utility in $bcq-utilities {
       // The utility can be disabled with `false`, thus check if the utility is a map first
       // Only proceed if responsive container queries are enabled or if it's the base container query
       @if type-of($utility) ==

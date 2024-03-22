@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.2.0] - 2024-03-22
+
+### Added
+
+- Add classes for `.bcq-text-{breakpoint}-{value}` and `.bcq-float-{breakpoint}-{value}`.
+
 ## [1.1.0] - 2024-03-22
 
 ### Added
