@@ -26,6 +26,18 @@ Add in your scss file:
 
 Add the class `.bcq` to your parent container.
 
+### Grid
+
 Inside it you can use the class `.bcq-{size}` or `.bcq-{breakpoint}-{size}` like you will use a `.col-*`in Bootstrap.
 
-You can also hide or display items with `.bcq-d-{value}` or `.bcq-d-{breakpoint}-{value}` like `.d-*`.
+### Display
+
+You can hide or display items ([with any other display values](https://getbootstrap.com/docs/5.3/utilities/display/#notation)) with `.bcq-d-{value}` or `.bcq-d-{breakpoint}-{value}` like `.d-*`.
+
+### Text align
+
+You can align text at `start`, `center` or `end` with `.bcq-text-{value}` or `.bcq-text-{breakpoint}-{value}` like `.text-*`.
+
+### Float
+
+You can make the element float at `start`, `end` or `none` with `.bcq-float-{value}` or `.bcq-float-{breakpoint}-{value}` like `.float-*`.
