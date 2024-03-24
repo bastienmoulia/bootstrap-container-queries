@@ -1,67 +1,8 @@
 @import "./breakpoints";
+@import "./utilities";
 
 .bcq {
-  display: flex;
-  flex-wrap: wrap;
   container-type: inline-size;
-
-  & > * {
-    flex: 0 0 auto;
-    width: 100cqw;
-  }
 }
 
-$bcq-utilities: (
-  "container-queries-display": (
-    responsive: true,
-    property: display,
-    class: bcq-d,
-    values: inline inline-block block grid inline-grid table table-row
-      table-cell flex inline-flex none,
-  ),
-  "container-queries-text-align": (
-    responsive: true,
-    property: text-align,
-    class: bcq-text,
-    values: (
-      start: left,
-      end: right,
-      center: center,
-    )
-  ),
-  "container-queries-float": (
-    responsive: true,
-    property: float,
-    class: bcq-float,
-    values: (
-      start: left,
-      end: right,
-      none: none,
-    )
-  ),
-);
-
-@each $breakpoint in map-keys($grid-breakpoints) {
-  // Generate container query if needed
-  @include container-breakpoint-up($breakpoint) {
-    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-
-    @for $i from 1 through 12 {
-      .bcq#{$infix}-#{$i} {
-        width: calc((100 / 12) * $i * 1cqw);
-      }
-    }
-
-    // Loop over each utility property
-    @each $key, $utility in $bcq-utilities {
-      // The utility can be disabled with `false`, thus check if the utility is a map first
-      // Only proceed if responsive container queries are enabled or if it's the base container query
-      @if type-of($utility) ==
-        "map" and
-        (map-get($utility, responsive) or $infix == "")
-      {
-        @include generate-utility($utility, $infix);
-      }
-    }
-  }
-}
+@import "./api";

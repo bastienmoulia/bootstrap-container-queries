@@ -1,11 +1,5 @@
 .bcq {
-  display: flex;
-  flex-wrap: wrap;
   container-type: inline-size;
-}
-.bcq > * {
-  flex: 0 0 auto;
-  width: 100cqw;
 }
 
 .bcq-1 {

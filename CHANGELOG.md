@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.3.0] - 2024-03-24
+
+### Changed
+
+- Change the CSS for `.bcq` to be minimal.
+
 ## [1.2.0] - 2024-03-22
 
 ### Added

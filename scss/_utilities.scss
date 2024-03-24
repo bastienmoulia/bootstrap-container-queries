@@ -1,0 +1,33 @@
+$bcq-utilities: () !default;
+$bcq-utilities: map-merge(
+  (
+    "container-queries-display": (
+      responsive: true,
+      property: display,
+      class: bcq-d,
+      values: inline inline-block block grid inline-grid table table-row
+      table-cell flex inline-flex none,
+    ),
+    "container-queries-text-align": (
+      responsive: true,
+      property: text-align,
+      class: bcq-text,
+      values: (
+        start: left,
+        end: right,
+        center: center,
+      ),
+    ),
+    "container-queries-float": (
+      responsive: true,
+      property: float,
+      class: bcq-float,
+      values: (
+        start: left,
+        end: right,
+        none: none,
+      ),
+    ),
+  ),
+  $bcq-utilities
+);
