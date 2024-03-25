@@ -6,7 +6,7 @@ $bcq-utilities: map-merge(
       property: display,
       class: bcq-d,
       values: inline inline-block block grid inline-grid table table-row
-      table-cell flex inline-flex none,
+        table-cell flex inline-flex none,
     ),
     "container-queries-text-align": (
       responsive: true,
@@ -27,6 +27,174 @@ $bcq-utilities: map-merge(
         end: right,
         none: none,
       ),
+    ),
+    "container-queries-margin": (
+      responsive: true,
+      property: margin,
+      class: bcq-m,
+      values:
+        map-merge(
+          $spacers,
+          (
+            auto: auto,
+          )
+        ),
+    ),
+    "container-queries-margin-x": (
+      responsive: true,
+      property: margin-right margin-left,
+      class: bcq-mx,
+      values:
+        map-merge(
+          $spacers,
+          (
+            auto: auto,
+          )
+        ),
+    ),
+    "container-queries-margin-y": (
+      responsive: true,
+      property: margin-top margin-bottom,
+      class: bcq-my,
+      values:
+        map-merge(
+          $spacers,
+          (
+            auto: auto,
+          )
+        ),
+    ),
+    "container-queries-margin-top": (
+      responsive: true,
+      property: margin-top,
+      class: bcq-mt,
+      values:
+        map-merge(
+          $spacers,
+          (
+            auto: auto,
+          )
+        ),
+    ),
+    "container-queries-margin-end": (
+      responsive: true,
+      property: margin-right,
+      class: bcq-me,
+      values:
+        map-merge(
+          $spacers,
+          (
+            auto: auto,
+          )
+        ),
+    ),
+    "container-queries-margin-bottom": (
+      responsive: true,
+      property: margin-bottom,
+      class: bcq-mb,
+      values:
+        map-merge(
+          $spacers,
+          (
+            auto: auto,
+          )
+        ),
+    ),
+    "container-queries-margin-start": (
+      responsive: true,
+      property: margin-left,
+      class: bcq-ms,
+      values:
+        map-merge(
+          $spacers,
+          (
+            auto: auto,
+          )
+        ),
+    ),
+    "container-queries-negative-margin": (
+      responsive: true,
+      property: margin,
+      class: bcq-m,
+      values: $negative-spacers,
+    ),
+    "container-queries-negative-margin-x": (
+      responsive: true,
+      property: margin-right margin-left,
+      class: bcq-mx,
+      values: $negative-spacers,
+    ),
+    "container-queries-negative-margin-y": (
+      responsive: true,
+      property: margin-top margin-bottom,
+      class: bcq-my,
+      values: $negative-spacers,
+    ),
+    "container-queries-negative-margin-top": (
+      responsive: true,
+      property: margin-top,
+      class: bcq-mt,
+      values: $negative-spacers,
+    ),
+    "container-queries-negative-margin-end": (
+      responsive: true,
+      property: margin-right,
+      class: bcq-me,
+      values: $negative-spacers,
+    ),
+    "container-queries-negative-margin-bottom": (
+      responsive: true,
+      property: margin-bottom,
+      class: bcq-mb,
+      values: $negative-spacers,
+    ),
+    "container-queries-negative-margin-start": (
+      responsive: true,
+      property: margin-left,
+      class: bcq-ms,
+      values: $negative-spacers,
+    ),
+    "container-queries-padding": (
+      responsive: true,
+      property: padding,
+      class: bcq-p,
+      values: $spacers,
+    ),
+    "container-queries-padding-x": (
+      responsive: true,
+      property: padding-right padding-left,
+      class: bcq-px,
+      values: $spacers,
+    ),
+    "container-queries-padding-y": (
+      responsive: true,
+      property: padding-top padding-bottom,
+      class: bcq-py,
+      values: $spacers,
+    ),
+    "container-queries-padding-top": (
+      responsive: true,
+      property: padding-top,
+      class: bcq-pt,
+      values: $spacers,
+    ),
+    "container-queries-padding-end": (
+      responsive: true,
+      property: padding-right,
+      class: bcq-pe,
+      values: $spacers,
+    ),
+    "container-queries-padding-bottom": (
+      responsive: true,
+      property: padding-bottom,
+      class: bcq-pb,
+      values: $spacers,
+    ),
+    "container-queries-padding-start": (
+      responsive: true,
+      property: padding-left,
+      class: bcq-ps,
+      values: $spacers,
     ),
   ),
   $bcq-utilities

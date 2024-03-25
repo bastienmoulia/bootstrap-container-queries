@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-container-queries",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Container queries for bootstrap",
   "homepage": "https://github.com/bastienmoulia/bootstrap-container-queries",
   "main": "scss/bootstrap-container-queries.scss",

@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.4.0] - 2024-03-25
+
+### Added
+
+- Add classes for margin and padding.
+
 ## [1.3.0] - 2024-03-24
 
 ### Changed
