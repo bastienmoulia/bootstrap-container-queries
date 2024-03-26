@@ -19,7 +19,7 @@ Add in the `<head>` of your html file:
 Add in your scss file:
 
 ```scss
-@import "~bootstrap-container-queries/scss/bootstrap-container-queries";
+@import "bootstrap-container-queries/scss/bootstrap-container-queries";
 ```
 
 ## Usage
@@ -41,3 +41,7 @@ You can align text at `start`, `center` or `end` with `.bcq-text-{value}` or `.b
 ### Float
 
 You can make the element float at `start`, `end` or `none` with `.bcq-float-{value}` or `.bcq-float-{breakpoint}-{value}` like `.float-*`.
+
+### Margin and padding
+
+You can add the bootstrap margin or padding with `.bcq-m{sides}-{breakpoint}-{value}` or `.bcq-p{sides}-{breakpoint}-{value}`.
