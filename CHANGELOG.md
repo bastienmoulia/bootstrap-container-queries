@@ -1,4 +1,22 @@
+<!-- https://keepachangelog.com/en/1.1.0/ -->
+
 # Changelog
+
+## [2.0.0] - 2024-04-08
+
+### Added
+
+- Add custom breakpoints for container queries:
+```scss
+$container-queries-breakpoints: (
+  sm: 30em,
+  md: 48em,
+  lg: 62em,
+  xl: 75em,
+  xxl: 90em
+) !default;
+```
+- Add buttons to change the size of the container in the demo page.
 
 ## [1.4.0] - 2024-03-25
 

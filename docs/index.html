@@ -13,7 +13,7 @@
     <link href="./style.css" rel="stylesheet" />
     <style>
       .resizable {
-        width: 500px;
+        width: 30em;
         resize: horizontal;
         margin: 0 auto;
         overflow: hidden;
@@ -21,7 +21,17 @@
     </style>
   </head>
   <body>
-    <h1>Bootstrap Container Queries</h1>
+    <h1 class="display-1 text-center">Bootstrap Container Queries</h1>
+    <div class="text-center">
+      <div class="btn-group mb-3" role="group">
+        <button type="button" class="btn btn-outline-primary" data-size="28">xs</button>
+        <button type="button" class="btn btn-outline-primary" data-size="30">sm</button>
+        <button type="button" class="btn btn-outline-primary" data-size="48">md</button>
+        <button type="button" class="btn btn-outline-primary" data-size="62">lg</button>
+        <button type="button" class="btn btn-outline-primary" data-size="75">xl</button>
+        <button type="button" class="btn btn-outline-primary" data-size="90">xxl</button>
+      </div>
+    </div>
     <div class="resizable border border-primary">
       <div class="bcq row">
         <div class="bcq-sm-6 bcq-md-4 bcq-lg-3">bcq-sm-6 bcq-md-4 bcq-lg-3</div>
@@ -62,4 +72,11 @@
       </div>
     </div>
   </body>
+  <script>
+    document.querySelectorAll("button").forEach((button) => {
+      button.addEventListener("click", () => {
+        document.querySelector(".resizable").style.width = `${button.dataset.size}em`;
+      });
+    });
+  </script>
 </html>

@@ -45,3 +45,17 @@ You can make the element float at `start`, `end` or `none` with `.bcq-float-{val
 ### Margin and padding
 
 You can add the bootstrap margin or padding with `.bcq-m{sides}-{breakpoint}-{value}` or `.bcq-p{sides}-{breakpoint}-{value}`.
+
+## Custom breakpoints
+
+You can add custom breakpoints for container queries:
+
+```scss
+$container-queries-breakpoints: (
+  sm: 30em,
+  md: 48em,
+  lg: 62em,
+  xl: 75em,
+  xxl: 90em
+);
+```

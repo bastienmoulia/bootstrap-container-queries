@@ -1,6 +1,14 @@
 @import "./breakpoints";
 @import "./utilities";
 
+$container-queries-breakpoints: (
+  sm: 30em,
+  md: 48em,
+  lg: 62em,
+  xl: 75em,
+  xxl: 90em
+) !default;
+
 .bcq {
   container-type: inline-size;
 }
