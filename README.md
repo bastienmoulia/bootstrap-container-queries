@@ -59,3 +59,7 @@ $container-queries-breakpoints: (
   xxl: 90em
 );
 ```
+
+## Warning
+
+The `.bcq` class will create a new [Stacking Context](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_context) that can result of z-index or transform: translate on the Z axis to not work.
