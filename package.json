@@ -4,6 +4,8 @@
   "description": "Container queries for bootstrap",
   "homepage": "https://github.com/bastienmoulia/bootstrap-container-queries",
   "main": "scss/bootstrap-container-queries.scss",
+  "sass": "scss/bootstrap-container-queries.scss",
+  "style": "dist/bootstrap-container-queries.css",
   "scripts": {
     "start": "concurrently \"npm run serve\" \"npm run watch\"",
     "build": "sass scss/build.scss dist/bootstrap-container-queries.min.css --style=compressed && sass scss/build.scss dist/bootstrap-container-queries.css",
