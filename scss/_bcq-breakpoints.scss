@@ -1,7 +1,9 @@
+@use "../node_modules/bootstrap-sass-modules/scss/mixins/breakpoints";
+
 // Container of at least the minimum breakpoint width. No query for the smallest breakpoint.
 // Makes the @content apply to the given breakpoint and wider.
-@mixin container-breakpoint-up($name, $breakpoints: $container-queries-breakpoints) {
-  $min: breakpoint-min($name, $breakpoints);
+@mixin container-breakpoint-up($name, $breakpoints) {
+  $min: breakpoints.breakpoint-min($name, $breakpoints);
 
   @if $min {
     @container (min-width: #{$min}) {
@@ -14,8 +16,8 @@
 
 // Container of at most the maximum breakpoint width. No query for the largest breakpoint.
 // Makes the @content apply to the given breakpoint and narrower.
-@mixin container-breakpoint-down($name, $breakpoints: $container-queries-breakpoints) {
-  $max: breakpoint-max($name, $breakpoints);
+@mixin container-breakpoint-down($name, $breakpoints) {
+  $max: breakpoints.breakpoint-max($name, $breakpoints);
 
   @if $max {
     @container (max-width: #{$max}) {
@@ -28,13 +30,9 @@
 
 // Container that spans multiple breakpoint widths.
 // Makes the @content apply between the min and max breakpoints
-@mixin container-breakpoint-between(
-  $lower,
-  $upper,
-  $breakpoints: $container-queries-breakpoints
-) {
-  $min: breakpoint-min($lower, $breakpoints);
-  $max: breakpoint-max($upper, $breakpoints);
+@mixin container-breakpoint-between($lower, $upper, $breakpoints) {
+  $min: breakpoints.breakpoint-min($lower, $breakpoints);
+  $max: breakpoints.breakpoint-max($upper, $breakpoints);
 
   @if $min != null and $max != null {
     @container (min-width: #{$min}) and (max-width: #{$max}) {
@@ -54,10 +52,10 @@
 // Container between the breakpoint's minimum and maximum widths.
 // No minimum for the smallest breakpoint, and no maximum for the largest one.
 // Makes the @content apply only to the given breakpoint, not viewports any wider or narrower.
-@mixin container-breakpoint-only($name, $breakpoints: $container-queries-breakpoints) {
-  $min: breakpoint-min($name, $breakpoints);
+@mixin container-breakpoint-only($name, $breakpoints) {
+  $min: breakpoints.breakpoint-min($name, $breakpoints);
   $next: breakpoint-next($name, $breakpoints);
-  $max: breakpoint-max($next, $breakpoints);
+  $max: breakpoints.breakpoint-max($next, $breakpoints);
 
   @if $min != null and $max != null {
     @container (min-width: $min) and (max-width: $max) {

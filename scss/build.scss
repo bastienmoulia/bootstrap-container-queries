@@ -1,7 +1,7 @@
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/maps";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/vendor/rfs";
+@use "../node_modules/bootstrap-sass-modules/scss/functions";
+@use "../node_modules/bootstrap-sass-modules/scss/variables";
+@use "../node_modules/bootstrap-sass-modules/scss/maps";
+@use "../node_modules/bootstrap-sass-modules/scss/mixins";
+@use "../node_modules/bootstrap-sass-modules/scss/vendor/rfs";
 
-@import "./bootstrap-container-queries";
+@use "./bootstrap-container-queries";

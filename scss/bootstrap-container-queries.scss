@@ -1,16 +1,19 @@
-@import "./breakpoints";
-@import "./utilities";
+@use "../node_modules/bootstrap-sass-modules/scss/variables";
+@use "./bcq-api";
 
 $container-queries-breakpoints: (
   sm: 30em,
   md: 48em,
   lg: 62em,
   xl: 75em,
-  xxl: 90em
+  xxl: 90em,
 ) !default;
 
 .bcq {
   container-type: inline-size;
 }
 
-@import "./api";
+@include bcq-api.generate-containers(
+  variables.$grid-breakpoints,
+  $container-queries-breakpoints
+);

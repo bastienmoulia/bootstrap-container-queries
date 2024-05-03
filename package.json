@@ -42,6 +42,6 @@
     "stylelint-config-twbs-bootstrap": "^14.0.0"
   },
   "peerDependencies": {
-    "bootstrap": "^5.3.3"
+    "bootstrap-sass-modules": "^1.0.0"
   }
 }

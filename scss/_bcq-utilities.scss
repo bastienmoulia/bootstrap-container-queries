@@ -1,3 +1,6 @@
+@use "../node_modules/bootstrap-sass-modules/scss/variables";
+@use "../node_modules/bootstrap-sass-modules/scss/maps";
+
 $bcq-utilities: () !default;
 $bcq-utilities: map-merge(
   (
@@ -34,7 +37,7 @@ $bcq-utilities: map-merge(
       class: bcq-m,
       values:
         map-merge(
-          $spacers,
+          variables.$spacers,
           (
             auto: auto,
           )
@@ -46,7 +49,7 @@ $bcq-utilities: map-merge(
       class: bcq-mx,
       values:
         map-merge(
-          $spacers,
+          variables.$spacers,
           (
             auto: auto,
           )
@@ -58,7 +61,7 @@ $bcq-utilities: map-merge(
       class: bcq-my,
       values:
         map-merge(
-          $spacers,
+          variables.$spacers,
           (
             auto: auto,
           )
@@ -70,7 +73,7 @@ $bcq-utilities: map-merge(
       class: bcq-mt,
       values:
         map-merge(
-          $spacers,
+          variables.$spacers,
           (
             auto: auto,
           )
@@ -82,7 +85,7 @@ $bcq-utilities: map-merge(
       class: bcq-me,
       values:
         map-merge(
-          $spacers,
+          variables.$spacers,
           (
             auto: auto,
           )
@@ -94,7 +97,7 @@ $bcq-utilities: map-merge(
       class: bcq-mb,
       values:
         map-merge(
-          $spacers,
+          variables.$spacers,
           (
             auto: auto,
           )
@@ -106,7 +109,7 @@ $bcq-utilities: map-merge(
       class: bcq-ms,
       values:
         map-merge(
-          $spacers,
+          variables.$spacers,
           (
             auto: auto,
           )
@@ -116,85 +119,85 @@ $bcq-utilities: map-merge(
       responsive: true,
       property: margin,
       class: bcq-m,
-      values: $negative-spacers,
+      values: maps.$negative-spacers,
     ),
     "container-queries-negative-margin-x": (
       responsive: true,
       property: margin-right margin-left,
       class: bcq-mx,
-      values: $negative-spacers,
+      values: maps.$negative-spacers,
     ),
     "container-queries-negative-margin-y": (
       responsive: true,
       property: margin-top margin-bottom,
       class: bcq-my,
-      values: $negative-spacers,
+      values: maps.$negative-spacers,
     ),
     "container-queries-negative-margin-top": (
       responsive: true,
       property: margin-top,
       class: bcq-mt,
-      values: $negative-spacers,
+      values: maps.$negative-spacers,
     ),
     "container-queries-negative-margin-end": (
       responsive: true,
       property: margin-right,
       class: bcq-me,
-      values: $negative-spacers,
+      values: maps.$negative-spacers,
     ),
     "container-queries-negative-margin-bottom": (
       responsive: true,
       property: margin-bottom,
       class: bcq-mb,
-      values: $negative-spacers,
+      values: maps.$negative-spacers,
     ),
     "container-queries-negative-margin-start": (
       responsive: true,
       property: margin-left,
       class: bcq-ms,
-      values: $negative-spacers,
+      values: maps.$negative-spacers,
     ),
     "container-queries-padding": (
       responsive: true,
       property: padding,
       class: bcq-p,
-      values: $spacers,
+      values: variables.$spacers,
     ),
     "container-queries-padding-x": (
       responsive: true,
       property: padding-right padding-left,
       class: bcq-px,
-      values: $spacers,
+      values: variables.$spacers,
     ),
     "container-queries-padding-y": (
       responsive: true,
       property: padding-top padding-bottom,
       class: bcq-py,
-      values: $spacers,
+      values: variables.$spacers,
     ),
     "container-queries-padding-top": (
       responsive: true,
       property: padding-top,
       class: bcq-pt,
-      values: $spacers,
+      values: variables.$spacers,
     ),
     "container-queries-padding-end": (
       responsive: true,
       property: padding-right,
       class: bcq-pe,
-      values: $spacers,
+      values: variables.$spacers,
     ),
     "container-queries-padding-bottom": (
       responsive: true,
       property: padding-bottom,
       class: bcq-pb,
-      values: $spacers,
+      values: variables.$spacers,
     ),
     "container-queries-padding-start": (
       responsive: true,
       property: padding-left,
       class: bcq-ps,
-      values: $spacers,
+      values: variables.$spacers,
     ),
   ),
   $bcq-utilities

@@ -19,6 +19,12 @@ Add in the `<head>` of your html file:
 Add in your scss file:
 
 ```scss
+@use "bootstrap-container-queries/scss/bootstrap-container-queries";
+```
+
+Or if you don't use SASS modules:
+
+```scss
 @import "bootstrap-container-queries/scss/bootstrap-container-queries";
 ```
 
@@ -56,7 +62,7 @@ $container-queries-breakpoints: (
   md: 48em,
   lg: 62em,
   xl: 75em,
-  xxl: 90em
+  xxl: 90em,
 );
 ```
 
