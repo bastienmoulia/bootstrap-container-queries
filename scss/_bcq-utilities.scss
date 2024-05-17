@@ -1,5 +1,5 @@
-@use "../node_modules/bootstrap-sass-modules/scss/variables";
-@use "../node_modules/bootstrap-sass-modules/scss/maps";
+@use "bootstrap-sass-modules/scss/variables";
+@use "bootstrap-sass-modules/scss/maps";
 
 $bcq-utilities: () !default;
 $bcq-utilities: map-merge(

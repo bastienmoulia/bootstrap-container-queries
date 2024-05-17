@@ -1,4 +1,4 @@
-@use "../node_modules/bootstrap-sass-modules/scss/mixins/breakpoints";
+@use "bootstrap-sass-modules/scss/mixins/breakpoints";
 
 // Container of at least the minimum breakpoint width. No query for the smallest breakpoint.
 // Makes the @content apply to the given breakpoint and wider.

@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-container-queries",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Container queries for bootstrap",
   "homepage": "https://github.com/bastienmoulia/bootstrap-container-queries",
   "main": "scss/bootstrap-container-queries.scss",
@@ -8,9 +8,9 @@
   "style": "dist/bootstrap-container-queries.css",
   "scripts": {
     "start": "concurrently \"npm run serve\" \"npm run watch\"",
-    "build": "sass scss/build.scss dist/bootstrap-container-queries.min.css --style=compressed && sass scss/build.scss dist/bootstrap-container-queries.css",
+    "build": "sass scss/build.scss dist/bootstrap-container-queries.min.css --style=compressed --load-path=node_modules && sass scss/build.scss dist/bootstrap-container-queries.css --load-path=node_modules",
     "serve": "http-server ./docs -o -c-1",
-    "watch": "sass scss/build.scss docs/style.css --watch",
+    "watch": "sass scss/build.scss docs/style.css --watch --load-path=node_modules",
     "prettier": "prettier . --write",
     "stylelint": "stylelint '**/*.scss' --fix"
   },

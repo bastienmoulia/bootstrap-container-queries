@@ -2,6 +2,12 @@
 
 # Changelog
 
+## [3.0.2] - 2024-05-17
+
+### Fixed
+
+- Fix SASS import from node_modules.
+
 ## [3.0.1] - 2024-05-17
 
 ### Fixed
