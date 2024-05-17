@@ -41,7 +41,7 @@
     "stylelint-config-prettier-scss": "^1.0.0",
     "stylelint-config-twbs-bootstrap": "^14.0.0"
   },
-  "peerDependencies": {
-    "bootstrap-sass-modules": "^1.0.0"
+  "dependencies": {
+    "bootstrap-sass-modules": "^2.0.1"
   }
 }

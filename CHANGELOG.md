@@ -2,6 +2,12 @@
 
 # Changelog
 
+## [3.0.1] - 2024-05-17
+
+### Fixed
+
+- Set `bootstrap-sass-modules` as a dependency.
+
 ## [3.0.0] - 2024-05-03
 
 ### Added
