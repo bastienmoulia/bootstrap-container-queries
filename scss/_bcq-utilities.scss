@@ -11,6 +11,12 @@ $bcq-utilities: map-merge(
       values: inline inline-block block grid inline-grid table table-row
         table-cell flex inline-flex none,
     ),
+    "container-queries-flex-direction": (
+      responsive: true,
+      property: flex-direction,
+      class: bcq-flex,
+      values: column column-reverse row row-reverse,
+    ),
     "container-queries-text-align": (
       responsive: true,
       property: text-align,
