@@ -2,6 +2,12 @@
 
 # Changelog
 
+## [3.1.0] - 2024-11-20
+
+### Added
+
+- Flex direction classes.
+
 ## [3.0.2] - 2024-05-17
 
 ### Fixed

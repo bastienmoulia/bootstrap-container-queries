@@ -94,6 +94,22 @@
   display: none !important;
 }
 
+.bcq-flex-column {
+  flex-direction: column !important;
+}
+
+.bcq-flex-column-reverse {
+  flex-direction: column-reverse !important;
+}
+
+.bcq-flex-row {
+  flex-direction: row !important;
+}
+
+.bcq-flex-row-reverse {
+  flex-direction: row-reverse !important;
+}
+
 .bcq-text-start {
   text-align: left !important;
 }
@@ -578,6 +594,18 @@
   .bcq-d-sm-none {
     display: none !important;
   }
+  .bcq-flex-sm-column {
+    flex-direction: column !important;
+  }
+  .bcq-flex-sm-column-reverse {
+    flex-direction: column-reverse !important;
+  }
+  .bcq-flex-sm-row {
+    flex-direction: row !important;
+  }
+  .bcq-flex-sm-row-reverse {
+    flex-direction: row-reverse !important;
+  }
   .bcq-text-sm-start {
     text-align: left !important;
   }
@@ -965,6 +993,18 @@
   }
   .bcq-d-md-none {
     display: none !important;
+  }
+  .bcq-flex-md-column {
+    flex-direction: column !important;
+  }
+  .bcq-flex-md-column-reverse {
+    flex-direction: column-reverse !important;
+  }
+  .bcq-flex-md-row {
+    flex-direction: row !important;
+  }
+  .bcq-flex-md-row-reverse {
+    flex-direction: row-reverse !important;
   }
   .bcq-text-md-start {
     text-align: left !important;
@@ -1354,6 +1394,18 @@
   .bcq-d-lg-none {
     display: none !important;
   }
+  .bcq-flex-lg-column {
+    flex-direction: column !important;
+  }
+  .bcq-flex-lg-column-reverse {
+    flex-direction: column-reverse !important;
+  }
+  .bcq-flex-lg-row {
+    flex-direction: row !important;
+  }
+  .bcq-flex-lg-row-reverse {
+    flex-direction: row-reverse !important;
+  }
   .bcq-text-lg-start {
     text-align: left !important;
   }
@@ -1742,6 +1794,18 @@
   .bcq-d-xl-none {
     display: none !important;
   }
+  .bcq-flex-xl-column {
+    flex-direction: column !important;
+  }
+  .bcq-flex-xl-column-reverse {
+    flex-direction: column-reverse !important;
+  }
+  .bcq-flex-xl-row {
+    flex-direction: row !important;
+  }
+  .bcq-flex-xl-row-reverse {
+    flex-direction: row-reverse !important;
+  }
   .bcq-text-xl-start {
     text-align: left !important;
   }
@@ -2129,6 +2193,18 @@
   }
   .bcq-d-xxl-none {
     display: none !important;
+  }
+  .bcq-flex-xxl-column {
+    flex-direction: column !important;
+  }
+  .bcq-flex-xxl-column-reverse {
+    flex-direction: column-reverse !important;
+  }
+  .bcq-flex-xxl-row {
+    flex-direction: row !important;
+  }
+  .bcq-flex-xxl-row-reverse {
+    flex-direction: row-reverse !important;
   }
   .bcq-text-xxl-start {
     text-align: left !important;

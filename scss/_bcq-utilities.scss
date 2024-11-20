@@ -9,7 +9,7 @@ $bcq-utilities: map-merge(
       property: display,
       class: bcq-d,
       values: inline inline-block block grid inline-grid table table-row
-        table-cell flex inline-flex none,
+      table-cell flex inline-flex none,
     ),
     "container-queries-flex-direction": (
       responsive: true,
@@ -42,84 +42,84 @@ $bcq-utilities: map-merge(
       property: margin,
       class: bcq-m,
       values:
-        map-merge(
-          variables.$spacers,
-          (
-            auto: auto,
-          )
-        ),
+      map-merge(
+        variables.$spacers,
+        (
+          auto: auto,
+        )
+      ),
     ),
     "container-queries-margin-x": (
       responsive: true,
       property: margin-right margin-left,
       class: bcq-mx,
       values:
-        map-merge(
-          variables.$spacers,
-          (
-            auto: auto,
-          )
-        ),
+      map-merge(
+        variables.$spacers,
+        (
+          auto: auto,
+        )
+      ),
     ),
     "container-queries-margin-y": (
       responsive: true,
       property: margin-top margin-bottom,
       class: bcq-my,
       values:
-        map-merge(
-          variables.$spacers,
-          (
-            auto: auto,
-          )
-        ),
+      map-merge(
+        variables.$spacers,
+        (
+          auto: auto,
+        )
+      ),
     ),
     "container-queries-margin-top": (
       responsive: true,
       property: margin-top,
       class: bcq-mt,
       values:
-        map-merge(
-          variables.$spacers,
-          (
-            auto: auto,
-          )
-        ),
+      map-merge(
+        variables.$spacers,
+        (
+          auto: auto,
+        )
+      ),
     ),
     "container-queries-margin-end": (
       responsive: true,
       property: margin-right,
       class: bcq-me,
       values:
-        map-merge(
-          variables.$spacers,
-          (
-            auto: auto,
-          )
-        ),
+      map-merge(
+        variables.$spacers,
+        (
+          auto: auto,
+        )
+      ),
     ),
     "container-queries-margin-bottom": (
       responsive: true,
       property: margin-bottom,
       class: bcq-mb,
       values:
-        map-merge(
-          variables.$spacers,
-          (
-            auto: auto,
-          )
-        ),
+      map-merge(
+        variables.$spacers,
+        (
+          auto: auto,
+        )
+      ),
     ),
     "container-queries-margin-start": (
       responsive: true,
       property: margin-left,
       class: bcq-ms,
       values:
-        map-merge(
-          variables.$spacers,
-          (
-            auto: auto,
-          )
-        ),
+      map-merge(
+        variables.$spacers,
+        (
+          auto: auto,
+        )
+      ),
     ),
     "container-queries-negative-margin": (
       responsive: true,

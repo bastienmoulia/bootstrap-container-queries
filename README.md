@@ -52,6 +52,10 @@ You can make the element float at `start`, `end` or `none` with `.bcq-float-{val
 
 You can add the bootstrap margin or padding with `.bcq-m{sides}-{breakpoint}-{value}` or `.bcq-p{sides}-{breakpoint}-{value}`.
 
+### Flex direction
+
+You can add the flex direction `column`, `column-reverse`, `row` or `row-reverse` with `.bcq-flex-{value}` or `.bcq-flex-{breakpoint}-{value}`.
+
 ## Custom breakpoints
 
 You can add custom breakpoints for container queries:
@@ -69,3 +73,9 @@ $container-queries-breakpoints: (
 ## Warning
 
 The `.bcq` class will create a new [Stacking Context](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_context) that can result of z-index or transform: translate on the Z axis to not work.
+
+# Contributors
+
+<p align="center">
+  <img src="https://contributors-img.web.app/image?repo=bastienmoulia/bootstrap-container-queries"/>
+</p>
