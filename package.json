@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-container-queries",
-  "version": "3.1.0",
+  "version": "4.0.0-alpha.1",
   "description": "Container queries for bootstrap",
   "homepage": "https://github.com/bastienmoulia/bootstrap-container-queries",
   "main": "scss/bootstrap-container-queries.scss",
@@ -8,9 +8,9 @@
   "style": "dist/bootstrap-container-queries.css",
   "scripts": {
     "start": "concurrently \"npm run serve\" \"npm run watch\"",
-    "build": "sass scss/build.scss dist/bootstrap-container-queries.min.css --style=compressed --load-path=node_modules --quiet-deps && sass scss/build.scss dist/bootstrap-container-queries.css --load-path=node_modules --quiet-deps",
+    "build": "sass scss/build.scss dist/bootstrap-container-queries.min.css --style=compressed --load-path=node_modules && sass scss/build.scss dist/bootstrap-container-queries.css --load-path=node_modules",
     "serve": "http-server ./docs -o -c-1",
-    "watch": "sass scss/build.scss docs/style.css --watch --load-path=node_modules --quiet-deps",
+    "watch": "sass scss/build.scss docs/style.css --watch --load-path=node_modules",
     "prettier": "prettier . --write",
     "stylelint": "stylelint '**/*.scss' --fix",
     "prettier:check": "prettier . --check",
@@ -33,6 +33,12 @@
     "./scss/bootstrap-container-queries": {
       "style": "./scss/bootstrap-container-queries.scss"
     },
+    "./dist/v3/bootstrap-container-queries.css": {
+      "style": "./dist/v3/bootstrap-container-queries.css"
+    },
+    "./dist/v3/bootstrap-container-queries.min.css": {
+      "style": "./dist/v3/bootstrap-container-queries.min.css"
+    },
     "./dist/bootstrap-container-queries.css": {
       "style": "./dist/bootstrap-container-queries.css"
     },
@@ -42,7 +48,7 @@
   },
   "devDependencies": {
     "@vitest/browser-playwright": "^5.0.4",
-    "bootstrap": "^5.3.8",
+    "bootstrap": "^6.0.0-alpha.1",
     "concurrently": "^10.0.6",
     "http-server": "^14.1.1",
     "playwright": "1.64.1",
@@ -53,7 +59,7 @@
     "stylelint-config-twbs-bootstrap": "^16.1.0",
     "vitest": "^5.0.4"
   },
-  "dependencies": {
-    "bootstrap-sass-modules": "^3.1.0"
+  "peerDependencies": {
+    "bootstrap": "^6.0.0-alpha.1"
   }
 }

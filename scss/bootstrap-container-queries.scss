@@ -1,19 +1,15 @@
-@use "bootstrap-sass-modules/scss/variables";
+@forward "./bcq-api" show $container-queries-breakpoints,
+  $container-queries-utilities;
+
+@use "bootstrap/scss/layout/breakpoints" as bp;
 @use "./bcq-api";
 
-$container-queries-breakpoints: (
-  sm: 30em,
-  md: 48em,
-  lg: 62em,
-  xl: 75em,
-  xxl: 90em,
-) !default;
+@layer colors, config, root, reboot, layout, content, forms, components, custom, helpers, utilities;
 
-.bcq {
-  container-type: inline-size;
+@layer layout {
+  .bcq {
+    @include bp.set-container();
+  }
 }
 
-@include bcq-api.generate-containers(
-  variables.$grid-breakpoints,
-  $container-queries-breakpoints
-);
+@include bcq-api.generate-containers();

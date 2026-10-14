@@ -1,57 +1,75 @@
 @use "sass:map";
+@use "sass:math";
 @use "sass:meta";
-@use "bootstrap-sass-modules/scss/mixins/breakpoints";
-@use "bootstrap-sass-modules/scss/mixins/utilities";
-@use "bootstrap-sass-modules/scss/vendor/rfs";
-@use "./bcq-breakpoints";
-@use "./bcq-utilities";
+@use "bootstrap/scss/config" as bs;
+@use "bootstrap/scss/functions" as bs-functions;
+@use "bootstrap/scss/layout/breakpoints" as bp;
+@use "bootstrap/scss/mixins/utilities" as bs-utilities;
+// Populates `bs.$utilities`.
+@use "bootstrap/scss/utilities";
 
-@mixin generate-containers($grid-breakpoints, $container-queries-breakpoints) {
-  // Loop over each breakpoint
-  @each $breakpoint in map.keys($grid-breakpoints) {
-    // Generate container query if needed
-    @include bcq-breakpoints.container-breakpoint-up(
-      $breakpoint,
-      $container-queries-breakpoints
-    ) {
-      $infix: breakpoints.breakpoint-infix($breakpoint, $grid-breakpoints);
+$container-queries-breakpoints: null !default;
+$container-queries-utilities: (
+  "display",
+  "flex-direction",
+  "text-align",
+  "float",
+  "margin",
+  "margin-x",
+  "margin-y",
+  "margin-top",
+  "margin-end",
+  "margin-bottom",
+  "margin-start",
+  "padding",
+  "padding-x",
+  "padding-y",
+  "padding-top",
+  "padding-end",
+  "padding-bottom",
+  "padding-start"
+) !default;
 
-      @for $i from 1 through 12 {
-        .bcq#{$infix}-#{$i} {
-          width: calc((100 / 12) * $i * 1cqw);
-        }
-      }
+// Prefix of the container classes, e.g. `@md:` for `@md:d-none`.
+@function prefix($name) {
+  @return "\\@#{$name}\\:";
+}
 
-      // Loop over each utility property
-      @each $key, $utility in bcq-utilities.$bcq-utilities {
-        // The utility can be disabled with `false`, thus check if the utility is a map first
-        // Only proceed if responsive container queries are enabled or if it's the base container query
-        @if meta.type-of($utility) ==
-          "map" and
-          (map.get($utility, responsive) or $infix == "")
-        {
-          @include utilities.generate-utility($utility, $infix);
-        }
-      }
-    }
+@mixin generate-containers() {
+  $breakpoints: bs.$breakpoints;
+  @if $container-queries-breakpoints != null {
+    $breakpoints: $container-queries-breakpoints;
   }
 
-  // RFS rescaling
-  @media (min-width: rfs.$rfs-mq-value) {
-    @each $breakpoint in map.keys($grid-breakpoints) {
-      $infix: breakpoints.breakpoint-infix($breakpoint, $grid-breakpoints);
+  $utilities: bs-functions.map-get-multiple(
+    bs.$utilities,
+    $container-queries-utilities
+  );
 
-      @if map.get($grid-breakpoints, $breakpoint) < rfs.$rfs-breakpoint {
-        // Loop over each utility property
-        @each $key, $utility in bcq-utilities.$bcq-utilities {
-          // The utility can be disabled with `false`, thus check if the utility is a map first
-          // Only proceed if responsive media queries are enabled or if it's the base media query
-          @if meta.type-of($utility) ==
-            "map" and
-            map.get($utility, rfs) and
-            (map.get($utility, responsive) or $infix == "")
-          {
-            @include utilities.generate-utility($utility, $infix, true);
+  // The smallest breakpoint has no query: Bootstrap already provides its classes.
+  @each $name, $min in $breakpoints {
+    @if bp.breakpoint-min($name, $breakpoints) != null {
+      @include bp.container-breakpoint-up($name, null, $breakpoints) {
+        $prefix: prefix($name);
+
+        @layer layout {
+          @for $i from 1 through bs.$grid-columns {
+            .#{$prefix}col-#{$i} {
+              width: math.div(100, bs.$grid-columns) * $i * 1cqw;
+            }
+          }
+        }
+
+        @layer utilities {
+          @each $key, $utility in $utilities {
+            @if meta.type-of($utility) ==
+              "map" and
+              map.get($utility, enabled) !=
+              false and
+              map.get($utility, responsive)
+            {
+              @include bs-utilities.generate-utility($utility, $prefix);
+            }
           }
         }
       }

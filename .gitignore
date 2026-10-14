@@ -1,5 +1,4 @@
 node_modules
-dist
 .vitest
 tests/visual/__screenshots__/**/*-darwin.png
 tests/visual/__screenshots__/**/*-win32.png

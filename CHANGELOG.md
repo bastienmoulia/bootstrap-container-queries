@@ -2,6 +2,27 @@
 
 # Changelog
 
+## [4.0.0-alpha.1] - Unreleased
+
+### Changed
+
+- **Breaking:** Bootstrap 6 support. Bootstrap 5 is still supported by the 3.x line (`dist/v3/`).
+- **Breaking:** class names now use the container prefix, like `.@md:d-none` and `.@md:col-4` instead of `.bcq-d-md-none` and `.bcq-md-4`. The base classes (`.bcq-d-none`) are gone, use Bootstrap ones.
+- **Breaking:** `bootstrap` 6 is a peer dependency, `bootstrap-sass-modules` is not used anymore.
+- Default container breakpoints are Bootstrap's `$breakpoints`, and container queries use the range syntax.
+- CSS is emitted in the Bootstrap `layout` and `utilities` cascade layers.
+- Generated utilities can be selected with `$container-queries-utilities`.
+- `.bcq` is an alias of Bootstrap `.contains-inline`.
+
+### Added
+
+- Vitest unit and visual regression tests.
+- Demo of the previous version at `/v3/`.
+
+### Updated
+
+- Dependencies and Sass deprecations.
+
 ## [3.1.0] - 2024-11-20
 
 ### Added
