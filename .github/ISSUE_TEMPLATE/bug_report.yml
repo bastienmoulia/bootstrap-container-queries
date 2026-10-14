@@ -1,0 +1,22 @@
+name: Bug report
+description: Something does not work as expected
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Package, Bootstrap and browser versions
+      placeholder: bootstrap-container-queries 4.0.0-alpha.2, Bootstrap 6.0.0-alpha.1, Chrome 130
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Include the HTML/SCSS needed to reproduce it (a CodePen or StackBlitz link helps).
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?

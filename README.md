@@ -176,6 +176,8 @@ npm run test:visual:docker   # visual tests in the Playwright Linux image
 
 The visual tests compare screenshots with the baselines in `tests/visual/__screenshots__`. Screenshots depend on the platform, so the committed reference ones are the Linux ones, generated with `VRT_ARGS=-u npm run test:visual:docker`.
 
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the contribution and release process, and [SECURITY.md](SECURITY.md) to report vulnerabilities.
+
 ## Warning
 
 The `.contains-inline` class will create a new [Stacking Context](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_context) that can result of z-index or transform: translate on the Z axis to not work.

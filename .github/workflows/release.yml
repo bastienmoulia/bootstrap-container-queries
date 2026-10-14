@@ -1,0 +1,45 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
+        with:
+          node-version: 24
+          cache: npm
+          registry-url: https://registry.npmjs.org
+      - name: Check tag matches package version
+        run: |
+          [ "v$(node -p "require('./package.json').version")" = "$GITHUB_REF_NAME" ] || {
+            echo "Tag $GITHUB_REF_NAME does not match package.json version" >&2
+            exit 1
+          }
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run build
+      - name: Check dist is up to date
+        run: git diff --exit-code -- dist/
+      - run: npm run test:unit
+      - name: Update npm (staged publishing needs npm >= 11.15)
+        run: npm install -g npm@latest
+      - name: Stage release for approval
+        run: |
+          case "$GITHUB_REF_NAME" in
+            *-*) TAG=next ;;
+            *) TAG=latest ;;
+          esac
+          npm stage publish --access public --tag "$TAG"

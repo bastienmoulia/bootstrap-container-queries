@@ -185,13 +185,13 @@
         </div>
       </div>
     </div>
-  </body>
-  <script>
-    document.querySelectorAll("button").forEach((button) => {
-      button.addEventListener("click", () => {
-        document.querySelector(".resizable").style.width =
-          `${button.dataset.size}em`;
+    <script>
+      document.querySelectorAll("button").forEach((button) => {
+        button.addEventListener("click", () => {
+          document.querySelector(".resizable").style.width =
+            `${button.dataset.size}em`;
+        });
       });
-    });
-  </script>
+    </script>
+  </body>
 </html>

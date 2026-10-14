@@ -2,6 +2,17 @@
 
 # Changelog
 
+## [4.0.0-alpha.3] - 2026-10-14
+
+### Added
+
+- Package metadata (`repository`, `bugs`, `sideEffects`) and `sass`/`default` export conditions.
+- Release workflow publishing to npm through trusted publishing (staged), security policy and contributing guide.
+
+### Security
+
+- GitHub Actions pinned to commit SHAs, Dependabot enabled, SRI on the docs CDN stylesheet.
+
 ## [4.0.0-alpha.2] - 2026-10-14
 
 ### Changed

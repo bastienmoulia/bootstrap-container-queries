@@ -1,11 +1,22 @@
 {
   "name": "bootstrap-container-queries",
-  "version": "4.0.0-alpha.2",
+  "version": "4.0.0-alpha.3",
   "description": "Container queries for bootstrap",
   "homepage": "https://github.com/bastienmoulia/bootstrap-container-queries",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bastienmoulia/bootstrap-container-queries.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bastienmoulia/bootstrap-container-queries/issues"
+  },
   "main": "scss/bootstrap-container-queries.scss",
   "sass": "scss/bootstrap-container-queries.scss",
   "style": "dist/bootstrap-container-queries.css",
+  "sideEffects": [
+    "*.css",
+    "*.scss"
+  ],
   "files": [
     "scss",
     "dist",
@@ -37,19 +48,29 @@
   "license": "MIT",
   "exports": {
     "./scss/bootstrap-container-queries": {
-      "style": "./scss/bootstrap-container-queries.scss"
+      "sass": "./scss/bootstrap-container-queries.scss",
+      "style": "./scss/bootstrap-container-queries.scss",
+      "default": "./scss/bootstrap-container-queries.scss"
     },
     "./dist/v3/bootstrap-container-queries.css": {
-      "style": "./dist/v3/bootstrap-container-queries.css"
+      "sass": "./dist/v3/bootstrap-container-queries.css",
+      "style": "./dist/v3/bootstrap-container-queries.css",
+      "default": "./dist/v3/bootstrap-container-queries.css"
     },
     "./dist/v3/bootstrap-container-queries.min.css": {
-      "style": "./dist/v3/bootstrap-container-queries.min.css"
+      "sass": "./dist/v3/bootstrap-container-queries.min.css",
+      "style": "./dist/v3/bootstrap-container-queries.min.css",
+      "default": "./dist/v3/bootstrap-container-queries.min.css"
     },
     "./dist/bootstrap-container-queries.css": {
-      "style": "./dist/bootstrap-container-queries.css"
+      "sass": "./dist/bootstrap-container-queries.css",
+      "style": "./dist/bootstrap-container-queries.css",
+      "default": "./dist/bootstrap-container-queries.css"
     },
     "./dist/bootstrap-container-queries.min.css": {
-      "style": "./dist/bootstrap-container-queries.min.css"
+      "sass": "./dist/bootstrap-container-queries.min.css",
+      "style": "./dist/bootstrap-container-queries.min.css",
+      "default": "./dist/bootstrap-container-queries.min.css"
     }
   },
   "devDependencies": {
@@ -67,5 +88,9 @@
   },
   "peerDependencies": {
     "bootstrap": "^6.0.0-alpha.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
   }
 }

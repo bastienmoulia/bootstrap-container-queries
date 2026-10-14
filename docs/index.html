@@ -8,6 +8,8 @@
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
+      crossorigin="anonymous"
     />
     <link href="./style.css" rel="stylesheet" />
     <style>
@@ -235,13 +237,13 @@
         </div>
       </div>
     </div>
-  </body>
-  <script>
-    document.querySelectorAll("button").forEach((button) => {
-      button.addEventListener("click", () => {
-        document.querySelector(".resizable").style.width =
-          `${button.dataset.size}em`;
+    <script>
+      document.querySelectorAll("button").forEach((button) => {
+        button.addEventListener("click", () => {
+          document.querySelector(".resizable").style.width =
+            `${button.dataset.size}em`;
+        });
       });
-    });
-  </script>
+    </script>
+  </body>
 </html>
