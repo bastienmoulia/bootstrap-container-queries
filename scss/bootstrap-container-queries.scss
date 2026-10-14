@@ -1,15 +1,8 @@
 @forward "./bcq-api" show $container-queries-breakpoints,
-  $container-queries-utilities;
+  $container-queries-container-name, $container-queries-utilities;
 
-@use "bootstrap/scss/layout/breakpoints" as bp;
 @use "./bcq-api";
 
 @layer colors, config, root, reboot, layout, content, forms, components, custom, helpers, utilities;
-
-@layer layout {
-  .bcq {
-    @include bp.set-container();
-  }
-}
 
 @include bcq-api.generate-containers();

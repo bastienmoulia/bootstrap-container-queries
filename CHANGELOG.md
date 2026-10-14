@@ -2,6 +2,18 @@
 
 # Changelog
 
+## [4.0.0-alpha.2] - 2026-10-14
+
+### Changed
+
+- **Breaking:** class prefix `@md:` is now `cq-md:` (`.cq-md:d-none`, `.cq-md:col-4`), as `md:` is used by Bootstrap 6 for viewport classes.
+- **Breaking:** the `.bcq` class is removed, use Bootstrap's `.contains-inline` (or `set-container()`).
+- Breakpoint prefixes are built with Bootstrap's `css-escape-ident`.
+
+### Added
+
+- `$container-queries-container-name` to query a named container.
+
 ## [4.0.0-alpha.1] - Unreleased
 
 ### Changed

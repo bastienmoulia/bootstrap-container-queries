@@ -9,6 +9,8 @@
 @use "bootstrap/scss/utilities";
 
 $container-queries-breakpoints: null !default;
+// Name of the query container, e.g. `sidebar` for `set-container(inline-size, sidebar)`.
+$container-queries-container-name: null !default;
 $container-queries-utilities: (
   "display",
   "flex-direction",
@@ -30,9 +32,9 @@ $container-queries-utilities: (
   "padding-start"
 ) !default;
 
-// Prefix of the container classes, e.g. `@md:` for `@md:d-none`.
+// Prefix of the container classes, e.g. `cq-md:` for `cq-md:d-none`.
 @function prefix($name) {
-  @return "\\@#{$name}\\:";
+  @return "cq-#{bp.css-escape-ident($name)}\\:";
 }
 
 @mixin generate-containers() {
@@ -49,7 +51,11 @@ $container-queries-utilities: (
   // The smallest breakpoint has no query: Bootstrap already provides its classes.
   @each $name, $min in $breakpoints {
     @if bp.breakpoint-min($name, $breakpoints) != null {
-      @include bp.container-breakpoint-up($name, null, $breakpoints) {
+      @include bp.container-breakpoint-up(
+        $name,
+        $container-queries-container-name,
+        $breakpoints
+      ) {
         $prefix: prefix($name);
 
         @layer layout {

@@ -53,16 +53,16 @@
 
       <h2>Usage</h2>
       <p>
-        Add <code>.bcq</code> to the parent (an alias of Bootstrap's
-        <code>.contains-inline</code>), then use classes prefixed with
-        <code>@breakpoint:</code>:
+        Add Bootstrap's <code>.contains-inline</code> to the parent (or use
+        <code>set-container()</code> in Sass), then use classes prefixed with
+        <code>cq-breakpoint:</code>:
       </p>
-      <pre><code>&lt;div class="bcq"&gt;
-  &lt;div class="d-none @md:d-block"&gt;Visible when the container is at least md&lt;/div&gt;
+      <pre><code>&lt;div class="contains-inline"&gt;
+  &lt;div class="d-none cq-md:d-block"&gt;Visible when the container is at least md&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="bcq row"&gt;
-  &lt;div class="@sm:col-6 @lg:col-3"&gt;...&lt;/div&gt;
+&lt;div class="contains-inline row"&gt;
+  &lt;div class="cq-sm:col-6 cq-lg:col-3"&gt;...&lt;/div&gt;
 &lt;/div&gt;</code></pre>
       <p>
         Without prefix the class is plain Bootstrap and applies at every width.
@@ -87,35 +87,36 @@
         <tbody>
           <tr>
             <td>Grid</td>
-            <td><code>@{bp}:col-{1-12}</code></td>
-            <td><code>@md:col-4</code></td>
+            <td><code>cq-{bp}:col-{1-12}</code></td>
+            <td><code>cq-md:col-4</code></td>
           </tr>
           <tr>
             <td>Display</td>
-            <td><code>@{bp}:d-{value}</code></td>
-            <td><code>@lg:d-none</code></td>
+            <td><code>cq-{bp}:d-{value}</code></td>
+            <td><code>cq-lg:d-none</code></td>
           </tr>
           <tr>
             <td>Flex direction</td>
-            <td><code>@{bp}:flex-{value}</code></td>
-            <td><code>@lg:flex-column-reverse</code></td>
+            <td><code>cq-{bp}:flex-{value}</code></td>
+            <td><code>cq-lg:flex-column-reverse</code></td>
           </tr>
           <tr>
             <td>Text align</td>
-            <td><code>@{bp}:text-{start|center|end}</code></td>
-            <td><code>@md:text-end</code></td>
+            <td><code>cq-{bp}:text-{start|center|end}</code></td>
+            <td><code>cq-md:text-end</code></td>
           </tr>
           <tr>
             <td>Float</td>
-            <td><code>@{bp}:float-{start|end}</code></td>
-            <td><code>@sm:float-end</code></td>
+            <td><code>cq-{bp}:float-{start|end}</code></td>
+            <td><code>cq-sm:float-end</code></td>
           </tr>
           <tr>
             <td>Margin, padding</td>
             <td>
-              <code>@{bp}:m{sides}-{n}</code>, <code>@{bp}:p{sides}-{n}</code>
+              <code>cq-{bp}:m{sides}-{n}</code>,
+              <code>cq-{bp}:p{sides}-{n}</code>
             </td>
-            <td><code>@xl:mt-5</code>, <code>@md:px-3</code></td>
+            <td><code>cq-xl:mt-5</code>, <code>cq-md:px-3</code></td>
           </tr>
         </tbody>
       </table>
@@ -133,8 +134,8 @@
       <h2>Good to know</h2>
       <ul>
         <li>
-          <code>.bcq</code> creates a stacking context, which can affect
-          <code>z-index</code> and Z-axis transforms of descendants.
+          <code>.contains-inline</code> creates a stacking context, which can
+          affect <code>z-index</code> and Z-axis transforms of descendants.
         </li>
         <li>
           Browsers: Chrome and Edge 130+, Firefox 132+, Safari 18+ (same as
@@ -199,37 +200,37 @@
       </div>
     </div>
     <div class="resizable border border-primary">
-      <div class="bcq row">
-        <div class="@sm:col-6 @md:col-4 @lg:col-3">
-          @sm:col-6 @md:col-4 @lg:col-3
+      <div class="contains-inline row">
+        <div class="cq-sm:col-6 cq-md:col-4 cq-lg:col-3">
+          cq-sm:col-6 cq-md:col-4 cq-lg:col-3
         </div>
-        <div class="@sm:col-6 @md:col-4 @lg:col-3">
-          @sm:col-6 @md:col-4 @lg:col-3
+        <div class="cq-sm:col-6 cq-md:col-4 cq-lg:col-3">
+          cq-sm:col-6 cq-md:col-4 cq-lg:col-3
         </div>
-        <div class="@sm:col-6 @md:col-4 @lg:col-3">
-          @sm:col-6 @md:col-4 @lg:col-3
+        <div class="cq-sm:col-6 cq-md:col-4 cq-lg:col-3">
+          cq-sm:col-6 cq-md:col-4 cq-lg:col-3
         </div>
       </div>
-      <div class="bcq">
-        <div class="@sm:d-none">hide on sm and wider screens</div>
-        <div class="d-none @sm:d-block">hide on screens smaller than sm</div>
-        <div class="@md:d-none">hide on md and wider screens</div>
-        <div class="d-none @md:d-block">hide on screens smaller than md</div>
-        <div class="@lg:d-none">hide on lg and wider screens</div>
-        <div class="d-none @lg:d-block">hide on screens smaller than lg</div>
-        <div class="text-start @sm:text-end">text start < sm < text end</div>
-        <div class="text-start @md:text-end">text start < md < text end</div>
-        <div class="text-start @lg:text-end">text start < lg < text end</div>
-        <div class="float-start @sm:float-end">
+      <div class="contains-inline">
+        <div class="cq-sm:d-none">hide on sm and wider screens</div>
+        <div class="d-none cq-sm:d-block">hide on screens smaller than sm</div>
+        <div class="cq-md:d-none">hide on md and wider screens</div>
+        <div class="d-none cq-md:d-block">hide on screens smaller than md</div>
+        <div class="cq-lg:d-none">hide on lg and wider screens</div>
+        <div class="d-none cq-lg:d-block">hide on screens smaller than lg</div>
+        <div class="text-start cq-sm:text-end">text start < sm < text end</div>
+        <div class="text-start cq-md:text-end">text start < md < text end</div>
+        <div class="text-start cq-lg:text-end">text start < lg < text end</div>
+        <div class="float-start cq-sm:float-end">
           float start < sm < float end
         </div>
-        <div class="float-start @md:float-end">
+        <div class="float-start cq-md:float-end">
           float start < md < float end
         </div>
-        <div class="float-start @lg:float-end">
+        <div class="float-start cq-lg:float-end">
           float start < lg < float end
         </div>
-        <div class="flex-column @lg:flex-column-reverse">
+        <div class="flex-column cq-lg:flex-column-reverse">
           flex direction column < lg < flex direction column-reverse
         </div>
       </div>

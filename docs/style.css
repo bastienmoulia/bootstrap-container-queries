@@ -1,3455 +1,3450 @@
 @layer colors, config, root, reboot, layout, content, forms, components, custom, helpers, utilities;
-@layer layout {
-  .bcq {
-    container-type: inline-size;
-  }
-}
 @container (width >= 576px) {
   @layer layout {
-    .\@sm\:col-1 {
+    .cq-sm\:col-1 {
       width: 8.3333333333cqw;
     }
-    .\@sm\:col-2 {
+    .cq-sm\:col-2 {
       width: 16.6666666667cqw;
     }
-    .\@sm\:col-3 {
+    .cq-sm\:col-3 {
       width: 25cqw;
     }
-    .\@sm\:col-4 {
+    .cq-sm\:col-4 {
       width: 33.3333333333cqw;
     }
-    .\@sm\:col-5 {
+    .cq-sm\:col-5 {
       width: 41.6666666667cqw;
     }
-    .\@sm\:col-6 {
+    .cq-sm\:col-6 {
       width: 50cqw;
     }
-    .\@sm\:col-7 {
+    .cq-sm\:col-7 {
       width: 58.3333333333cqw;
     }
-    .\@sm\:col-8 {
+    .cq-sm\:col-8 {
       width: 66.6666666667cqw;
     }
-    .\@sm\:col-9 {
+    .cq-sm\:col-9 {
       width: 75cqw;
     }
-    .\@sm\:col-10 {
+    .cq-sm\:col-10 {
       width: 83.3333333333cqw;
     }
-    .\@sm\:col-11 {
+    .cq-sm\:col-11 {
       width: 91.6666666667cqw;
     }
-    .\@sm\:col-12 {
+    .cq-sm\:col-12 {
       width: 100cqw;
     }
   }
   @layer utilities {
-    .\@sm\:float-start {
+    .cq-sm\:float-start {
       float: inline-start;
     }
-    .\@sm\:float-end {
+    .cq-sm\:float-end {
       float: inline-end;
     }
-    .\@sm\:float-none {
+    .cq-sm\:float-none {
       float: none;
     }
-    .\@sm\:d-inline {
+    .cq-sm\:d-inline {
       display: inline;
     }
-    .\@sm\:d-inline-block {
+    .cq-sm\:d-inline-block {
       display: inline-block;
     }
-    .\@sm\:d-block {
+    .cq-sm\:d-block {
       display: block;
     }
-    .\@sm\:d-grid {
+    .cq-sm\:d-grid {
       display: grid;
     }
-    .\@sm\:d-inline-grid {
+    .cq-sm\:d-inline-grid {
       display: inline-grid;
     }
-    .\@sm\:d-table {
+    .cq-sm\:d-table {
       display: table;
     }
-    .\@sm\:d-table-row {
+    .cq-sm\:d-table-row {
       display: table-row;
     }
-    .\@sm\:d-table-cell {
+    .cq-sm\:d-table-cell {
       display: table-cell;
     }
-    .\@sm\:d-flex {
+    .cq-sm\:d-flex {
       display: flex;
     }
-    .\@sm\:d-inline-flex {
+    .cq-sm\:d-inline-flex {
       display: inline-flex;
     }
-    .\@sm\:d-contents {
+    .cq-sm\:d-contents {
       display: contents;
     }
-    .\@sm\:d-flow-root {
+    .cq-sm\:d-flow-root {
       display: flow-root;
     }
-    .\@sm\:d-none {
+    .cq-sm\:d-none {
       display: none;
     }
-    .\@sm\:flex-row {
+    .cq-sm\:flex-row {
       flex-direction: row;
     }
-    .\@sm\:flex-column {
+    .cq-sm\:flex-column {
       flex-direction: column;
     }
-    .\@sm\:flex-row-reverse {
+    .cq-sm\:flex-row-reverse {
       flex-direction: row-reverse;
     }
-    .\@sm\:flex-column-reverse {
+    .cq-sm\:flex-column-reverse {
       flex-direction: column-reverse;
     }
-    .\@sm\:m-0 {
+    .cq-sm\:m-0 {
       margin: 0;
     }
-    .\@sm\:m-1 {
+    .cq-sm\:m-1 {
       margin: 0.25rem;
     }
-    .\@sm\:m-2 {
+    .cq-sm\:m-2 {
       margin: 0.375rem;
     }
-    .\@sm\:m-3 {
+    .cq-sm\:m-3 {
       margin: 0.5rem;
     }
-    .\@sm\:m-4 {
+    .cq-sm\:m-4 {
       margin: 0.75rem;
     }
-    .\@sm\:m-5 {
+    .cq-sm\:m-5 {
       margin: 1rem;
     }
-    .\@sm\:m-6 {
+    .cq-sm\:m-6 {
       margin: 1.25rem;
     }
-    .\@sm\:m-7 {
+    .cq-sm\:m-7 {
       margin: 1.5rem;
     }
-    .\@sm\:m-8 {
+    .cq-sm\:m-8 {
       margin: 1.75rem;
     }
-    .\@sm\:m-9 {
+    .cq-sm\:m-9 {
       margin: 2rem;
     }
-    .\@sm\:m-10 {
+    .cq-sm\:m-10 {
       margin: 2.25rem;
     }
-    .\@sm\:m-11 {
+    .cq-sm\:m-11 {
       margin: 2.5rem;
     }
-    .\@sm\:m-12 {
+    .cq-sm\:m-12 {
       margin: 3rem;
     }
-    .\@sm\:m-auto {
+    .cq-sm\:m-auto {
       margin: auto;
     }
-    .\@sm\:mx-0 {
+    .cq-sm\:mx-0 {
       margin-inline: 0;
     }
-    .\@sm\:mx-1 {
+    .cq-sm\:mx-1 {
       margin-inline: 0.25rem;
     }
-    .\@sm\:mx-2 {
+    .cq-sm\:mx-2 {
       margin-inline: 0.375rem;
     }
-    .\@sm\:mx-3 {
+    .cq-sm\:mx-3 {
       margin-inline: 0.5rem;
     }
-    .\@sm\:mx-4 {
+    .cq-sm\:mx-4 {
       margin-inline: 0.75rem;
     }
-    .\@sm\:mx-5 {
+    .cq-sm\:mx-5 {
       margin-inline: 1rem;
     }
-    .\@sm\:mx-6 {
+    .cq-sm\:mx-6 {
       margin-inline: 1.25rem;
     }
-    .\@sm\:mx-7 {
+    .cq-sm\:mx-7 {
       margin-inline: 1.5rem;
     }
-    .\@sm\:mx-8 {
+    .cq-sm\:mx-8 {
       margin-inline: 1.75rem;
     }
-    .\@sm\:mx-9 {
+    .cq-sm\:mx-9 {
       margin-inline: 2rem;
     }
-    .\@sm\:mx-10 {
+    .cq-sm\:mx-10 {
       margin-inline: 2.25rem;
     }
-    .\@sm\:mx-11 {
+    .cq-sm\:mx-11 {
       margin-inline: 2.5rem;
     }
-    .\@sm\:mx-12 {
+    .cq-sm\:mx-12 {
       margin-inline: 3rem;
     }
-    .\@sm\:mx-auto {
+    .cq-sm\:mx-auto {
       margin-inline: auto;
     }
-    .\@sm\:my-0 {
+    .cq-sm\:my-0 {
       margin-block: 0;
     }
-    .\@sm\:my-1 {
+    .cq-sm\:my-1 {
       margin-block: 0.25rem;
     }
-    .\@sm\:my-2 {
+    .cq-sm\:my-2 {
       margin-block: 0.375rem;
     }
-    .\@sm\:my-3 {
+    .cq-sm\:my-3 {
       margin-block: 0.5rem;
     }
-    .\@sm\:my-4 {
+    .cq-sm\:my-4 {
       margin-block: 0.75rem;
     }
-    .\@sm\:my-5 {
+    .cq-sm\:my-5 {
       margin-block: 1rem;
     }
-    .\@sm\:my-6 {
+    .cq-sm\:my-6 {
       margin-block: 1.25rem;
     }
-    .\@sm\:my-7 {
+    .cq-sm\:my-7 {
       margin-block: 1.5rem;
     }
-    .\@sm\:my-8 {
+    .cq-sm\:my-8 {
       margin-block: 1.75rem;
     }
-    .\@sm\:my-9 {
+    .cq-sm\:my-9 {
       margin-block: 2rem;
     }
-    .\@sm\:my-10 {
+    .cq-sm\:my-10 {
       margin-block: 2.25rem;
     }
-    .\@sm\:my-11 {
+    .cq-sm\:my-11 {
       margin-block: 2.5rem;
     }
-    .\@sm\:my-12 {
+    .cq-sm\:my-12 {
       margin-block: 3rem;
     }
-    .\@sm\:my-auto {
+    .cq-sm\:my-auto {
       margin-block: auto;
     }
-    .\@sm\:mt-0 {
+    .cq-sm\:mt-0 {
       margin-block-start: 0;
     }
-    .\@sm\:mt-1 {
+    .cq-sm\:mt-1 {
       margin-block-start: 0.25rem;
     }
-    .\@sm\:mt-2 {
+    .cq-sm\:mt-2 {
       margin-block-start: 0.375rem;
     }
-    .\@sm\:mt-3 {
+    .cq-sm\:mt-3 {
       margin-block-start: 0.5rem;
     }
-    .\@sm\:mt-4 {
+    .cq-sm\:mt-4 {
       margin-block-start: 0.75rem;
     }
-    .\@sm\:mt-5 {
+    .cq-sm\:mt-5 {
       margin-block-start: 1rem;
     }
-    .\@sm\:mt-6 {
+    .cq-sm\:mt-6 {
       margin-block-start: 1.25rem;
     }
-    .\@sm\:mt-7 {
+    .cq-sm\:mt-7 {
       margin-block-start: 1.5rem;
     }
-    .\@sm\:mt-8 {
+    .cq-sm\:mt-8 {
       margin-block-start: 1.75rem;
     }
-    .\@sm\:mt-9 {
+    .cq-sm\:mt-9 {
       margin-block-start: 2rem;
     }
-    .\@sm\:mt-10 {
+    .cq-sm\:mt-10 {
       margin-block-start: 2.25rem;
     }
-    .\@sm\:mt-11 {
+    .cq-sm\:mt-11 {
       margin-block-start: 2.5rem;
     }
-    .\@sm\:mt-12 {
+    .cq-sm\:mt-12 {
       margin-block-start: 3rem;
     }
-    .\@sm\:mt-auto {
+    .cq-sm\:mt-auto {
       margin-block-start: auto;
     }
-    .\@sm\:me-0 {
+    .cq-sm\:me-0 {
       margin-inline-end: 0;
     }
-    .\@sm\:me-1 {
+    .cq-sm\:me-1 {
       margin-inline-end: 0.25rem;
     }
-    .\@sm\:me-2 {
+    .cq-sm\:me-2 {
       margin-inline-end: 0.375rem;
     }
-    .\@sm\:me-3 {
+    .cq-sm\:me-3 {
       margin-inline-end: 0.5rem;
     }
-    .\@sm\:me-4 {
+    .cq-sm\:me-4 {
       margin-inline-end: 0.75rem;
     }
-    .\@sm\:me-5 {
+    .cq-sm\:me-5 {
       margin-inline-end: 1rem;
     }
-    .\@sm\:me-6 {
+    .cq-sm\:me-6 {
       margin-inline-end: 1.25rem;
     }
-    .\@sm\:me-7 {
+    .cq-sm\:me-7 {
       margin-inline-end: 1.5rem;
     }
-    .\@sm\:me-8 {
+    .cq-sm\:me-8 {
       margin-inline-end: 1.75rem;
     }
-    .\@sm\:me-9 {
+    .cq-sm\:me-9 {
       margin-inline-end: 2rem;
     }
-    .\@sm\:me-10 {
+    .cq-sm\:me-10 {
       margin-inline-end: 2.25rem;
     }
-    .\@sm\:me-11 {
+    .cq-sm\:me-11 {
       margin-inline-end: 2.5rem;
     }
-    .\@sm\:me-12 {
+    .cq-sm\:me-12 {
       margin-inline-end: 3rem;
     }
-    .\@sm\:me--1 {
+    .cq-sm\:me--1 {
       margin-inline-end: -0.25rem;
     }
-    .\@sm\:me--2 {
+    .cq-sm\:me--2 {
       margin-inline-end: -0.5rem;
     }
-    .\@sm\:me-auto {
+    .cq-sm\:me-auto {
       margin-inline-end: auto;
     }
-    .\@sm\:mb-0 {
+    .cq-sm\:mb-0 {
       margin-block-end: 0;
     }
-    .\@sm\:mb-1 {
+    .cq-sm\:mb-1 {
       margin-block-end: 0.25rem;
     }
-    .\@sm\:mb-2 {
+    .cq-sm\:mb-2 {
       margin-block-end: 0.375rem;
     }
-    .\@sm\:mb-3 {
+    .cq-sm\:mb-3 {
       margin-block-end: 0.5rem;
     }
-    .\@sm\:mb-4 {
+    .cq-sm\:mb-4 {
       margin-block-end: 0.75rem;
     }
-    .\@sm\:mb-5 {
+    .cq-sm\:mb-5 {
       margin-block-end: 1rem;
     }
-    .\@sm\:mb-6 {
+    .cq-sm\:mb-6 {
       margin-block-end: 1.25rem;
     }
-    .\@sm\:mb-7 {
+    .cq-sm\:mb-7 {
       margin-block-end: 1.5rem;
     }
-    .\@sm\:mb-8 {
+    .cq-sm\:mb-8 {
       margin-block-end: 1.75rem;
     }
-    .\@sm\:mb-9 {
+    .cq-sm\:mb-9 {
       margin-block-end: 2rem;
     }
-    .\@sm\:mb-10 {
+    .cq-sm\:mb-10 {
       margin-block-end: 2.25rem;
     }
-    .\@sm\:mb-11 {
+    .cq-sm\:mb-11 {
       margin-block-end: 2.5rem;
     }
-    .\@sm\:mb-12 {
+    .cq-sm\:mb-12 {
       margin-block-end: 3rem;
     }
-    .\@sm\:mb-auto {
+    .cq-sm\:mb-auto {
       margin-block-end: auto;
     }
-    .\@sm\:ms-0 {
+    .cq-sm\:ms-0 {
       margin-inline-start: 0;
     }
-    .\@sm\:ms-1 {
+    .cq-sm\:ms-1 {
       margin-inline-start: 0.25rem;
     }
-    .\@sm\:ms-2 {
+    .cq-sm\:ms-2 {
       margin-inline-start: 0.375rem;
     }
-    .\@sm\:ms-3 {
+    .cq-sm\:ms-3 {
       margin-inline-start: 0.5rem;
     }
-    .\@sm\:ms-4 {
+    .cq-sm\:ms-4 {
       margin-inline-start: 0.75rem;
     }
-    .\@sm\:ms-5 {
+    .cq-sm\:ms-5 {
       margin-inline-start: 1rem;
     }
-    .\@sm\:ms-6 {
+    .cq-sm\:ms-6 {
       margin-inline-start: 1.25rem;
     }
-    .\@sm\:ms-7 {
+    .cq-sm\:ms-7 {
       margin-inline-start: 1.5rem;
     }
-    .\@sm\:ms-8 {
+    .cq-sm\:ms-8 {
       margin-inline-start: 1.75rem;
     }
-    .\@sm\:ms-9 {
+    .cq-sm\:ms-9 {
       margin-inline-start: 2rem;
     }
-    .\@sm\:ms-10 {
+    .cq-sm\:ms-10 {
       margin-inline-start: 2.25rem;
     }
-    .\@sm\:ms-11 {
+    .cq-sm\:ms-11 {
       margin-inline-start: 2.5rem;
     }
-    .\@sm\:ms-12 {
+    .cq-sm\:ms-12 {
       margin-inline-start: 3rem;
     }
-    .\@sm\:ms--1 {
+    .cq-sm\:ms--1 {
       margin-inline-start: -0.25rem;
     }
-    .\@sm\:ms--2 {
+    .cq-sm\:ms--2 {
       margin-inline-start: -0.5rem;
     }
-    .\@sm\:ms-auto {
+    .cq-sm\:ms-auto {
       margin-inline-start: auto;
     }
-    .\@sm\:p-0 {
+    .cq-sm\:p-0 {
       padding: 0;
     }
-    .\@sm\:p-1 {
+    .cq-sm\:p-1 {
       padding: 0.25rem;
     }
-    .\@sm\:p-2 {
+    .cq-sm\:p-2 {
       padding: 0.375rem;
     }
-    .\@sm\:p-3 {
+    .cq-sm\:p-3 {
       padding: 0.5rem;
     }
-    .\@sm\:p-4 {
+    .cq-sm\:p-4 {
       padding: 0.75rem;
     }
-    .\@sm\:p-5 {
+    .cq-sm\:p-5 {
       padding: 1rem;
     }
-    .\@sm\:p-6 {
+    .cq-sm\:p-6 {
       padding: 1.25rem;
     }
-    .\@sm\:p-7 {
+    .cq-sm\:p-7 {
       padding: 1.5rem;
     }
-    .\@sm\:p-8 {
+    .cq-sm\:p-8 {
       padding: 1.75rem;
     }
-    .\@sm\:p-9 {
+    .cq-sm\:p-9 {
       padding: 2rem;
     }
-    .\@sm\:p-10 {
+    .cq-sm\:p-10 {
       padding: 2.25rem;
     }
-    .\@sm\:p-11 {
+    .cq-sm\:p-11 {
       padding: 2.5rem;
     }
-    .\@sm\:p-12 {
+    .cq-sm\:p-12 {
       padding: 3rem;
     }
-    .\@sm\:px-0 {
+    .cq-sm\:px-0 {
       padding-inline: 0;
     }
-    .\@sm\:px-1 {
+    .cq-sm\:px-1 {
       padding-inline: 0.25rem;
     }
-    .\@sm\:px-2 {
+    .cq-sm\:px-2 {
       padding-inline: 0.375rem;
     }
-    .\@sm\:px-3 {
+    .cq-sm\:px-3 {
       padding-inline: 0.5rem;
     }
-    .\@sm\:px-4 {
+    .cq-sm\:px-4 {
       padding-inline: 0.75rem;
     }
-    .\@sm\:px-5 {
+    .cq-sm\:px-5 {
       padding-inline: 1rem;
     }
-    .\@sm\:px-6 {
+    .cq-sm\:px-6 {
       padding-inline: 1.25rem;
     }
-    .\@sm\:px-7 {
+    .cq-sm\:px-7 {
       padding-inline: 1.5rem;
     }
-    .\@sm\:px-8 {
+    .cq-sm\:px-8 {
       padding-inline: 1.75rem;
     }
-    .\@sm\:px-9 {
+    .cq-sm\:px-9 {
       padding-inline: 2rem;
     }
-    .\@sm\:px-10 {
+    .cq-sm\:px-10 {
       padding-inline: 2.25rem;
     }
-    .\@sm\:px-11 {
+    .cq-sm\:px-11 {
       padding-inline: 2.5rem;
     }
-    .\@sm\:px-12 {
+    .cq-sm\:px-12 {
       padding-inline: 3rem;
     }
-    .\@sm\:py-0 {
+    .cq-sm\:py-0 {
       padding-block: 0;
     }
-    .\@sm\:py-1 {
+    .cq-sm\:py-1 {
       padding-block: 0.25rem;
     }
-    .\@sm\:py-2 {
+    .cq-sm\:py-2 {
       padding-block: 0.375rem;
     }
-    .\@sm\:py-3 {
+    .cq-sm\:py-3 {
       padding-block: 0.5rem;
     }
-    .\@sm\:py-4 {
+    .cq-sm\:py-4 {
       padding-block: 0.75rem;
     }
-    .\@sm\:py-5 {
+    .cq-sm\:py-5 {
       padding-block: 1rem;
     }
-    .\@sm\:py-6 {
+    .cq-sm\:py-6 {
       padding-block: 1.25rem;
     }
-    .\@sm\:py-7 {
+    .cq-sm\:py-7 {
       padding-block: 1.5rem;
     }
-    .\@sm\:py-8 {
+    .cq-sm\:py-8 {
       padding-block: 1.75rem;
     }
-    .\@sm\:py-9 {
+    .cq-sm\:py-9 {
       padding-block: 2rem;
     }
-    .\@sm\:py-10 {
+    .cq-sm\:py-10 {
       padding-block: 2.25rem;
     }
-    .\@sm\:py-11 {
+    .cq-sm\:py-11 {
       padding-block: 2.5rem;
     }
-    .\@sm\:py-12 {
+    .cq-sm\:py-12 {
       padding-block: 3rem;
     }
-    .\@sm\:pt-0 {
+    .cq-sm\:pt-0 {
       padding-block-start: 0;
     }
-    .\@sm\:pt-1 {
+    .cq-sm\:pt-1 {
       padding-block-start: 0.25rem;
     }
-    .\@sm\:pt-2 {
+    .cq-sm\:pt-2 {
       padding-block-start: 0.375rem;
     }
-    .\@sm\:pt-3 {
+    .cq-sm\:pt-3 {
       padding-block-start: 0.5rem;
     }
-    .\@sm\:pt-4 {
+    .cq-sm\:pt-4 {
       padding-block-start: 0.75rem;
     }
-    .\@sm\:pt-5 {
+    .cq-sm\:pt-5 {
       padding-block-start: 1rem;
     }
-    .\@sm\:pt-6 {
+    .cq-sm\:pt-6 {
       padding-block-start: 1.25rem;
     }
-    .\@sm\:pt-7 {
+    .cq-sm\:pt-7 {
       padding-block-start: 1.5rem;
     }
-    .\@sm\:pt-8 {
+    .cq-sm\:pt-8 {
       padding-block-start: 1.75rem;
     }
-    .\@sm\:pt-9 {
+    .cq-sm\:pt-9 {
       padding-block-start: 2rem;
     }
-    .\@sm\:pt-10 {
+    .cq-sm\:pt-10 {
       padding-block-start: 2.25rem;
     }
-    .\@sm\:pt-11 {
+    .cq-sm\:pt-11 {
       padding-block-start: 2.5rem;
     }
-    .\@sm\:pt-12 {
+    .cq-sm\:pt-12 {
       padding-block-start: 3rem;
     }
-    .\@sm\:pe-0 {
+    .cq-sm\:pe-0 {
       padding-inline-end: 0;
     }
-    .\@sm\:pe-1 {
+    .cq-sm\:pe-1 {
       padding-inline-end: 0.25rem;
     }
-    .\@sm\:pe-2 {
+    .cq-sm\:pe-2 {
       padding-inline-end: 0.375rem;
     }
-    .\@sm\:pe-3 {
+    .cq-sm\:pe-3 {
       padding-inline-end: 0.5rem;
     }
-    .\@sm\:pe-4 {
+    .cq-sm\:pe-4 {
       padding-inline-end: 0.75rem;
     }
-    .\@sm\:pe-5 {
+    .cq-sm\:pe-5 {
       padding-inline-end: 1rem;
     }
-    .\@sm\:pe-6 {
+    .cq-sm\:pe-6 {
       padding-inline-end: 1.25rem;
     }
-    .\@sm\:pe-7 {
+    .cq-sm\:pe-7 {
       padding-inline-end: 1.5rem;
     }
-    .\@sm\:pe-8 {
+    .cq-sm\:pe-8 {
       padding-inline-end: 1.75rem;
     }
-    .\@sm\:pe-9 {
+    .cq-sm\:pe-9 {
       padding-inline-end: 2rem;
     }
-    .\@sm\:pe-10 {
+    .cq-sm\:pe-10 {
       padding-inline-end: 2.25rem;
     }
-    .\@sm\:pe-11 {
+    .cq-sm\:pe-11 {
       padding-inline-end: 2.5rem;
     }
-    .\@sm\:pe-12 {
+    .cq-sm\:pe-12 {
       padding-inline-end: 3rem;
     }
-    .\@sm\:pb-0 {
+    .cq-sm\:pb-0 {
       padding-block-end: 0;
     }
-    .\@sm\:pb-1 {
+    .cq-sm\:pb-1 {
       padding-block-end: 0.25rem;
     }
-    .\@sm\:pb-2 {
+    .cq-sm\:pb-2 {
       padding-block-end: 0.375rem;
     }
-    .\@sm\:pb-3 {
+    .cq-sm\:pb-3 {
       padding-block-end: 0.5rem;
     }
-    .\@sm\:pb-4 {
+    .cq-sm\:pb-4 {
       padding-block-end: 0.75rem;
     }
-    .\@sm\:pb-5 {
+    .cq-sm\:pb-5 {
       padding-block-end: 1rem;
     }
-    .\@sm\:pb-6 {
+    .cq-sm\:pb-6 {
       padding-block-end: 1.25rem;
     }
-    .\@sm\:pb-7 {
+    .cq-sm\:pb-7 {
       padding-block-end: 1.5rem;
     }
-    .\@sm\:pb-8 {
+    .cq-sm\:pb-8 {
       padding-block-end: 1.75rem;
     }
-    .\@sm\:pb-9 {
+    .cq-sm\:pb-9 {
       padding-block-end: 2rem;
     }
-    .\@sm\:pb-10 {
+    .cq-sm\:pb-10 {
       padding-block-end: 2.25rem;
     }
-    .\@sm\:pb-11 {
+    .cq-sm\:pb-11 {
       padding-block-end: 2.5rem;
     }
-    .\@sm\:pb-12 {
+    .cq-sm\:pb-12 {
       padding-block-end: 3rem;
     }
-    .\@sm\:ps-0 {
+    .cq-sm\:ps-0 {
       padding-inline-start: 0;
     }
-    .\@sm\:ps-1 {
+    .cq-sm\:ps-1 {
       padding-inline-start: 0.25rem;
     }
-    .\@sm\:ps-2 {
+    .cq-sm\:ps-2 {
       padding-inline-start: 0.375rem;
     }
-    .\@sm\:ps-3 {
+    .cq-sm\:ps-3 {
       padding-inline-start: 0.5rem;
     }
-    .\@sm\:ps-4 {
+    .cq-sm\:ps-4 {
       padding-inline-start: 0.75rem;
     }
-    .\@sm\:ps-5 {
+    .cq-sm\:ps-5 {
       padding-inline-start: 1rem;
     }
-    .\@sm\:ps-6 {
+    .cq-sm\:ps-6 {
       padding-inline-start: 1.25rem;
     }
-    .\@sm\:ps-7 {
+    .cq-sm\:ps-7 {
       padding-inline-start: 1.5rem;
     }
-    .\@sm\:ps-8 {
+    .cq-sm\:ps-8 {
       padding-inline-start: 1.75rem;
     }
-    .\@sm\:ps-9 {
+    .cq-sm\:ps-9 {
       padding-inline-start: 2rem;
     }
-    .\@sm\:ps-10 {
+    .cq-sm\:ps-10 {
       padding-inline-start: 2.25rem;
     }
-    .\@sm\:ps-11 {
+    .cq-sm\:ps-11 {
       padding-inline-start: 2.5rem;
     }
-    .\@sm\:ps-12 {
+    .cq-sm\:ps-12 {
       padding-inline-start: 3rem;
     }
-    .\@sm\:text-start {
+    .cq-sm\:text-start {
       text-align: start;
     }
-    .\@sm\:text-end {
+    .cq-sm\:text-end {
       text-align: end;
     }
-    .\@sm\:text-center {
+    .cq-sm\:text-center {
       text-align: center;
     }
   }
 }
 @container (width >= 768px) {
   @layer layout {
-    .\@md\:col-1 {
+    .cq-md\:col-1 {
       width: 8.3333333333cqw;
     }
-    .\@md\:col-2 {
+    .cq-md\:col-2 {
       width: 16.6666666667cqw;
     }
-    .\@md\:col-3 {
+    .cq-md\:col-3 {
       width: 25cqw;
     }
-    .\@md\:col-4 {
+    .cq-md\:col-4 {
       width: 33.3333333333cqw;
     }
-    .\@md\:col-5 {
+    .cq-md\:col-5 {
       width: 41.6666666667cqw;
     }
-    .\@md\:col-6 {
+    .cq-md\:col-6 {
       width: 50cqw;
     }
-    .\@md\:col-7 {
+    .cq-md\:col-7 {
       width: 58.3333333333cqw;
     }
-    .\@md\:col-8 {
+    .cq-md\:col-8 {
       width: 66.6666666667cqw;
     }
-    .\@md\:col-9 {
+    .cq-md\:col-9 {
       width: 75cqw;
     }
-    .\@md\:col-10 {
+    .cq-md\:col-10 {
       width: 83.3333333333cqw;
     }
-    .\@md\:col-11 {
+    .cq-md\:col-11 {
       width: 91.6666666667cqw;
     }
-    .\@md\:col-12 {
+    .cq-md\:col-12 {
       width: 100cqw;
     }
   }
   @layer utilities {
-    .\@md\:float-start {
+    .cq-md\:float-start {
       float: inline-start;
     }
-    .\@md\:float-end {
+    .cq-md\:float-end {
       float: inline-end;
     }
-    .\@md\:float-none {
+    .cq-md\:float-none {
       float: none;
     }
-    .\@md\:d-inline {
+    .cq-md\:d-inline {
       display: inline;
     }
-    .\@md\:d-inline-block {
+    .cq-md\:d-inline-block {
       display: inline-block;
     }
-    .\@md\:d-block {
+    .cq-md\:d-block {
       display: block;
     }
-    .\@md\:d-grid {
+    .cq-md\:d-grid {
       display: grid;
     }
-    .\@md\:d-inline-grid {
+    .cq-md\:d-inline-grid {
       display: inline-grid;
     }
-    .\@md\:d-table {
+    .cq-md\:d-table {
       display: table;
     }
-    .\@md\:d-table-row {
+    .cq-md\:d-table-row {
       display: table-row;
     }
-    .\@md\:d-table-cell {
+    .cq-md\:d-table-cell {
       display: table-cell;
     }
-    .\@md\:d-flex {
+    .cq-md\:d-flex {
       display: flex;
     }
-    .\@md\:d-inline-flex {
+    .cq-md\:d-inline-flex {
       display: inline-flex;
     }
-    .\@md\:d-contents {
+    .cq-md\:d-contents {
       display: contents;
     }
-    .\@md\:d-flow-root {
+    .cq-md\:d-flow-root {
       display: flow-root;
     }
-    .\@md\:d-none {
+    .cq-md\:d-none {
       display: none;
     }
-    .\@md\:flex-row {
+    .cq-md\:flex-row {
       flex-direction: row;
     }
-    .\@md\:flex-column {
+    .cq-md\:flex-column {
       flex-direction: column;
     }
-    .\@md\:flex-row-reverse {
+    .cq-md\:flex-row-reverse {
       flex-direction: row-reverse;
     }
-    .\@md\:flex-column-reverse {
+    .cq-md\:flex-column-reverse {
       flex-direction: column-reverse;
     }
-    .\@md\:m-0 {
+    .cq-md\:m-0 {
       margin: 0;
     }
-    .\@md\:m-1 {
+    .cq-md\:m-1 {
       margin: 0.25rem;
     }
-    .\@md\:m-2 {
+    .cq-md\:m-2 {
       margin: 0.375rem;
     }
-    .\@md\:m-3 {
+    .cq-md\:m-3 {
       margin: 0.5rem;
     }
-    .\@md\:m-4 {
+    .cq-md\:m-4 {
       margin: 0.75rem;
     }
-    .\@md\:m-5 {
+    .cq-md\:m-5 {
       margin: 1rem;
     }
-    .\@md\:m-6 {
+    .cq-md\:m-6 {
       margin: 1.25rem;
     }
-    .\@md\:m-7 {
+    .cq-md\:m-7 {
       margin: 1.5rem;
     }
-    .\@md\:m-8 {
+    .cq-md\:m-8 {
       margin: 1.75rem;
     }
-    .\@md\:m-9 {
+    .cq-md\:m-9 {
       margin: 2rem;
     }
-    .\@md\:m-10 {
+    .cq-md\:m-10 {
       margin: 2.25rem;
     }
-    .\@md\:m-11 {
+    .cq-md\:m-11 {
       margin: 2.5rem;
     }
-    .\@md\:m-12 {
+    .cq-md\:m-12 {
       margin: 3rem;
     }
-    .\@md\:m-auto {
+    .cq-md\:m-auto {
       margin: auto;
     }
-    .\@md\:mx-0 {
+    .cq-md\:mx-0 {
       margin-inline: 0;
     }
-    .\@md\:mx-1 {
+    .cq-md\:mx-1 {
       margin-inline: 0.25rem;
     }
-    .\@md\:mx-2 {
+    .cq-md\:mx-2 {
       margin-inline: 0.375rem;
     }
-    .\@md\:mx-3 {
+    .cq-md\:mx-3 {
       margin-inline: 0.5rem;
     }
-    .\@md\:mx-4 {
+    .cq-md\:mx-4 {
       margin-inline: 0.75rem;
     }
-    .\@md\:mx-5 {
+    .cq-md\:mx-5 {
       margin-inline: 1rem;
     }
-    .\@md\:mx-6 {
+    .cq-md\:mx-6 {
       margin-inline: 1.25rem;
     }
-    .\@md\:mx-7 {
+    .cq-md\:mx-7 {
       margin-inline: 1.5rem;
     }
-    .\@md\:mx-8 {
+    .cq-md\:mx-8 {
       margin-inline: 1.75rem;
     }
-    .\@md\:mx-9 {
+    .cq-md\:mx-9 {
       margin-inline: 2rem;
     }
-    .\@md\:mx-10 {
+    .cq-md\:mx-10 {
       margin-inline: 2.25rem;
     }
-    .\@md\:mx-11 {
+    .cq-md\:mx-11 {
       margin-inline: 2.5rem;
     }
-    .\@md\:mx-12 {
+    .cq-md\:mx-12 {
       margin-inline: 3rem;
     }
-    .\@md\:mx-auto {
+    .cq-md\:mx-auto {
       margin-inline: auto;
     }
-    .\@md\:my-0 {
+    .cq-md\:my-0 {
       margin-block: 0;
     }
-    .\@md\:my-1 {
+    .cq-md\:my-1 {
       margin-block: 0.25rem;
     }
-    .\@md\:my-2 {
+    .cq-md\:my-2 {
       margin-block: 0.375rem;
     }
-    .\@md\:my-3 {
+    .cq-md\:my-3 {
       margin-block: 0.5rem;
     }
-    .\@md\:my-4 {
+    .cq-md\:my-4 {
       margin-block: 0.75rem;
     }
-    .\@md\:my-5 {
+    .cq-md\:my-5 {
       margin-block: 1rem;
     }
-    .\@md\:my-6 {
+    .cq-md\:my-6 {
       margin-block: 1.25rem;
     }
-    .\@md\:my-7 {
+    .cq-md\:my-7 {
       margin-block: 1.5rem;
     }
-    .\@md\:my-8 {
+    .cq-md\:my-8 {
       margin-block: 1.75rem;
     }
-    .\@md\:my-9 {
+    .cq-md\:my-9 {
       margin-block: 2rem;
     }
-    .\@md\:my-10 {
+    .cq-md\:my-10 {
       margin-block: 2.25rem;
     }
-    .\@md\:my-11 {
+    .cq-md\:my-11 {
       margin-block: 2.5rem;
     }
-    .\@md\:my-12 {
+    .cq-md\:my-12 {
       margin-block: 3rem;
     }
-    .\@md\:my-auto {
+    .cq-md\:my-auto {
       margin-block: auto;
     }
-    .\@md\:mt-0 {
+    .cq-md\:mt-0 {
       margin-block-start: 0;
     }
-    .\@md\:mt-1 {
+    .cq-md\:mt-1 {
       margin-block-start: 0.25rem;
     }
-    .\@md\:mt-2 {
+    .cq-md\:mt-2 {
       margin-block-start: 0.375rem;
     }
-    .\@md\:mt-3 {
+    .cq-md\:mt-3 {
       margin-block-start: 0.5rem;
     }
-    .\@md\:mt-4 {
+    .cq-md\:mt-4 {
       margin-block-start: 0.75rem;
     }
-    .\@md\:mt-5 {
+    .cq-md\:mt-5 {
       margin-block-start: 1rem;
     }
-    .\@md\:mt-6 {
+    .cq-md\:mt-6 {
       margin-block-start: 1.25rem;
     }
-    .\@md\:mt-7 {
+    .cq-md\:mt-7 {
       margin-block-start: 1.5rem;
     }
-    .\@md\:mt-8 {
+    .cq-md\:mt-8 {
       margin-block-start: 1.75rem;
     }
-    .\@md\:mt-9 {
+    .cq-md\:mt-9 {
       margin-block-start: 2rem;
     }
-    .\@md\:mt-10 {
+    .cq-md\:mt-10 {
       margin-block-start: 2.25rem;
     }
-    .\@md\:mt-11 {
+    .cq-md\:mt-11 {
       margin-block-start: 2.5rem;
     }
-    .\@md\:mt-12 {
+    .cq-md\:mt-12 {
       margin-block-start: 3rem;
     }
-    .\@md\:mt-auto {
+    .cq-md\:mt-auto {
       margin-block-start: auto;
     }
-    .\@md\:me-0 {
+    .cq-md\:me-0 {
       margin-inline-end: 0;
     }
-    .\@md\:me-1 {
+    .cq-md\:me-1 {
       margin-inline-end: 0.25rem;
     }
-    .\@md\:me-2 {
+    .cq-md\:me-2 {
       margin-inline-end: 0.375rem;
     }
-    .\@md\:me-3 {
+    .cq-md\:me-3 {
       margin-inline-end: 0.5rem;
     }
-    .\@md\:me-4 {
+    .cq-md\:me-4 {
       margin-inline-end: 0.75rem;
     }
-    .\@md\:me-5 {
+    .cq-md\:me-5 {
       margin-inline-end: 1rem;
     }
-    .\@md\:me-6 {
+    .cq-md\:me-6 {
       margin-inline-end: 1.25rem;
     }
-    .\@md\:me-7 {
+    .cq-md\:me-7 {
       margin-inline-end: 1.5rem;
     }
-    .\@md\:me-8 {
+    .cq-md\:me-8 {
       margin-inline-end: 1.75rem;
     }
-    .\@md\:me-9 {
+    .cq-md\:me-9 {
       margin-inline-end: 2rem;
     }
-    .\@md\:me-10 {
+    .cq-md\:me-10 {
       margin-inline-end: 2.25rem;
     }
-    .\@md\:me-11 {
+    .cq-md\:me-11 {
       margin-inline-end: 2.5rem;
     }
-    .\@md\:me-12 {
+    .cq-md\:me-12 {
       margin-inline-end: 3rem;
     }
-    .\@md\:me--1 {
+    .cq-md\:me--1 {
       margin-inline-end: -0.25rem;
     }
-    .\@md\:me--2 {
+    .cq-md\:me--2 {
       margin-inline-end: -0.5rem;
     }
-    .\@md\:me-auto {
+    .cq-md\:me-auto {
       margin-inline-end: auto;
     }
-    .\@md\:mb-0 {
+    .cq-md\:mb-0 {
       margin-block-end: 0;
     }
-    .\@md\:mb-1 {
+    .cq-md\:mb-1 {
       margin-block-end: 0.25rem;
     }
-    .\@md\:mb-2 {
+    .cq-md\:mb-2 {
       margin-block-end: 0.375rem;
     }
-    .\@md\:mb-3 {
+    .cq-md\:mb-3 {
       margin-block-end: 0.5rem;
     }
-    .\@md\:mb-4 {
+    .cq-md\:mb-4 {
       margin-block-end: 0.75rem;
     }
-    .\@md\:mb-5 {
+    .cq-md\:mb-5 {
       margin-block-end: 1rem;
     }
-    .\@md\:mb-6 {
+    .cq-md\:mb-6 {
       margin-block-end: 1.25rem;
     }
-    .\@md\:mb-7 {
+    .cq-md\:mb-7 {
       margin-block-end: 1.5rem;
     }
-    .\@md\:mb-8 {
+    .cq-md\:mb-8 {
       margin-block-end: 1.75rem;
     }
-    .\@md\:mb-9 {
+    .cq-md\:mb-9 {
       margin-block-end: 2rem;
     }
-    .\@md\:mb-10 {
+    .cq-md\:mb-10 {
       margin-block-end: 2.25rem;
     }
-    .\@md\:mb-11 {
+    .cq-md\:mb-11 {
       margin-block-end: 2.5rem;
     }
-    .\@md\:mb-12 {
+    .cq-md\:mb-12 {
       margin-block-end: 3rem;
     }
-    .\@md\:mb-auto {
+    .cq-md\:mb-auto {
       margin-block-end: auto;
     }
-    .\@md\:ms-0 {
+    .cq-md\:ms-0 {
       margin-inline-start: 0;
     }
-    .\@md\:ms-1 {
+    .cq-md\:ms-1 {
       margin-inline-start: 0.25rem;
     }
-    .\@md\:ms-2 {
+    .cq-md\:ms-2 {
       margin-inline-start: 0.375rem;
     }
-    .\@md\:ms-3 {
+    .cq-md\:ms-3 {
       margin-inline-start: 0.5rem;
     }
-    .\@md\:ms-4 {
+    .cq-md\:ms-4 {
       margin-inline-start: 0.75rem;
     }
-    .\@md\:ms-5 {
+    .cq-md\:ms-5 {
       margin-inline-start: 1rem;
     }
-    .\@md\:ms-6 {
+    .cq-md\:ms-6 {
       margin-inline-start: 1.25rem;
     }
-    .\@md\:ms-7 {
+    .cq-md\:ms-7 {
       margin-inline-start: 1.5rem;
     }
-    .\@md\:ms-8 {
+    .cq-md\:ms-8 {
       margin-inline-start: 1.75rem;
     }
-    .\@md\:ms-9 {
+    .cq-md\:ms-9 {
       margin-inline-start: 2rem;
     }
-    .\@md\:ms-10 {
+    .cq-md\:ms-10 {
       margin-inline-start: 2.25rem;
     }
-    .\@md\:ms-11 {
+    .cq-md\:ms-11 {
       margin-inline-start: 2.5rem;
     }
-    .\@md\:ms-12 {
+    .cq-md\:ms-12 {
       margin-inline-start: 3rem;
     }
-    .\@md\:ms--1 {
+    .cq-md\:ms--1 {
       margin-inline-start: -0.25rem;
     }
-    .\@md\:ms--2 {
+    .cq-md\:ms--2 {
       margin-inline-start: -0.5rem;
     }
-    .\@md\:ms-auto {
+    .cq-md\:ms-auto {
       margin-inline-start: auto;
     }
-    .\@md\:p-0 {
+    .cq-md\:p-0 {
       padding: 0;
     }
-    .\@md\:p-1 {
+    .cq-md\:p-1 {
       padding: 0.25rem;
     }
-    .\@md\:p-2 {
+    .cq-md\:p-2 {
       padding: 0.375rem;
     }
-    .\@md\:p-3 {
+    .cq-md\:p-3 {
       padding: 0.5rem;
     }
-    .\@md\:p-4 {
+    .cq-md\:p-4 {
       padding: 0.75rem;
     }
-    .\@md\:p-5 {
+    .cq-md\:p-5 {
       padding: 1rem;
     }
-    .\@md\:p-6 {
+    .cq-md\:p-6 {
       padding: 1.25rem;
     }
-    .\@md\:p-7 {
+    .cq-md\:p-7 {
       padding: 1.5rem;
     }
-    .\@md\:p-8 {
+    .cq-md\:p-8 {
       padding: 1.75rem;
     }
-    .\@md\:p-9 {
+    .cq-md\:p-9 {
       padding: 2rem;
     }
-    .\@md\:p-10 {
+    .cq-md\:p-10 {
       padding: 2.25rem;
     }
-    .\@md\:p-11 {
+    .cq-md\:p-11 {
       padding: 2.5rem;
     }
-    .\@md\:p-12 {
+    .cq-md\:p-12 {
       padding: 3rem;
     }
-    .\@md\:px-0 {
+    .cq-md\:px-0 {
       padding-inline: 0;
     }
-    .\@md\:px-1 {
+    .cq-md\:px-1 {
       padding-inline: 0.25rem;
     }
-    .\@md\:px-2 {
+    .cq-md\:px-2 {
       padding-inline: 0.375rem;
     }
-    .\@md\:px-3 {
+    .cq-md\:px-3 {
       padding-inline: 0.5rem;
     }
-    .\@md\:px-4 {
+    .cq-md\:px-4 {
       padding-inline: 0.75rem;
     }
-    .\@md\:px-5 {
+    .cq-md\:px-5 {
       padding-inline: 1rem;
     }
-    .\@md\:px-6 {
+    .cq-md\:px-6 {
       padding-inline: 1.25rem;
     }
-    .\@md\:px-7 {
+    .cq-md\:px-7 {
       padding-inline: 1.5rem;
     }
-    .\@md\:px-8 {
+    .cq-md\:px-8 {
       padding-inline: 1.75rem;
     }
-    .\@md\:px-9 {
+    .cq-md\:px-9 {
       padding-inline: 2rem;
     }
-    .\@md\:px-10 {
+    .cq-md\:px-10 {
       padding-inline: 2.25rem;
     }
-    .\@md\:px-11 {
+    .cq-md\:px-11 {
       padding-inline: 2.5rem;
     }
-    .\@md\:px-12 {
+    .cq-md\:px-12 {
       padding-inline: 3rem;
     }
-    .\@md\:py-0 {
+    .cq-md\:py-0 {
       padding-block: 0;
     }
-    .\@md\:py-1 {
+    .cq-md\:py-1 {
       padding-block: 0.25rem;
     }
-    .\@md\:py-2 {
+    .cq-md\:py-2 {
       padding-block: 0.375rem;
     }
-    .\@md\:py-3 {
+    .cq-md\:py-3 {
       padding-block: 0.5rem;
     }
-    .\@md\:py-4 {
+    .cq-md\:py-4 {
       padding-block: 0.75rem;
     }
-    .\@md\:py-5 {
+    .cq-md\:py-5 {
       padding-block: 1rem;
     }
-    .\@md\:py-6 {
+    .cq-md\:py-6 {
       padding-block: 1.25rem;
     }
-    .\@md\:py-7 {
+    .cq-md\:py-7 {
       padding-block: 1.5rem;
     }
-    .\@md\:py-8 {
+    .cq-md\:py-8 {
       padding-block: 1.75rem;
     }
-    .\@md\:py-9 {
+    .cq-md\:py-9 {
       padding-block: 2rem;
     }
-    .\@md\:py-10 {
+    .cq-md\:py-10 {
       padding-block: 2.25rem;
     }
-    .\@md\:py-11 {
+    .cq-md\:py-11 {
       padding-block: 2.5rem;
     }
-    .\@md\:py-12 {
+    .cq-md\:py-12 {
       padding-block: 3rem;
     }
-    .\@md\:pt-0 {
+    .cq-md\:pt-0 {
       padding-block-start: 0;
     }
-    .\@md\:pt-1 {
+    .cq-md\:pt-1 {
       padding-block-start: 0.25rem;
     }
-    .\@md\:pt-2 {
+    .cq-md\:pt-2 {
       padding-block-start: 0.375rem;
     }
-    .\@md\:pt-3 {
+    .cq-md\:pt-3 {
       padding-block-start: 0.5rem;
     }
-    .\@md\:pt-4 {
+    .cq-md\:pt-4 {
       padding-block-start: 0.75rem;
     }
-    .\@md\:pt-5 {
+    .cq-md\:pt-5 {
       padding-block-start: 1rem;
     }
-    .\@md\:pt-6 {
+    .cq-md\:pt-6 {
       padding-block-start: 1.25rem;
     }
-    .\@md\:pt-7 {
+    .cq-md\:pt-7 {
       padding-block-start: 1.5rem;
     }
-    .\@md\:pt-8 {
+    .cq-md\:pt-8 {
       padding-block-start: 1.75rem;
     }
-    .\@md\:pt-9 {
+    .cq-md\:pt-9 {
       padding-block-start: 2rem;
     }
-    .\@md\:pt-10 {
+    .cq-md\:pt-10 {
       padding-block-start: 2.25rem;
     }
-    .\@md\:pt-11 {
+    .cq-md\:pt-11 {
       padding-block-start: 2.5rem;
     }
-    .\@md\:pt-12 {
+    .cq-md\:pt-12 {
       padding-block-start: 3rem;
     }
-    .\@md\:pe-0 {
+    .cq-md\:pe-0 {
       padding-inline-end: 0;
     }
-    .\@md\:pe-1 {
+    .cq-md\:pe-1 {
       padding-inline-end: 0.25rem;
     }
-    .\@md\:pe-2 {
+    .cq-md\:pe-2 {
       padding-inline-end: 0.375rem;
     }
-    .\@md\:pe-3 {
+    .cq-md\:pe-3 {
       padding-inline-end: 0.5rem;
     }
-    .\@md\:pe-4 {
+    .cq-md\:pe-4 {
       padding-inline-end: 0.75rem;
     }
-    .\@md\:pe-5 {
+    .cq-md\:pe-5 {
       padding-inline-end: 1rem;
     }
-    .\@md\:pe-6 {
+    .cq-md\:pe-6 {
       padding-inline-end: 1.25rem;
     }
-    .\@md\:pe-7 {
+    .cq-md\:pe-7 {
       padding-inline-end: 1.5rem;
     }
-    .\@md\:pe-8 {
+    .cq-md\:pe-8 {
       padding-inline-end: 1.75rem;
     }
-    .\@md\:pe-9 {
+    .cq-md\:pe-9 {
       padding-inline-end: 2rem;
     }
-    .\@md\:pe-10 {
+    .cq-md\:pe-10 {
       padding-inline-end: 2.25rem;
     }
-    .\@md\:pe-11 {
+    .cq-md\:pe-11 {
       padding-inline-end: 2.5rem;
     }
-    .\@md\:pe-12 {
+    .cq-md\:pe-12 {
       padding-inline-end: 3rem;
     }
-    .\@md\:pb-0 {
+    .cq-md\:pb-0 {
       padding-block-end: 0;
     }
-    .\@md\:pb-1 {
+    .cq-md\:pb-1 {
       padding-block-end: 0.25rem;
     }
-    .\@md\:pb-2 {
+    .cq-md\:pb-2 {
       padding-block-end: 0.375rem;
     }
-    .\@md\:pb-3 {
+    .cq-md\:pb-3 {
       padding-block-end: 0.5rem;
     }
-    .\@md\:pb-4 {
+    .cq-md\:pb-4 {
       padding-block-end: 0.75rem;
     }
-    .\@md\:pb-5 {
+    .cq-md\:pb-5 {
       padding-block-end: 1rem;
     }
-    .\@md\:pb-6 {
+    .cq-md\:pb-6 {
       padding-block-end: 1.25rem;
     }
-    .\@md\:pb-7 {
+    .cq-md\:pb-7 {
       padding-block-end: 1.5rem;
     }
-    .\@md\:pb-8 {
+    .cq-md\:pb-8 {
       padding-block-end: 1.75rem;
     }
-    .\@md\:pb-9 {
+    .cq-md\:pb-9 {
       padding-block-end: 2rem;
     }
-    .\@md\:pb-10 {
+    .cq-md\:pb-10 {
       padding-block-end: 2.25rem;
     }
-    .\@md\:pb-11 {
+    .cq-md\:pb-11 {
       padding-block-end: 2.5rem;
     }
-    .\@md\:pb-12 {
+    .cq-md\:pb-12 {
       padding-block-end: 3rem;
     }
-    .\@md\:ps-0 {
+    .cq-md\:ps-0 {
       padding-inline-start: 0;
     }
-    .\@md\:ps-1 {
+    .cq-md\:ps-1 {
       padding-inline-start: 0.25rem;
     }
-    .\@md\:ps-2 {
+    .cq-md\:ps-2 {
       padding-inline-start: 0.375rem;
     }
-    .\@md\:ps-3 {
+    .cq-md\:ps-3 {
       padding-inline-start: 0.5rem;
     }
-    .\@md\:ps-4 {
+    .cq-md\:ps-4 {
       padding-inline-start: 0.75rem;
     }
-    .\@md\:ps-5 {
+    .cq-md\:ps-5 {
       padding-inline-start: 1rem;
     }
-    .\@md\:ps-6 {
+    .cq-md\:ps-6 {
       padding-inline-start: 1.25rem;
     }
-    .\@md\:ps-7 {
+    .cq-md\:ps-7 {
       padding-inline-start: 1.5rem;
     }
-    .\@md\:ps-8 {
+    .cq-md\:ps-8 {
       padding-inline-start: 1.75rem;
     }
-    .\@md\:ps-9 {
+    .cq-md\:ps-9 {
       padding-inline-start: 2rem;
     }
-    .\@md\:ps-10 {
+    .cq-md\:ps-10 {
       padding-inline-start: 2.25rem;
     }
-    .\@md\:ps-11 {
+    .cq-md\:ps-11 {
       padding-inline-start: 2.5rem;
     }
-    .\@md\:ps-12 {
+    .cq-md\:ps-12 {
       padding-inline-start: 3rem;
     }
-    .\@md\:text-start {
+    .cq-md\:text-start {
       text-align: start;
     }
-    .\@md\:text-end {
+    .cq-md\:text-end {
       text-align: end;
     }
-    .\@md\:text-center {
+    .cq-md\:text-center {
       text-align: center;
     }
   }
 }
 @container (width >= 1024px) {
   @layer layout {
-    .\@lg\:col-1 {
+    .cq-lg\:col-1 {
       width: 8.3333333333cqw;
     }
-    .\@lg\:col-2 {
+    .cq-lg\:col-2 {
       width: 16.6666666667cqw;
     }
-    .\@lg\:col-3 {
+    .cq-lg\:col-3 {
       width: 25cqw;
     }
-    .\@lg\:col-4 {
+    .cq-lg\:col-4 {
       width: 33.3333333333cqw;
     }
-    .\@lg\:col-5 {
+    .cq-lg\:col-5 {
       width: 41.6666666667cqw;
     }
-    .\@lg\:col-6 {
+    .cq-lg\:col-6 {
       width: 50cqw;
     }
-    .\@lg\:col-7 {
+    .cq-lg\:col-7 {
       width: 58.3333333333cqw;
     }
-    .\@lg\:col-8 {
+    .cq-lg\:col-8 {
       width: 66.6666666667cqw;
     }
-    .\@lg\:col-9 {
+    .cq-lg\:col-9 {
       width: 75cqw;
     }
-    .\@lg\:col-10 {
+    .cq-lg\:col-10 {
       width: 83.3333333333cqw;
     }
-    .\@lg\:col-11 {
+    .cq-lg\:col-11 {
       width: 91.6666666667cqw;
     }
-    .\@lg\:col-12 {
+    .cq-lg\:col-12 {
       width: 100cqw;
     }
   }
   @layer utilities {
-    .\@lg\:float-start {
+    .cq-lg\:float-start {
       float: inline-start;
     }
-    .\@lg\:float-end {
+    .cq-lg\:float-end {
       float: inline-end;
     }
-    .\@lg\:float-none {
+    .cq-lg\:float-none {
       float: none;
     }
-    .\@lg\:d-inline {
+    .cq-lg\:d-inline {
       display: inline;
     }
-    .\@lg\:d-inline-block {
+    .cq-lg\:d-inline-block {
       display: inline-block;
     }
-    .\@lg\:d-block {
+    .cq-lg\:d-block {
       display: block;
     }
-    .\@lg\:d-grid {
+    .cq-lg\:d-grid {
       display: grid;
     }
-    .\@lg\:d-inline-grid {
+    .cq-lg\:d-inline-grid {
       display: inline-grid;
     }
-    .\@lg\:d-table {
+    .cq-lg\:d-table {
       display: table;
     }
-    .\@lg\:d-table-row {
+    .cq-lg\:d-table-row {
       display: table-row;
     }
-    .\@lg\:d-table-cell {
+    .cq-lg\:d-table-cell {
       display: table-cell;
     }
-    .\@lg\:d-flex {
+    .cq-lg\:d-flex {
       display: flex;
     }
-    .\@lg\:d-inline-flex {
+    .cq-lg\:d-inline-flex {
       display: inline-flex;
     }
-    .\@lg\:d-contents {
+    .cq-lg\:d-contents {
       display: contents;
     }
-    .\@lg\:d-flow-root {
+    .cq-lg\:d-flow-root {
       display: flow-root;
     }
-    .\@lg\:d-none {
+    .cq-lg\:d-none {
       display: none;
     }
-    .\@lg\:flex-row {
+    .cq-lg\:flex-row {
       flex-direction: row;
     }
-    .\@lg\:flex-column {
+    .cq-lg\:flex-column {
       flex-direction: column;
     }
-    .\@lg\:flex-row-reverse {
+    .cq-lg\:flex-row-reverse {
       flex-direction: row-reverse;
     }
-    .\@lg\:flex-column-reverse {
+    .cq-lg\:flex-column-reverse {
       flex-direction: column-reverse;
     }
-    .\@lg\:m-0 {
+    .cq-lg\:m-0 {
       margin: 0;
     }
-    .\@lg\:m-1 {
+    .cq-lg\:m-1 {
       margin: 0.25rem;
     }
-    .\@lg\:m-2 {
+    .cq-lg\:m-2 {
       margin: 0.375rem;
     }
-    .\@lg\:m-3 {
+    .cq-lg\:m-3 {
       margin: 0.5rem;
     }
-    .\@lg\:m-4 {
+    .cq-lg\:m-4 {
       margin: 0.75rem;
     }
-    .\@lg\:m-5 {
+    .cq-lg\:m-5 {
       margin: 1rem;
     }
-    .\@lg\:m-6 {
+    .cq-lg\:m-6 {
       margin: 1.25rem;
     }
-    .\@lg\:m-7 {
+    .cq-lg\:m-7 {
       margin: 1.5rem;
     }
-    .\@lg\:m-8 {
+    .cq-lg\:m-8 {
       margin: 1.75rem;
     }
-    .\@lg\:m-9 {
+    .cq-lg\:m-9 {
       margin: 2rem;
     }
-    .\@lg\:m-10 {
+    .cq-lg\:m-10 {
       margin: 2.25rem;
     }
-    .\@lg\:m-11 {
+    .cq-lg\:m-11 {
       margin: 2.5rem;
     }
-    .\@lg\:m-12 {
+    .cq-lg\:m-12 {
       margin: 3rem;
     }
-    .\@lg\:m-auto {
+    .cq-lg\:m-auto {
       margin: auto;
     }
-    .\@lg\:mx-0 {
+    .cq-lg\:mx-0 {
       margin-inline: 0;
     }
-    .\@lg\:mx-1 {
+    .cq-lg\:mx-1 {
       margin-inline: 0.25rem;
     }
-    .\@lg\:mx-2 {
+    .cq-lg\:mx-2 {
       margin-inline: 0.375rem;
     }
-    .\@lg\:mx-3 {
+    .cq-lg\:mx-3 {
       margin-inline: 0.5rem;
     }
-    .\@lg\:mx-4 {
+    .cq-lg\:mx-4 {
       margin-inline: 0.75rem;
     }
-    .\@lg\:mx-5 {
+    .cq-lg\:mx-5 {
       margin-inline: 1rem;
     }
-    .\@lg\:mx-6 {
+    .cq-lg\:mx-6 {
       margin-inline: 1.25rem;
     }
-    .\@lg\:mx-7 {
+    .cq-lg\:mx-7 {
       margin-inline: 1.5rem;
     }
-    .\@lg\:mx-8 {
+    .cq-lg\:mx-8 {
       margin-inline: 1.75rem;
     }
-    .\@lg\:mx-9 {
+    .cq-lg\:mx-9 {
       margin-inline: 2rem;
     }
-    .\@lg\:mx-10 {
+    .cq-lg\:mx-10 {
       margin-inline: 2.25rem;
     }
-    .\@lg\:mx-11 {
+    .cq-lg\:mx-11 {
       margin-inline: 2.5rem;
     }
-    .\@lg\:mx-12 {
+    .cq-lg\:mx-12 {
       margin-inline: 3rem;
     }
-    .\@lg\:mx-auto {
+    .cq-lg\:mx-auto {
       margin-inline: auto;
     }
-    .\@lg\:my-0 {
+    .cq-lg\:my-0 {
       margin-block: 0;
     }
-    .\@lg\:my-1 {
+    .cq-lg\:my-1 {
       margin-block: 0.25rem;
     }
-    .\@lg\:my-2 {
+    .cq-lg\:my-2 {
       margin-block: 0.375rem;
     }
-    .\@lg\:my-3 {
+    .cq-lg\:my-3 {
       margin-block: 0.5rem;
     }
-    .\@lg\:my-4 {
+    .cq-lg\:my-4 {
       margin-block: 0.75rem;
     }
-    .\@lg\:my-5 {
+    .cq-lg\:my-5 {
       margin-block: 1rem;
     }
-    .\@lg\:my-6 {
+    .cq-lg\:my-6 {
       margin-block: 1.25rem;
     }
-    .\@lg\:my-7 {
+    .cq-lg\:my-7 {
       margin-block: 1.5rem;
     }
-    .\@lg\:my-8 {
+    .cq-lg\:my-8 {
       margin-block: 1.75rem;
     }
-    .\@lg\:my-9 {
+    .cq-lg\:my-9 {
       margin-block: 2rem;
     }
-    .\@lg\:my-10 {
+    .cq-lg\:my-10 {
       margin-block: 2.25rem;
     }
-    .\@lg\:my-11 {
+    .cq-lg\:my-11 {
       margin-block: 2.5rem;
     }
-    .\@lg\:my-12 {
+    .cq-lg\:my-12 {
       margin-block: 3rem;
     }
-    .\@lg\:my-auto {
+    .cq-lg\:my-auto {
       margin-block: auto;
     }
-    .\@lg\:mt-0 {
+    .cq-lg\:mt-0 {
       margin-block-start: 0;
     }
-    .\@lg\:mt-1 {
+    .cq-lg\:mt-1 {
       margin-block-start: 0.25rem;
     }
-    .\@lg\:mt-2 {
+    .cq-lg\:mt-2 {
       margin-block-start: 0.375rem;
     }
-    .\@lg\:mt-3 {
+    .cq-lg\:mt-3 {
       margin-block-start: 0.5rem;
     }
-    .\@lg\:mt-4 {
+    .cq-lg\:mt-4 {
       margin-block-start: 0.75rem;
     }
-    .\@lg\:mt-5 {
+    .cq-lg\:mt-5 {
       margin-block-start: 1rem;
     }
-    .\@lg\:mt-6 {
+    .cq-lg\:mt-6 {
       margin-block-start: 1.25rem;
     }
-    .\@lg\:mt-7 {
+    .cq-lg\:mt-7 {
       margin-block-start: 1.5rem;
     }
-    .\@lg\:mt-8 {
+    .cq-lg\:mt-8 {
       margin-block-start: 1.75rem;
     }
-    .\@lg\:mt-9 {
+    .cq-lg\:mt-9 {
       margin-block-start: 2rem;
     }
-    .\@lg\:mt-10 {
+    .cq-lg\:mt-10 {
       margin-block-start: 2.25rem;
     }
-    .\@lg\:mt-11 {
+    .cq-lg\:mt-11 {
       margin-block-start: 2.5rem;
     }
-    .\@lg\:mt-12 {
+    .cq-lg\:mt-12 {
       margin-block-start: 3rem;
     }
-    .\@lg\:mt-auto {
+    .cq-lg\:mt-auto {
       margin-block-start: auto;
     }
-    .\@lg\:me-0 {
+    .cq-lg\:me-0 {
       margin-inline-end: 0;
     }
-    .\@lg\:me-1 {
+    .cq-lg\:me-1 {
       margin-inline-end: 0.25rem;
     }
-    .\@lg\:me-2 {
+    .cq-lg\:me-2 {
       margin-inline-end: 0.375rem;
     }
-    .\@lg\:me-3 {
+    .cq-lg\:me-3 {
       margin-inline-end: 0.5rem;
     }
-    .\@lg\:me-4 {
+    .cq-lg\:me-4 {
       margin-inline-end: 0.75rem;
     }
-    .\@lg\:me-5 {
+    .cq-lg\:me-5 {
       margin-inline-end: 1rem;
     }
-    .\@lg\:me-6 {
+    .cq-lg\:me-6 {
       margin-inline-end: 1.25rem;
     }
-    .\@lg\:me-7 {
+    .cq-lg\:me-7 {
       margin-inline-end: 1.5rem;
     }
-    .\@lg\:me-8 {
+    .cq-lg\:me-8 {
       margin-inline-end: 1.75rem;
     }
-    .\@lg\:me-9 {
+    .cq-lg\:me-9 {
       margin-inline-end: 2rem;
     }
-    .\@lg\:me-10 {
+    .cq-lg\:me-10 {
       margin-inline-end: 2.25rem;
     }
-    .\@lg\:me-11 {
+    .cq-lg\:me-11 {
       margin-inline-end: 2.5rem;
     }
-    .\@lg\:me-12 {
+    .cq-lg\:me-12 {
       margin-inline-end: 3rem;
     }
-    .\@lg\:me--1 {
+    .cq-lg\:me--1 {
       margin-inline-end: -0.25rem;
     }
-    .\@lg\:me--2 {
+    .cq-lg\:me--2 {
       margin-inline-end: -0.5rem;
     }
-    .\@lg\:me-auto {
+    .cq-lg\:me-auto {
       margin-inline-end: auto;
     }
-    .\@lg\:mb-0 {
+    .cq-lg\:mb-0 {
       margin-block-end: 0;
     }
-    .\@lg\:mb-1 {
+    .cq-lg\:mb-1 {
       margin-block-end: 0.25rem;
     }
-    .\@lg\:mb-2 {
+    .cq-lg\:mb-2 {
       margin-block-end: 0.375rem;
     }
-    .\@lg\:mb-3 {
+    .cq-lg\:mb-3 {
       margin-block-end: 0.5rem;
     }
-    .\@lg\:mb-4 {
+    .cq-lg\:mb-4 {
       margin-block-end: 0.75rem;
     }
-    .\@lg\:mb-5 {
+    .cq-lg\:mb-5 {
       margin-block-end: 1rem;
     }
-    .\@lg\:mb-6 {
+    .cq-lg\:mb-6 {
       margin-block-end: 1.25rem;
     }
-    .\@lg\:mb-7 {
+    .cq-lg\:mb-7 {
       margin-block-end: 1.5rem;
     }
-    .\@lg\:mb-8 {
+    .cq-lg\:mb-8 {
       margin-block-end: 1.75rem;
     }
-    .\@lg\:mb-9 {
+    .cq-lg\:mb-9 {
       margin-block-end: 2rem;
     }
-    .\@lg\:mb-10 {
+    .cq-lg\:mb-10 {
       margin-block-end: 2.25rem;
     }
-    .\@lg\:mb-11 {
+    .cq-lg\:mb-11 {
       margin-block-end: 2.5rem;
     }
-    .\@lg\:mb-12 {
+    .cq-lg\:mb-12 {
       margin-block-end: 3rem;
     }
-    .\@lg\:mb-auto {
+    .cq-lg\:mb-auto {
       margin-block-end: auto;
     }
-    .\@lg\:ms-0 {
+    .cq-lg\:ms-0 {
       margin-inline-start: 0;
     }
-    .\@lg\:ms-1 {
+    .cq-lg\:ms-1 {
       margin-inline-start: 0.25rem;
     }
-    .\@lg\:ms-2 {
+    .cq-lg\:ms-2 {
       margin-inline-start: 0.375rem;
     }
-    .\@lg\:ms-3 {
+    .cq-lg\:ms-3 {
       margin-inline-start: 0.5rem;
     }
-    .\@lg\:ms-4 {
+    .cq-lg\:ms-4 {
       margin-inline-start: 0.75rem;
     }
-    .\@lg\:ms-5 {
+    .cq-lg\:ms-5 {
       margin-inline-start: 1rem;
     }
-    .\@lg\:ms-6 {
+    .cq-lg\:ms-6 {
       margin-inline-start: 1.25rem;
     }
-    .\@lg\:ms-7 {
+    .cq-lg\:ms-7 {
       margin-inline-start: 1.5rem;
     }
-    .\@lg\:ms-8 {
+    .cq-lg\:ms-8 {
       margin-inline-start: 1.75rem;
     }
-    .\@lg\:ms-9 {
+    .cq-lg\:ms-9 {
       margin-inline-start: 2rem;
     }
-    .\@lg\:ms-10 {
+    .cq-lg\:ms-10 {
       margin-inline-start: 2.25rem;
     }
-    .\@lg\:ms-11 {
+    .cq-lg\:ms-11 {
       margin-inline-start: 2.5rem;
     }
-    .\@lg\:ms-12 {
+    .cq-lg\:ms-12 {
       margin-inline-start: 3rem;
     }
-    .\@lg\:ms--1 {
+    .cq-lg\:ms--1 {
       margin-inline-start: -0.25rem;
     }
-    .\@lg\:ms--2 {
+    .cq-lg\:ms--2 {
       margin-inline-start: -0.5rem;
     }
-    .\@lg\:ms-auto {
+    .cq-lg\:ms-auto {
       margin-inline-start: auto;
     }
-    .\@lg\:p-0 {
+    .cq-lg\:p-0 {
       padding: 0;
     }
-    .\@lg\:p-1 {
+    .cq-lg\:p-1 {
       padding: 0.25rem;
     }
-    .\@lg\:p-2 {
+    .cq-lg\:p-2 {
       padding: 0.375rem;
     }
-    .\@lg\:p-3 {
+    .cq-lg\:p-3 {
       padding: 0.5rem;
     }
-    .\@lg\:p-4 {
+    .cq-lg\:p-4 {
       padding: 0.75rem;
     }
-    .\@lg\:p-5 {
+    .cq-lg\:p-5 {
       padding: 1rem;
     }
-    .\@lg\:p-6 {
+    .cq-lg\:p-6 {
       padding: 1.25rem;
     }
-    .\@lg\:p-7 {
+    .cq-lg\:p-7 {
       padding: 1.5rem;
     }
-    .\@lg\:p-8 {
+    .cq-lg\:p-8 {
       padding: 1.75rem;
     }
-    .\@lg\:p-9 {
+    .cq-lg\:p-9 {
       padding: 2rem;
     }
-    .\@lg\:p-10 {
+    .cq-lg\:p-10 {
       padding: 2.25rem;
     }
-    .\@lg\:p-11 {
+    .cq-lg\:p-11 {
       padding: 2.5rem;
     }
-    .\@lg\:p-12 {
+    .cq-lg\:p-12 {
       padding: 3rem;
     }
-    .\@lg\:px-0 {
+    .cq-lg\:px-0 {
       padding-inline: 0;
     }
-    .\@lg\:px-1 {
+    .cq-lg\:px-1 {
       padding-inline: 0.25rem;
     }
-    .\@lg\:px-2 {
+    .cq-lg\:px-2 {
       padding-inline: 0.375rem;
     }
-    .\@lg\:px-3 {
+    .cq-lg\:px-3 {
       padding-inline: 0.5rem;
     }
-    .\@lg\:px-4 {
+    .cq-lg\:px-4 {
       padding-inline: 0.75rem;
     }
-    .\@lg\:px-5 {
+    .cq-lg\:px-5 {
       padding-inline: 1rem;
     }
-    .\@lg\:px-6 {
+    .cq-lg\:px-6 {
       padding-inline: 1.25rem;
     }
-    .\@lg\:px-7 {
+    .cq-lg\:px-7 {
       padding-inline: 1.5rem;
     }
-    .\@lg\:px-8 {
+    .cq-lg\:px-8 {
       padding-inline: 1.75rem;
     }
-    .\@lg\:px-9 {
+    .cq-lg\:px-9 {
       padding-inline: 2rem;
     }
-    .\@lg\:px-10 {
+    .cq-lg\:px-10 {
       padding-inline: 2.25rem;
     }
-    .\@lg\:px-11 {
+    .cq-lg\:px-11 {
       padding-inline: 2.5rem;
     }
-    .\@lg\:px-12 {
+    .cq-lg\:px-12 {
       padding-inline: 3rem;
     }
-    .\@lg\:py-0 {
+    .cq-lg\:py-0 {
       padding-block: 0;
     }
-    .\@lg\:py-1 {
+    .cq-lg\:py-1 {
       padding-block: 0.25rem;
     }
-    .\@lg\:py-2 {
+    .cq-lg\:py-2 {
       padding-block: 0.375rem;
     }
-    .\@lg\:py-3 {
+    .cq-lg\:py-3 {
       padding-block: 0.5rem;
     }
-    .\@lg\:py-4 {
+    .cq-lg\:py-4 {
       padding-block: 0.75rem;
     }
-    .\@lg\:py-5 {
+    .cq-lg\:py-5 {
       padding-block: 1rem;
     }
-    .\@lg\:py-6 {
+    .cq-lg\:py-6 {
       padding-block: 1.25rem;
     }
-    .\@lg\:py-7 {
+    .cq-lg\:py-7 {
       padding-block: 1.5rem;
     }
-    .\@lg\:py-8 {
+    .cq-lg\:py-8 {
       padding-block: 1.75rem;
     }
-    .\@lg\:py-9 {
+    .cq-lg\:py-9 {
       padding-block: 2rem;
     }
-    .\@lg\:py-10 {
+    .cq-lg\:py-10 {
       padding-block: 2.25rem;
     }
-    .\@lg\:py-11 {
+    .cq-lg\:py-11 {
       padding-block: 2.5rem;
     }
-    .\@lg\:py-12 {
+    .cq-lg\:py-12 {
       padding-block: 3rem;
     }
-    .\@lg\:pt-0 {
+    .cq-lg\:pt-0 {
       padding-block-start: 0;
     }
-    .\@lg\:pt-1 {
+    .cq-lg\:pt-1 {
       padding-block-start: 0.25rem;
     }
-    .\@lg\:pt-2 {
+    .cq-lg\:pt-2 {
       padding-block-start: 0.375rem;
     }
-    .\@lg\:pt-3 {
+    .cq-lg\:pt-3 {
       padding-block-start: 0.5rem;
     }
-    .\@lg\:pt-4 {
+    .cq-lg\:pt-4 {
       padding-block-start: 0.75rem;
     }
-    .\@lg\:pt-5 {
+    .cq-lg\:pt-5 {
       padding-block-start: 1rem;
     }
-    .\@lg\:pt-6 {
+    .cq-lg\:pt-6 {
       padding-block-start: 1.25rem;
     }
-    .\@lg\:pt-7 {
+    .cq-lg\:pt-7 {
       padding-block-start: 1.5rem;
     }
-    .\@lg\:pt-8 {
+    .cq-lg\:pt-8 {
       padding-block-start: 1.75rem;
     }
-    .\@lg\:pt-9 {
+    .cq-lg\:pt-9 {
       padding-block-start: 2rem;
     }
-    .\@lg\:pt-10 {
+    .cq-lg\:pt-10 {
       padding-block-start: 2.25rem;
     }
-    .\@lg\:pt-11 {
+    .cq-lg\:pt-11 {
       padding-block-start: 2.5rem;
     }
-    .\@lg\:pt-12 {
+    .cq-lg\:pt-12 {
       padding-block-start: 3rem;
     }
-    .\@lg\:pe-0 {
+    .cq-lg\:pe-0 {
       padding-inline-end: 0;
     }
-    .\@lg\:pe-1 {
+    .cq-lg\:pe-1 {
       padding-inline-end: 0.25rem;
     }
-    .\@lg\:pe-2 {
+    .cq-lg\:pe-2 {
       padding-inline-end: 0.375rem;
     }
-    .\@lg\:pe-3 {
+    .cq-lg\:pe-3 {
       padding-inline-end: 0.5rem;
     }
-    .\@lg\:pe-4 {
+    .cq-lg\:pe-4 {
       padding-inline-end: 0.75rem;
     }
-    .\@lg\:pe-5 {
+    .cq-lg\:pe-5 {
       padding-inline-end: 1rem;
     }
-    .\@lg\:pe-6 {
+    .cq-lg\:pe-6 {
       padding-inline-end: 1.25rem;
     }
-    .\@lg\:pe-7 {
+    .cq-lg\:pe-7 {
       padding-inline-end: 1.5rem;
     }
-    .\@lg\:pe-8 {
+    .cq-lg\:pe-8 {
       padding-inline-end: 1.75rem;
     }
-    .\@lg\:pe-9 {
+    .cq-lg\:pe-9 {
       padding-inline-end: 2rem;
     }
-    .\@lg\:pe-10 {
+    .cq-lg\:pe-10 {
       padding-inline-end: 2.25rem;
     }
-    .\@lg\:pe-11 {
+    .cq-lg\:pe-11 {
       padding-inline-end: 2.5rem;
     }
-    .\@lg\:pe-12 {
+    .cq-lg\:pe-12 {
       padding-inline-end: 3rem;
     }
-    .\@lg\:pb-0 {
+    .cq-lg\:pb-0 {
       padding-block-end: 0;
     }
-    .\@lg\:pb-1 {
+    .cq-lg\:pb-1 {
       padding-block-end: 0.25rem;
     }
-    .\@lg\:pb-2 {
+    .cq-lg\:pb-2 {
       padding-block-end: 0.375rem;
     }
-    .\@lg\:pb-3 {
+    .cq-lg\:pb-3 {
       padding-block-end: 0.5rem;
     }
-    .\@lg\:pb-4 {
+    .cq-lg\:pb-4 {
       padding-block-end: 0.75rem;
     }
-    .\@lg\:pb-5 {
+    .cq-lg\:pb-5 {
       padding-block-end: 1rem;
     }
-    .\@lg\:pb-6 {
+    .cq-lg\:pb-6 {
       padding-block-end: 1.25rem;
     }
-    .\@lg\:pb-7 {
+    .cq-lg\:pb-7 {
       padding-block-end: 1.5rem;
     }
-    .\@lg\:pb-8 {
+    .cq-lg\:pb-8 {
       padding-block-end: 1.75rem;
     }
-    .\@lg\:pb-9 {
+    .cq-lg\:pb-9 {
       padding-block-end: 2rem;
     }
-    .\@lg\:pb-10 {
+    .cq-lg\:pb-10 {
       padding-block-end: 2.25rem;
     }
-    .\@lg\:pb-11 {
+    .cq-lg\:pb-11 {
       padding-block-end: 2.5rem;
     }
-    .\@lg\:pb-12 {
+    .cq-lg\:pb-12 {
       padding-block-end: 3rem;
     }
-    .\@lg\:ps-0 {
+    .cq-lg\:ps-0 {
       padding-inline-start: 0;
     }
-    .\@lg\:ps-1 {
+    .cq-lg\:ps-1 {
       padding-inline-start: 0.25rem;
     }
-    .\@lg\:ps-2 {
+    .cq-lg\:ps-2 {
       padding-inline-start: 0.375rem;
     }
-    .\@lg\:ps-3 {
+    .cq-lg\:ps-3 {
       padding-inline-start: 0.5rem;
     }
-    .\@lg\:ps-4 {
+    .cq-lg\:ps-4 {
       padding-inline-start: 0.75rem;
     }
-    .\@lg\:ps-5 {
+    .cq-lg\:ps-5 {
       padding-inline-start: 1rem;
     }
-    .\@lg\:ps-6 {
+    .cq-lg\:ps-6 {
       padding-inline-start: 1.25rem;
     }
-    .\@lg\:ps-7 {
+    .cq-lg\:ps-7 {
       padding-inline-start: 1.5rem;
     }
-    .\@lg\:ps-8 {
+    .cq-lg\:ps-8 {
       padding-inline-start: 1.75rem;
     }
-    .\@lg\:ps-9 {
+    .cq-lg\:ps-9 {
       padding-inline-start: 2rem;
     }
-    .\@lg\:ps-10 {
+    .cq-lg\:ps-10 {
       padding-inline-start: 2.25rem;
     }
-    .\@lg\:ps-11 {
+    .cq-lg\:ps-11 {
       padding-inline-start: 2.5rem;
     }
-    .\@lg\:ps-12 {
+    .cq-lg\:ps-12 {
       padding-inline-start: 3rem;
     }
-    .\@lg\:text-start {
+    .cq-lg\:text-start {
       text-align: start;
     }
-    .\@lg\:text-end {
+    .cq-lg\:text-end {
       text-align: end;
     }
-    .\@lg\:text-center {
+    .cq-lg\:text-center {
       text-align: center;
     }
   }
 }
 @container (width >= 1280px) {
   @layer layout {
-    .\@xl\:col-1 {
+    .cq-xl\:col-1 {
       width: 8.3333333333cqw;
     }
-    .\@xl\:col-2 {
+    .cq-xl\:col-2 {
       width: 16.6666666667cqw;
     }
-    .\@xl\:col-3 {
+    .cq-xl\:col-3 {
       width: 25cqw;
     }
-    .\@xl\:col-4 {
+    .cq-xl\:col-4 {
       width: 33.3333333333cqw;
     }
-    .\@xl\:col-5 {
+    .cq-xl\:col-5 {
       width: 41.6666666667cqw;
     }
-    .\@xl\:col-6 {
+    .cq-xl\:col-6 {
       width: 50cqw;
     }
-    .\@xl\:col-7 {
+    .cq-xl\:col-7 {
       width: 58.3333333333cqw;
     }
-    .\@xl\:col-8 {
+    .cq-xl\:col-8 {
       width: 66.6666666667cqw;
     }
-    .\@xl\:col-9 {
+    .cq-xl\:col-9 {
       width: 75cqw;
     }
-    .\@xl\:col-10 {
+    .cq-xl\:col-10 {
       width: 83.3333333333cqw;
     }
-    .\@xl\:col-11 {
+    .cq-xl\:col-11 {
       width: 91.6666666667cqw;
     }
-    .\@xl\:col-12 {
+    .cq-xl\:col-12 {
       width: 100cqw;
     }
   }
   @layer utilities {
-    .\@xl\:float-start {
+    .cq-xl\:float-start {
       float: inline-start;
     }
-    .\@xl\:float-end {
+    .cq-xl\:float-end {
       float: inline-end;
     }
-    .\@xl\:float-none {
+    .cq-xl\:float-none {
       float: none;
     }
-    .\@xl\:d-inline {
+    .cq-xl\:d-inline {
       display: inline;
     }
-    .\@xl\:d-inline-block {
+    .cq-xl\:d-inline-block {
       display: inline-block;
     }
-    .\@xl\:d-block {
+    .cq-xl\:d-block {
       display: block;
     }
-    .\@xl\:d-grid {
+    .cq-xl\:d-grid {
       display: grid;
     }
-    .\@xl\:d-inline-grid {
+    .cq-xl\:d-inline-grid {
       display: inline-grid;
     }
-    .\@xl\:d-table {
+    .cq-xl\:d-table {
       display: table;
     }
-    .\@xl\:d-table-row {
+    .cq-xl\:d-table-row {
       display: table-row;
     }
-    .\@xl\:d-table-cell {
+    .cq-xl\:d-table-cell {
       display: table-cell;
     }
-    .\@xl\:d-flex {
+    .cq-xl\:d-flex {
       display: flex;
     }
-    .\@xl\:d-inline-flex {
+    .cq-xl\:d-inline-flex {
       display: inline-flex;
     }
-    .\@xl\:d-contents {
+    .cq-xl\:d-contents {
       display: contents;
     }
-    .\@xl\:d-flow-root {
+    .cq-xl\:d-flow-root {
       display: flow-root;
     }
-    .\@xl\:d-none {
+    .cq-xl\:d-none {
       display: none;
     }
-    .\@xl\:flex-row {
+    .cq-xl\:flex-row {
       flex-direction: row;
     }
-    .\@xl\:flex-column {
+    .cq-xl\:flex-column {
       flex-direction: column;
     }
-    .\@xl\:flex-row-reverse {
+    .cq-xl\:flex-row-reverse {
       flex-direction: row-reverse;
     }
-    .\@xl\:flex-column-reverse {
+    .cq-xl\:flex-column-reverse {
       flex-direction: column-reverse;
     }
-    .\@xl\:m-0 {
+    .cq-xl\:m-0 {
       margin: 0;
     }
-    .\@xl\:m-1 {
+    .cq-xl\:m-1 {
       margin: 0.25rem;
     }
-    .\@xl\:m-2 {
+    .cq-xl\:m-2 {
       margin: 0.375rem;
     }
-    .\@xl\:m-3 {
+    .cq-xl\:m-3 {
       margin: 0.5rem;
     }
-    .\@xl\:m-4 {
+    .cq-xl\:m-4 {
       margin: 0.75rem;
     }
-    .\@xl\:m-5 {
+    .cq-xl\:m-5 {
       margin: 1rem;
     }
-    .\@xl\:m-6 {
+    .cq-xl\:m-6 {
       margin: 1.25rem;
     }
-    .\@xl\:m-7 {
+    .cq-xl\:m-7 {
       margin: 1.5rem;
     }
-    .\@xl\:m-8 {
+    .cq-xl\:m-8 {
       margin: 1.75rem;
     }
-    .\@xl\:m-9 {
+    .cq-xl\:m-9 {
       margin: 2rem;
     }
-    .\@xl\:m-10 {
+    .cq-xl\:m-10 {
       margin: 2.25rem;
     }
-    .\@xl\:m-11 {
+    .cq-xl\:m-11 {
       margin: 2.5rem;
     }
-    .\@xl\:m-12 {
+    .cq-xl\:m-12 {
       margin: 3rem;
     }
-    .\@xl\:m-auto {
+    .cq-xl\:m-auto {
       margin: auto;
     }
-    .\@xl\:mx-0 {
+    .cq-xl\:mx-0 {
       margin-inline: 0;
     }
-    .\@xl\:mx-1 {
+    .cq-xl\:mx-1 {
       margin-inline: 0.25rem;
     }
-    .\@xl\:mx-2 {
+    .cq-xl\:mx-2 {
       margin-inline: 0.375rem;
     }
-    .\@xl\:mx-3 {
+    .cq-xl\:mx-3 {
       margin-inline: 0.5rem;
     }
-    .\@xl\:mx-4 {
+    .cq-xl\:mx-4 {
       margin-inline: 0.75rem;
     }
-    .\@xl\:mx-5 {
+    .cq-xl\:mx-5 {
       margin-inline: 1rem;
     }
-    .\@xl\:mx-6 {
+    .cq-xl\:mx-6 {
       margin-inline: 1.25rem;
     }
-    .\@xl\:mx-7 {
+    .cq-xl\:mx-7 {
       margin-inline: 1.5rem;
     }
-    .\@xl\:mx-8 {
+    .cq-xl\:mx-8 {
       margin-inline: 1.75rem;
     }
-    .\@xl\:mx-9 {
+    .cq-xl\:mx-9 {
       margin-inline: 2rem;
     }
-    .\@xl\:mx-10 {
+    .cq-xl\:mx-10 {
       margin-inline: 2.25rem;
     }
-    .\@xl\:mx-11 {
+    .cq-xl\:mx-11 {
       margin-inline: 2.5rem;
     }
-    .\@xl\:mx-12 {
+    .cq-xl\:mx-12 {
       margin-inline: 3rem;
     }
-    .\@xl\:mx-auto {
+    .cq-xl\:mx-auto {
       margin-inline: auto;
     }
-    .\@xl\:my-0 {
+    .cq-xl\:my-0 {
       margin-block: 0;
     }
-    .\@xl\:my-1 {
+    .cq-xl\:my-1 {
       margin-block: 0.25rem;
     }
-    .\@xl\:my-2 {
+    .cq-xl\:my-2 {
       margin-block: 0.375rem;
     }
-    .\@xl\:my-3 {
+    .cq-xl\:my-3 {
       margin-block: 0.5rem;
     }
-    .\@xl\:my-4 {
+    .cq-xl\:my-4 {
       margin-block: 0.75rem;
     }
-    .\@xl\:my-5 {
+    .cq-xl\:my-5 {
       margin-block: 1rem;
     }
-    .\@xl\:my-6 {
+    .cq-xl\:my-6 {
       margin-block: 1.25rem;
     }
-    .\@xl\:my-7 {
+    .cq-xl\:my-7 {
       margin-block: 1.5rem;
     }
-    .\@xl\:my-8 {
+    .cq-xl\:my-8 {
       margin-block: 1.75rem;
     }
-    .\@xl\:my-9 {
+    .cq-xl\:my-9 {
       margin-block: 2rem;
     }
-    .\@xl\:my-10 {
+    .cq-xl\:my-10 {
       margin-block: 2.25rem;
     }
-    .\@xl\:my-11 {
+    .cq-xl\:my-11 {
       margin-block: 2.5rem;
     }
-    .\@xl\:my-12 {
+    .cq-xl\:my-12 {
       margin-block: 3rem;
     }
-    .\@xl\:my-auto {
+    .cq-xl\:my-auto {
       margin-block: auto;
     }
-    .\@xl\:mt-0 {
+    .cq-xl\:mt-0 {
       margin-block-start: 0;
     }
-    .\@xl\:mt-1 {
+    .cq-xl\:mt-1 {
       margin-block-start: 0.25rem;
     }
-    .\@xl\:mt-2 {
+    .cq-xl\:mt-2 {
       margin-block-start: 0.375rem;
     }
-    .\@xl\:mt-3 {
+    .cq-xl\:mt-3 {
       margin-block-start: 0.5rem;
     }
-    .\@xl\:mt-4 {
+    .cq-xl\:mt-4 {
       margin-block-start: 0.75rem;
     }
-    .\@xl\:mt-5 {
+    .cq-xl\:mt-5 {
       margin-block-start: 1rem;
     }
-    .\@xl\:mt-6 {
+    .cq-xl\:mt-6 {
       margin-block-start: 1.25rem;
     }
-    .\@xl\:mt-7 {
+    .cq-xl\:mt-7 {
       margin-block-start: 1.5rem;
     }
-    .\@xl\:mt-8 {
+    .cq-xl\:mt-8 {
       margin-block-start: 1.75rem;
     }
-    .\@xl\:mt-9 {
+    .cq-xl\:mt-9 {
       margin-block-start: 2rem;
     }
-    .\@xl\:mt-10 {
+    .cq-xl\:mt-10 {
       margin-block-start: 2.25rem;
     }
-    .\@xl\:mt-11 {
+    .cq-xl\:mt-11 {
       margin-block-start: 2.5rem;
     }
-    .\@xl\:mt-12 {
+    .cq-xl\:mt-12 {
       margin-block-start: 3rem;
     }
-    .\@xl\:mt-auto {
+    .cq-xl\:mt-auto {
       margin-block-start: auto;
     }
-    .\@xl\:me-0 {
+    .cq-xl\:me-0 {
       margin-inline-end: 0;
     }
-    .\@xl\:me-1 {
+    .cq-xl\:me-1 {
       margin-inline-end: 0.25rem;
     }
-    .\@xl\:me-2 {
+    .cq-xl\:me-2 {
       margin-inline-end: 0.375rem;
     }
-    .\@xl\:me-3 {
+    .cq-xl\:me-3 {
       margin-inline-end: 0.5rem;
     }
-    .\@xl\:me-4 {
+    .cq-xl\:me-4 {
       margin-inline-end: 0.75rem;
     }
-    .\@xl\:me-5 {
+    .cq-xl\:me-5 {
       margin-inline-end: 1rem;
     }
-    .\@xl\:me-6 {
+    .cq-xl\:me-6 {
       margin-inline-end: 1.25rem;
     }
-    .\@xl\:me-7 {
+    .cq-xl\:me-7 {
       margin-inline-end: 1.5rem;
     }
-    .\@xl\:me-8 {
+    .cq-xl\:me-8 {
       margin-inline-end: 1.75rem;
     }
-    .\@xl\:me-9 {
+    .cq-xl\:me-9 {
       margin-inline-end: 2rem;
     }
-    .\@xl\:me-10 {
+    .cq-xl\:me-10 {
       margin-inline-end: 2.25rem;
     }
-    .\@xl\:me-11 {
+    .cq-xl\:me-11 {
       margin-inline-end: 2.5rem;
     }
-    .\@xl\:me-12 {
+    .cq-xl\:me-12 {
       margin-inline-end: 3rem;
     }
-    .\@xl\:me--1 {
+    .cq-xl\:me--1 {
       margin-inline-end: -0.25rem;
     }
-    .\@xl\:me--2 {
+    .cq-xl\:me--2 {
       margin-inline-end: -0.5rem;
     }
-    .\@xl\:me-auto {
+    .cq-xl\:me-auto {
       margin-inline-end: auto;
     }
-    .\@xl\:mb-0 {
+    .cq-xl\:mb-0 {
       margin-block-end: 0;
     }
-    .\@xl\:mb-1 {
+    .cq-xl\:mb-1 {
       margin-block-end: 0.25rem;
     }
-    .\@xl\:mb-2 {
+    .cq-xl\:mb-2 {
       margin-block-end: 0.375rem;
     }
-    .\@xl\:mb-3 {
+    .cq-xl\:mb-3 {
       margin-block-end: 0.5rem;
     }
-    .\@xl\:mb-4 {
+    .cq-xl\:mb-4 {
       margin-block-end: 0.75rem;
     }
-    .\@xl\:mb-5 {
+    .cq-xl\:mb-5 {
       margin-block-end: 1rem;
     }
-    .\@xl\:mb-6 {
+    .cq-xl\:mb-6 {
       margin-block-end: 1.25rem;
     }
-    .\@xl\:mb-7 {
+    .cq-xl\:mb-7 {
       margin-block-end: 1.5rem;
     }
-    .\@xl\:mb-8 {
+    .cq-xl\:mb-8 {
       margin-block-end: 1.75rem;
     }
-    .\@xl\:mb-9 {
+    .cq-xl\:mb-9 {
       margin-block-end: 2rem;
     }
-    .\@xl\:mb-10 {
+    .cq-xl\:mb-10 {
       margin-block-end: 2.25rem;
     }
-    .\@xl\:mb-11 {
+    .cq-xl\:mb-11 {
       margin-block-end: 2.5rem;
     }
-    .\@xl\:mb-12 {
+    .cq-xl\:mb-12 {
       margin-block-end: 3rem;
     }
-    .\@xl\:mb-auto {
+    .cq-xl\:mb-auto {
       margin-block-end: auto;
     }
-    .\@xl\:ms-0 {
+    .cq-xl\:ms-0 {
       margin-inline-start: 0;
     }
-    .\@xl\:ms-1 {
+    .cq-xl\:ms-1 {
       margin-inline-start: 0.25rem;
     }
-    .\@xl\:ms-2 {
+    .cq-xl\:ms-2 {
       margin-inline-start: 0.375rem;
     }
-    .\@xl\:ms-3 {
+    .cq-xl\:ms-3 {
       margin-inline-start: 0.5rem;
     }
-    .\@xl\:ms-4 {
+    .cq-xl\:ms-4 {
       margin-inline-start: 0.75rem;
     }
-    .\@xl\:ms-5 {
+    .cq-xl\:ms-5 {
       margin-inline-start: 1rem;
     }
-    .\@xl\:ms-6 {
+    .cq-xl\:ms-6 {
       margin-inline-start: 1.25rem;
     }
-    .\@xl\:ms-7 {
+    .cq-xl\:ms-7 {
       margin-inline-start: 1.5rem;
     }
-    .\@xl\:ms-8 {
+    .cq-xl\:ms-8 {
       margin-inline-start: 1.75rem;
     }
-    .\@xl\:ms-9 {
+    .cq-xl\:ms-9 {
       margin-inline-start: 2rem;
     }
-    .\@xl\:ms-10 {
+    .cq-xl\:ms-10 {
       margin-inline-start: 2.25rem;
     }
-    .\@xl\:ms-11 {
+    .cq-xl\:ms-11 {
       margin-inline-start: 2.5rem;
     }
-    .\@xl\:ms-12 {
+    .cq-xl\:ms-12 {
       margin-inline-start: 3rem;
     }
-    .\@xl\:ms--1 {
+    .cq-xl\:ms--1 {
       margin-inline-start: -0.25rem;
     }
-    .\@xl\:ms--2 {
+    .cq-xl\:ms--2 {
       margin-inline-start: -0.5rem;
     }
-    .\@xl\:ms-auto {
+    .cq-xl\:ms-auto {
       margin-inline-start: auto;
     }
-    .\@xl\:p-0 {
+    .cq-xl\:p-0 {
       padding: 0;
     }
-    .\@xl\:p-1 {
+    .cq-xl\:p-1 {
       padding: 0.25rem;
     }
-    .\@xl\:p-2 {
+    .cq-xl\:p-2 {
       padding: 0.375rem;
     }
-    .\@xl\:p-3 {
+    .cq-xl\:p-3 {
       padding: 0.5rem;
     }
-    .\@xl\:p-4 {
+    .cq-xl\:p-4 {
       padding: 0.75rem;
     }
-    .\@xl\:p-5 {
+    .cq-xl\:p-5 {
       padding: 1rem;
     }
-    .\@xl\:p-6 {
+    .cq-xl\:p-6 {
       padding: 1.25rem;
     }
-    .\@xl\:p-7 {
+    .cq-xl\:p-7 {
       padding: 1.5rem;
     }
-    .\@xl\:p-8 {
+    .cq-xl\:p-8 {
       padding: 1.75rem;
     }
-    .\@xl\:p-9 {
+    .cq-xl\:p-9 {
       padding: 2rem;
     }
-    .\@xl\:p-10 {
+    .cq-xl\:p-10 {
       padding: 2.25rem;
     }
-    .\@xl\:p-11 {
+    .cq-xl\:p-11 {
       padding: 2.5rem;
     }
-    .\@xl\:p-12 {
+    .cq-xl\:p-12 {
       padding: 3rem;
     }
-    .\@xl\:px-0 {
+    .cq-xl\:px-0 {
       padding-inline: 0;
     }
-    .\@xl\:px-1 {
+    .cq-xl\:px-1 {
       padding-inline: 0.25rem;
     }
-    .\@xl\:px-2 {
+    .cq-xl\:px-2 {
       padding-inline: 0.375rem;
     }
-    .\@xl\:px-3 {
+    .cq-xl\:px-3 {
       padding-inline: 0.5rem;
     }
-    .\@xl\:px-4 {
+    .cq-xl\:px-4 {
       padding-inline: 0.75rem;
     }
-    .\@xl\:px-5 {
+    .cq-xl\:px-5 {
       padding-inline: 1rem;
     }
-    .\@xl\:px-6 {
+    .cq-xl\:px-6 {
       padding-inline: 1.25rem;
     }
-    .\@xl\:px-7 {
+    .cq-xl\:px-7 {
       padding-inline: 1.5rem;
     }
-    .\@xl\:px-8 {
+    .cq-xl\:px-8 {
       padding-inline: 1.75rem;
     }
-    .\@xl\:px-9 {
+    .cq-xl\:px-9 {
       padding-inline: 2rem;
     }
-    .\@xl\:px-10 {
+    .cq-xl\:px-10 {
       padding-inline: 2.25rem;
     }
-    .\@xl\:px-11 {
+    .cq-xl\:px-11 {
       padding-inline: 2.5rem;
     }
-    .\@xl\:px-12 {
+    .cq-xl\:px-12 {
       padding-inline: 3rem;
     }
-    .\@xl\:py-0 {
+    .cq-xl\:py-0 {
       padding-block: 0;
     }
-    .\@xl\:py-1 {
+    .cq-xl\:py-1 {
       padding-block: 0.25rem;
     }
-    .\@xl\:py-2 {
+    .cq-xl\:py-2 {
       padding-block: 0.375rem;
     }
-    .\@xl\:py-3 {
+    .cq-xl\:py-3 {
       padding-block: 0.5rem;
     }
-    .\@xl\:py-4 {
+    .cq-xl\:py-4 {
       padding-block: 0.75rem;
     }
-    .\@xl\:py-5 {
+    .cq-xl\:py-5 {
       padding-block: 1rem;
     }
-    .\@xl\:py-6 {
+    .cq-xl\:py-6 {
       padding-block: 1.25rem;
     }
-    .\@xl\:py-7 {
+    .cq-xl\:py-7 {
       padding-block: 1.5rem;
     }
-    .\@xl\:py-8 {
+    .cq-xl\:py-8 {
       padding-block: 1.75rem;
     }
-    .\@xl\:py-9 {
+    .cq-xl\:py-9 {
       padding-block: 2rem;
     }
-    .\@xl\:py-10 {
+    .cq-xl\:py-10 {
       padding-block: 2.25rem;
     }
-    .\@xl\:py-11 {
+    .cq-xl\:py-11 {
       padding-block: 2.5rem;
     }
-    .\@xl\:py-12 {
+    .cq-xl\:py-12 {
       padding-block: 3rem;
     }
-    .\@xl\:pt-0 {
+    .cq-xl\:pt-0 {
       padding-block-start: 0;
     }
-    .\@xl\:pt-1 {
+    .cq-xl\:pt-1 {
       padding-block-start: 0.25rem;
     }
-    .\@xl\:pt-2 {
+    .cq-xl\:pt-2 {
       padding-block-start: 0.375rem;
     }
-    .\@xl\:pt-3 {
+    .cq-xl\:pt-3 {
       padding-block-start: 0.5rem;
     }
-    .\@xl\:pt-4 {
+    .cq-xl\:pt-4 {
       padding-block-start: 0.75rem;
     }
-    .\@xl\:pt-5 {
+    .cq-xl\:pt-5 {
       padding-block-start: 1rem;
     }
-    .\@xl\:pt-6 {
+    .cq-xl\:pt-6 {
       padding-block-start: 1.25rem;
     }
-    .\@xl\:pt-7 {
+    .cq-xl\:pt-7 {
       padding-block-start: 1.5rem;
     }
-    .\@xl\:pt-8 {
+    .cq-xl\:pt-8 {
       padding-block-start: 1.75rem;
     }
-    .\@xl\:pt-9 {
+    .cq-xl\:pt-9 {
       padding-block-start: 2rem;
     }
-    .\@xl\:pt-10 {
+    .cq-xl\:pt-10 {
       padding-block-start: 2.25rem;
     }
-    .\@xl\:pt-11 {
+    .cq-xl\:pt-11 {
       padding-block-start: 2.5rem;
     }
-    .\@xl\:pt-12 {
+    .cq-xl\:pt-12 {
       padding-block-start: 3rem;
     }
-    .\@xl\:pe-0 {
+    .cq-xl\:pe-0 {
       padding-inline-end: 0;
     }
-    .\@xl\:pe-1 {
+    .cq-xl\:pe-1 {
       padding-inline-end: 0.25rem;
     }
-    .\@xl\:pe-2 {
+    .cq-xl\:pe-2 {
       padding-inline-end: 0.375rem;
     }
-    .\@xl\:pe-3 {
+    .cq-xl\:pe-3 {
       padding-inline-end: 0.5rem;
     }
-    .\@xl\:pe-4 {
+    .cq-xl\:pe-4 {
       padding-inline-end: 0.75rem;
     }
-    .\@xl\:pe-5 {
+    .cq-xl\:pe-5 {
       padding-inline-end: 1rem;
     }
-    .\@xl\:pe-6 {
+    .cq-xl\:pe-6 {
       padding-inline-end: 1.25rem;
     }
-    .\@xl\:pe-7 {
+    .cq-xl\:pe-7 {
       padding-inline-end: 1.5rem;
     }
-    .\@xl\:pe-8 {
+    .cq-xl\:pe-8 {
       padding-inline-end: 1.75rem;
     }
-    .\@xl\:pe-9 {
+    .cq-xl\:pe-9 {
       padding-inline-end: 2rem;
     }
-    .\@xl\:pe-10 {
+    .cq-xl\:pe-10 {
       padding-inline-end: 2.25rem;
     }
-    .\@xl\:pe-11 {
+    .cq-xl\:pe-11 {
       padding-inline-end: 2.5rem;
     }
-    .\@xl\:pe-12 {
+    .cq-xl\:pe-12 {
       padding-inline-end: 3rem;
     }
-    .\@xl\:pb-0 {
+    .cq-xl\:pb-0 {
       padding-block-end: 0;
     }
-    .\@xl\:pb-1 {
+    .cq-xl\:pb-1 {
       padding-block-end: 0.25rem;
     }
-    .\@xl\:pb-2 {
+    .cq-xl\:pb-2 {
       padding-block-end: 0.375rem;
     }
-    .\@xl\:pb-3 {
+    .cq-xl\:pb-3 {
       padding-block-end: 0.5rem;
     }
-    .\@xl\:pb-4 {
+    .cq-xl\:pb-4 {
       padding-block-end: 0.75rem;
     }
-    .\@xl\:pb-5 {
+    .cq-xl\:pb-5 {
       padding-block-end: 1rem;
     }
-    .\@xl\:pb-6 {
+    .cq-xl\:pb-6 {
       padding-block-end: 1.25rem;
     }
-    .\@xl\:pb-7 {
+    .cq-xl\:pb-7 {
       padding-block-end: 1.5rem;
     }
-    .\@xl\:pb-8 {
+    .cq-xl\:pb-8 {
       padding-block-end: 1.75rem;
     }
-    .\@xl\:pb-9 {
+    .cq-xl\:pb-9 {
       padding-block-end: 2rem;
     }
-    .\@xl\:pb-10 {
+    .cq-xl\:pb-10 {
       padding-block-end: 2.25rem;
     }
-    .\@xl\:pb-11 {
+    .cq-xl\:pb-11 {
       padding-block-end: 2.5rem;
     }
-    .\@xl\:pb-12 {
+    .cq-xl\:pb-12 {
       padding-block-end: 3rem;
     }
-    .\@xl\:ps-0 {
+    .cq-xl\:ps-0 {
       padding-inline-start: 0;
     }
-    .\@xl\:ps-1 {
+    .cq-xl\:ps-1 {
       padding-inline-start: 0.25rem;
     }
-    .\@xl\:ps-2 {
+    .cq-xl\:ps-2 {
       padding-inline-start: 0.375rem;
     }
-    .\@xl\:ps-3 {
+    .cq-xl\:ps-3 {
       padding-inline-start: 0.5rem;
     }
-    .\@xl\:ps-4 {
+    .cq-xl\:ps-4 {
       padding-inline-start: 0.75rem;
     }
-    .\@xl\:ps-5 {
+    .cq-xl\:ps-5 {
       padding-inline-start: 1rem;
     }
-    .\@xl\:ps-6 {
+    .cq-xl\:ps-6 {
       padding-inline-start: 1.25rem;
     }
-    .\@xl\:ps-7 {
+    .cq-xl\:ps-7 {
       padding-inline-start: 1.5rem;
     }
-    .\@xl\:ps-8 {
+    .cq-xl\:ps-8 {
       padding-inline-start: 1.75rem;
     }
-    .\@xl\:ps-9 {
+    .cq-xl\:ps-9 {
       padding-inline-start: 2rem;
     }
-    .\@xl\:ps-10 {
+    .cq-xl\:ps-10 {
       padding-inline-start: 2.25rem;
     }
-    .\@xl\:ps-11 {
+    .cq-xl\:ps-11 {
       padding-inline-start: 2.5rem;
     }
-    .\@xl\:ps-12 {
+    .cq-xl\:ps-12 {
       padding-inline-start: 3rem;
     }
-    .\@xl\:text-start {
+    .cq-xl\:text-start {
       text-align: start;
     }
-    .\@xl\:text-end {
+    .cq-xl\:text-end {
       text-align: end;
     }
-    .\@xl\:text-center {
+    .cq-xl\:text-center {
       text-align: center;
     }
   }
 }
 @container (width >= 1536px) {
   @layer layout {
-    .\@2xl\:col-1 {
+    .cq-2xl\:col-1 {
       width: 8.3333333333cqw;
     }
-    .\@2xl\:col-2 {
+    .cq-2xl\:col-2 {
       width: 16.6666666667cqw;
     }
-    .\@2xl\:col-3 {
+    .cq-2xl\:col-3 {
       width: 25cqw;
     }
-    .\@2xl\:col-4 {
+    .cq-2xl\:col-4 {
       width: 33.3333333333cqw;
     }
-    .\@2xl\:col-5 {
+    .cq-2xl\:col-5 {
       width: 41.6666666667cqw;
     }
-    .\@2xl\:col-6 {
+    .cq-2xl\:col-6 {
       width: 50cqw;
     }
-    .\@2xl\:col-7 {
+    .cq-2xl\:col-7 {
       width: 58.3333333333cqw;
     }
-    .\@2xl\:col-8 {
+    .cq-2xl\:col-8 {
       width: 66.6666666667cqw;
     }
-    .\@2xl\:col-9 {
+    .cq-2xl\:col-9 {
       width: 75cqw;
     }
-    .\@2xl\:col-10 {
+    .cq-2xl\:col-10 {
       width: 83.3333333333cqw;
     }
-    .\@2xl\:col-11 {
+    .cq-2xl\:col-11 {
       width: 91.6666666667cqw;
     }
-    .\@2xl\:col-12 {
+    .cq-2xl\:col-12 {
       width: 100cqw;
     }
   }
   @layer utilities {
-    .\@2xl\:float-start {
+    .cq-2xl\:float-start {
       float: inline-start;
     }
-    .\@2xl\:float-end {
+    .cq-2xl\:float-end {
       float: inline-end;
     }
-    .\@2xl\:float-none {
+    .cq-2xl\:float-none {
       float: none;
     }
-    .\@2xl\:d-inline {
+    .cq-2xl\:d-inline {
       display: inline;
     }
-    .\@2xl\:d-inline-block {
+    .cq-2xl\:d-inline-block {
       display: inline-block;
     }
-    .\@2xl\:d-block {
+    .cq-2xl\:d-block {
       display: block;
     }
-    .\@2xl\:d-grid {
+    .cq-2xl\:d-grid {
       display: grid;
     }
-    .\@2xl\:d-inline-grid {
+    .cq-2xl\:d-inline-grid {
       display: inline-grid;
     }
-    .\@2xl\:d-table {
+    .cq-2xl\:d-table {
       display: table;
     }
-    .\@2xl\:d-table-row {
+    .cq-2xl\:d-table-row {
       display: table-row;
     }
-    .\@2xl\:d-table-cell {
+    .cq-2xl\:d-table-cell {
       display: table-cell;
     }
-    .\@2xl\:d-flex {
+    .cq-2xl\:d-flex {
       display: flex;
     }
-    .\@2xl\:d-inline-flex {
+    .cq-2xl\:d-inline-flex {
       display: inline-flex;
     }
-    .\@2xl\:d-contents {
+    .cq-2xl\:d-contents {
       display: contents;
     }
-    .\@2xl\:d-flow-root {
+    .cq-2xl\:d-flow-root {
       display: flow-root;
     }
-    .\@2xl\:d-none {
+    .cq-2xl\:d-none {
       display: none;
     }
-    .\@2xl\:flex-row {
+    .cq-2xl\:flex-row {
       flex-direction: row;
     }
-    .\@2xl\:flex-column {
+    .cq-2xl\:flex-column {
       flex-direction: column;
     }
-    .\@2xl\:flex-row-reverse {
+    .cq-2xl\:flex-row-reverse {
       flex-direction: row-reverse;
     }
-    .\@2xl\:flex-column-reverse {
+    .cq-2xl\:flex-column-reverse {
       flex-direction: column-reverse;
     }
-    .\@2xl\:m-0 {
+    .cq-2xl\:m-0 {
       margin: 0;
     }
-    .\@2xl\:m-1 {
+    .cq-2xl\:m-1 {
       margin: 0.25rem;
     }
-    .\@2xl\:m-2 {
+    .cq-2xl\:m-2 {
       margin: 0.375rem;
     }
-    .\@2xl\:m-3 {
+    .cq-2xl\:m-3 {
       margin: 0.5rem;
     }
-    .\@2xl\:m-4 {
+    .cq-2xl\:m-4 {
       margin: 0.75rem;
     }
-    .\@2xl\:m-5 {
+    .cq-2xl\:m-5 {
       margin: 1rem;
     }
-    .\@2xl\:m-6 {
+    .cq-2xl\:m-6 {
       margin: 1.25rem;
     }
-    .\@2xl\:m-7 {
+    .cq-2xl\:m-7 {
       margin: 1.5rem;
     }
-    .\@2xl\:m-8 {
+    .cq-2xl\:m-8 {
       margin: 1.75rem;
     }
-    .\@2xl\:m-9 {
+    .cq-2xl\:m-9 {
       margin: 2rem;
     }
-    .\@2xl\:m-10 {
+    .cq-2xl\:m-10 {
       margin: 2.25rem;
     }
-    .\@2xl\:m-11 {
+    .cq-2xl\:m-11 {
       margin: 2.5rem;
     }
-    .\@2xl\:m-12 {
+    .cq-2xl\:m-12 {
       margin: 3rem;
     }
-    .\@2xl\:m-auto {
+    .cq-2xl\:m-auto {
       margin: auto;
     }
-    .\@2xl\:mx-0 {
+    .cq-2xl\:mx-0 {
       margin-inline: 0;
     }
-    .\@2xl\:mx-1 {
+    .cq-2xl\:mx-1 {
       margin-inline: 0.25rem;
     }
-    .\@2xl\:mx-2 {
+    .cq-2xl\:mx-2 {
       margin-inline: 0.375rem;
     }
-    .\@2xl\:mx-3 {
+    .cq-2xl\:mx-3 {
       margin-inline: 0.5rem;
     }
-    .\@2xl\:mx-4 {
+    .cq-2xl\:mx-4 {
       margin-inline: 0.75rem;
     }
-    .\@2xl\:mx-5 {
+    .cq-2xl\:mx-5 {
       margin-inline: 1rem;
     }
-    .\@2xl\:mx-6 {
+    .cq-2xl\:mx-6 {
       margin-inline: 1.25rem;
     }
-    .\@2xl\:mx-7 {
+    .cq-2xl\:mx-7 {
       margin-inline: 1.5rem;
     }
-    .\@2xl\:mx-8 {
+    .cq-2xl\:mx-8 {
       margin-inline: 1.75rem;
     }
-    .\@2xl\:mx-9 {
+    .cq-2xl\:mx-9 {
       margin-inline: 2rem;
     }
-    .\@2xl\:mx-10 {
+    .cq-2xl\:mx-10 {
       margin-inline: 2.25rem;
     }
-    .\@2xl\:mx-11 {
+    .cq-2xl\:mx-11 {
       margin-inline: 2.5rem;
     }
-    .\@2xl\:mx-12 {
+    .cq-2xl\:mx-12 {
       margin-inline: 3rem;
     }
-    .\@2xl\:mx-auto {
+    .cq-2xl\:mx-auto {
       margin-inline: auto;
     }
-    .\@2xl\:my-0 {
+    .cq-2xl\:my-0 {
       margin-block: 0;
     }
-    .\@2xl\:my-1 {
+    .cq-2xl\:my-1 {
       margin-block: 0.25rem;
     }
-    .\@2xl\:my-2 {
+    .cq-2xl\:my-2 {
       margin-block: 0.375rem;
     }
-    .\@2xl\:my-3 {
+    .cq-2xl\:my-3 {
       margin-block: 0.5rem;
     }
-    .\@2xl\:my-4 {
+    .cq-2xl\:my-4 {
       margin-block: 0.75rem;
     }
-    .\@2xl\:my-5 {
+    .cq-2xl\:my-5 {
       margin-block: 1rem;
     }
-    .\@2xl\:my-6 {
+    .cq-2xl\:my-6 {
       margin-block: 1.25rem;
     }
-    .\@2xl\:my-7 {
+    .cq-2xl\:my-7 {
       margin-block: 1.5rem;
     }
-    .\@2xl\:my-8 {
+    .cq-2xl\:my-8 {
       margin-block: 1.75rem;
     }
-    .\@2xl\:my-9 {
+    .cq-2xl\:my-9 {
       margin-block: 2rem;
     }
-    .\@2xl\:my-10 {
+    .cq-2xl\:my-10 {
       margin-block: 2.25rem;
     }
-    .\@2xl\:my-11 {
+    .cq-2xl\:my-11 {
       margin-block: 2.5rem;
     }
-    .\@2xl\:my-12 {
+    .cq-2xl\:my-12 {
       margin-block: 3rem;
     }
-    .\@2xl\:my-auto {
+    .cq-2xl\:my-auto {
       margin-block: auto;
     }
-    .\@2xl\:mt-0 {
+    .cq-2xl\:mt-0 {
       margin-block-start: 0;
     }
-    .\@2xl\:mt-1 {
+    .cq-2xl\:mt-1 {
       margin-block-start: 0.25rem;
     }
-    .\@2xl\:mt-2 {
+    .cq-2xl\:mt-2 {
       margin-block-start: 0.375rem;
     }
-    .\@2xl\:mt-3 {
+    .cq-2xl\:mt-3 {
       margin-block-start: 0.5rem;
     }
-    .\@2xl\:mt-4 {
+    .cq-2xl\:mt-4 {
       margin-block-start: 0.75rem;
     }
-    .\@2xl\:mt-5 {
+    .cq-2xl\:mt-5 {
       margin-block-start: 1rem;
     }
-    .\@2xl\:mt-6 {
+    .cq-2xl\:mt-6 {
       margin-block-start: 1.25rem;
     }
-    .\@2xl\:mt-7 {
+    .cq-2xl\:mt-7 {
       margin-block-start: 1.5rem;
     }
-    .\@2xl\:mt-8 {
+    .cq-2xl\:mt-8 {
       margin-block-start: 1.75rem;
     }
-    .\@2xl\:mt-9 {
+    .cq-2xl\:mt-9 {
       margin-block-start: 2rem;
     }
-    .\@2xl\:mt-10 {
+    .cq-2xl\:mt-10 {
       margin-block-start: 2.25rem;
     }
-    .\@2xl\:mt-11 {
+    .cq-2xl\:mt-11 {
       margin-block-start: 2.5rem;
     }
-    .\@2xl\:mt-12 {
+    .cq-2xl\:mt-12 {
       margin-block-start: 3rem;
     }
-    .\@2xl\:mt-auto {
+    .cq-2xl\:mt-auto {
       margin-block-start: auto;
     }
-    .\@2xl\:me-0 {
+    .cq-2xl\:me-0 {
       margin-inline-end: 0;
     }
-    .\@2xl\:me-1 {
+    .cq-2xl\:me-1 {
       margin-inline-end: 0.25rem;
     }
-    .\@2xl\:me-2 {
+    .cq-2xl\:me-2 {
       margin-inline-end: 0.375rem;
     }
-    .\@2xl\:me-3 {
+    .cq-2xl\:me-3 {
       margin-inline-end: 0.5rem;
     }
-    .\@2xl\:me-4 {
+    .cq-2xl\:me-4 {
       margin-inline-end: 0.75rem;
     }
-    .\@2xl\:me-5 {
+    .cq-2xl\:me-5 {
       margin-inline-end: 1rem;
     }
-    .\@2xl\:me-6 {
+    .cq-2xl\:me-6 {
       margin-inline-end: 1.25rem;
     }
-    .\@2xl\:me-7 {
+    .cq-2xl\:me-7 {
       margin-inline-end: 1.5rem;
     }
-    .\@2xl\:me-8 {
+    .cq-2xl\:me-8 {
       margin-inline-end: 1.75rem;
     }
-    .\@2xl\:me-9 {
+    .cq-2xl\:me-9 {
       margin-inline-end: 2rem;
     }
-    .\@2xl\:me-10 {
+    .cq-2xl\:me-10 {
       margin-inline-end: 2.25rem;
     }
-    .\@2xl\:me-11 {
+    .cq-2xl\:me-11 {
       margin-inline-end: 2.5rem;
     }
-    .\@2xl\:me-12 {
+    .cq-2xl\:me-12 {
       margin-inline-end: 3rem;
     }
-    .\@2xl\:me--1 {
+    .cq-2xl\:me--1 {
       margin-inline-end: -0.25rem;
     }
-    .\@2xl\:me--2 {
+    .cq-2xl\:me--2 {
       margin-inline-end: -0.5rem;
     }
-    .\@2xl\:me-auto {
+    .cq-2xl\:me-auto {
       margin-inline-end: auto;
     }
-    .\@2xl\:mb-0 {
+    .cq-2xl\:mb-0 {
       margin-block-end: 0;
     }
-    .\@2xl\:mb-1 {
+    .cq-2xl\:mb-1 {
       margin-block-end: 0.25rem;
     }
-    .\@2xl\:mb-2 {
+    .cq-2xl\:mb-2 {
       margin-block-end: 0.375rem;
     }
-    .\@2xl\:mb-3 {
+    .cq-2xl\:mb-3 {
       margin-block-end: 0.5rem;
     }
-    .\@2xl\:mb-4 {
+    .cq-2xl\:mb-4 {
       margin-block-end: 0.75rem;
     }
-    .\@2xl\:mb-5 {
+    .cq-2xl\:mb-5 {
       margin-block-end: 1rem;
     }
-    .\@2xl\:mb-6 {
+    .cq-2xl\:mb-6 {
       margin-block-end: 1.25rem;
     }
-    .\@2xl\:mb-7 {
+    .cq-2xl\:mb-7 {
       margin-block-end: 1.5rem;
     }
-    .\@2xl\:mb-8 {
+    .cq-2xl\:mb-8 {
       margin-block-end: 1.75rem;
     }
-    .\@2xl\:mb-9 {
+    .cq-2xl\:mb-9 {
       margin-block-end: 2rem;
     }
-    .\@2xl\:mb-10 {
+    .cq-2xl\:mb-10 {
       margin-block-end: 2.25rem;
     }
-    .\@2xl\:mb-11 {
+    .cq-2xl\:mb-11 {
       margin-block-end: 2.5rem;
     }
-    .\@2xl\:mb-12 {
+    .cq-2xl\:mb-12 {
       margin-block-end: 3rem;
     }
-    .\@2xl\:mb-auto {
+    .cq-2xl\:mb-auto {
       margin-block-end: auto;
     }
-    .\@2xl\:ms-0 {
+    .cq-2xl\:ms-0 {
       margin-inline-start: 0;
     }
-    .\@2xl\:ms-1 {
+    .cq-2xl\:ms-1 {
       margin-inline-start: 0.25rem;
     }
-    .\@2xl\:ms-2 {
+    .cq-2xl\:ms-2 {
       margin-inline-start: 0.375rem;
     }
-    .\@2xl\:ms-3 {
+    .cq-2xl\:ms-3 {
       margin-inline-start: 0.5rem;
     }
-    .\@2xl\:ms-4 {
+    .cq-2xl\:ms-4 {
       margin-inline-start: 0.75rem;
     }
-    .\@2xl\:ms-5 {
+    .cq-2xl\:ms-5 {
       margin-inline-start: 1rem;
     }
-    .\@2xl\:ms-6 {
+    .cq-2xl\:ms-6 {
       margin-inline-start: 1.25rem;
     }
-    .\@2xl\:ms-7 {
+    .cq-2xl\:ms-7 {
       margin-inline-start: 1.5rem;
     }
-    .\@2xl\:ms-8 {
+    .cq-2xl\:ms-8 {
       margin-inline-start: 1.75rem;
     }
-    .\@2xl\:ms-9 {
+    .cq-2xl\:ms-9 {
       margin-inline-start: 2rem;
     }
-    .\@2xl\:ms-10 {
+    .cq-2xl\:ms-10 {
       margin-inline-start: 2.25rem;
     }
-    .\@2xl\:ms-11 {
+    .cq-2xl\:ms-11 {
       margin-inline-start: 2.5rem;
     }
-    .\@2xl\:ms-12 {
+    .cq-2xl\:ms-12 {
       margin-inline-start: 3rem;
     }
-    .\@2xl\:ms--1 {
+    .cq-2xl\:ms--1 {
       margin-inline-start: -0.25rem;
     }
-    .\@2xl\:ms--2 {
+    .cq-2xl\:ms--2 {
       margin-inline-start: -0.5rem;
     }
-    .\@2xl\:ms-auto {
+    .cq-2xl\:ms-auto {
       margin-inline-start: auto;
     }
-    .\@2xl\:p-0 {
+    .cq-2xl\:p-0 {
       padding: 0;
     }
-    .\@2xl\:p-1 {
+    .cq-2xl\:p-1 {
       padding: 0.25rem;
     }
-    .\@2xl\:p-2 {
+    .cq-2xl\:p-2 {
       padding: 0.375rem;
     }
-    .\@2xl\:p-3 {
+    .cq-2xl\:p-3 {
       padding: 0.5rem;
     }
-    .\@2xl\:p-4 {
+    .cq-2xl\:p-4 {
       padding: 0.75rem;
     }
-    .\@2xl\:p-5 {
+    .cq-2xl\:p-5 {
       padding: 1rem;
     }
-    .\@2xl\:p-6 {
+    .cq-2xl\:p-6 {
       padding: 1.25rem;
     }
-    .\@2xl\:p-7 {
+    .cq-2xl\:p-7 {
       padding: 1.5rem;
     }
-    .\@2xl\:p-8 {
+    .cq-2xl\:p-8 {
       padding: 1.75rem;
     }
-    .\@2xl\:p-9 {
+    .cq-2xl\:p-9 {
       padding: 2rem;
     }
-    .\@2xl\:p-10 {
+    .cq-2xl\:p-10 {
       padding: 2.25rem;
     }
-    .\@2xl\:p-11 {
+    .cq-2xl\:p-11 {
       padding: 2.5rem;
     }
-    .\@2xl\:p-12 {
+    .cq-2xl\:p-12 {
       padding: 3rem;
     }
-    .\@2xl\:px-0 {
+    .cq-2xl\:px-0 {
       padding-inline: 0;
     }
-    .\@2xl\:px-1 {
+    .cq-2xl\:px-1 {
       padding-inline: 0.25rem;
     }
-    .\@2xl\:px-2 {
+    .cq-2xl\:px-2 {
       padding-inline: 0.375rem;
     }
-    .\@2xl\:px-3 {
+    .cq-2xl\:px-3 {
       padding-inline: 0.5rem;
     }
-    .\@2xl\:px-4 {
+    .cq-2xl\:px-4 {
       padding-inline: 0.75rem;
     }
-    .\@2xl\:px-5 {
+    .cq-2xl\:px-5 {
       padding-inline: 1rem;
     }
-    .\@2xl\:px-6 {
+    .cq-2xl\:px-6 {
       padding-inline: 1.25rem;
     }
-    .\@2xl\:px-7 {
+    .cq-2xl\:px-7 {
       padding-inline: 1.5rem;
     }
-    .\@2xl\:px-8 {
+    .cq-2xl\:px-8 {
       padding-inline: 1.75rem;
     }
-    .\@2xl\:px-9 {
+    .cq-2xl\:px-9 {
       padding-inline: 2rem;
     }
-    .\@2xl\:px-10 {
+    .cq-2xl\:px-10 {
       padding-inline: 2.25rem;
     }
-    .\@2xl\:px-11 {
+    .cq-2xl\:px-11 {
       padding-inline: 2.5rem;
     }
-    .\@2xl\:px-12 {
+    .cq-2xl\:px-12 {
       padding-inline: 3rem;
     }
-    .\@2xl\:py-0 {
+    .cq-2xl\:py-0 {
       padding-block: 0;
     }
-    .\@2xl\:py-1 {
+    .cq-2xl\:py-1 {
       padding-block: 0.25rem;
     }
-    .\@2xl\:py-2 {
+    .cq-2xl\:py-2 {
       padding-block: 0.375rem;
     }
-    .\@2xl\:py-3 {
+    .cq-2xl\:py-3 {
       padding-block: 0.5rem;
     }
-    .\@2xl\:py-4 {
+    .cq-2xl\:py-4 {
       padding-block: 0.75rem;
     }
-    .\@2xl\:py-5 {
+    .cq-2xl\:py-5 {
       padding-block: 1rem;
     }
-    .\@2xl\:py-6 {
+    .cq-2xl\:py-6 {
       padding-block: 1.25rem;
     }
-    .\@2xl\:py-7 {
+    .cq-2xl\:py-7 {
       padding-block: 1.5rem;
     }
-    .\@2xl\:py-8 {
+    .cq-2xl\:py-8 {
       padding-block: 1.75rem;
     }
-    .\@2xl\:py-9 {
+    .cq-2xl\:py-9 {
       padding-block: 2rem;
     }
-    .\@2xl\:py-10 {
+    .cq-2xl\:py-10 {
       padding-block: 2.25rem;
     }
-    .\@2xl\:py-11 {
+    .cq-2xl\:py-11 {
       padding-block: 2.5rem;
     }
-    .\@2xl\:py-12 {
+    .cq-2xl\:py-12 {
       padding-block: 3rem;
     }
-    .\@2xl\:pt-0 {
+    .cq-2xl\:pt-0 {
       padding-block-start: 0;
     }
-    .\@2xl\:pt-1 {
+    .cq-2xl\:pt-1 {
       padding-block-start: 0.25rem;
     }
-    .\@2xl\:pt-2 {
+    .cq-2xl\:pt-2 {
       padding-block-start: 0.375rem;
     }
-    .\@2xl\:pt-3 {
+    .cq-2xl\:pt-3 {
       padding-block-start: 0.5rem;
     }
-    .\@2xl\:pt-4 {
+    .cq-2xl\:pt-4 {
       padding-block-start: 0.75rem;
     }
-    .\@2xl\:pt-5 {
+    .cq-2xl\:pt-5 {
       padding-block-start: 1rem;
     }
-    .\@2xl\:pt-6 {
+    .cq-2xl\:pt-6 {
       padding-block-start: 1.25rem;
     }
-    .\@2xl\:pt-7 {
+    .cq-2xl\:pt-7 {
       padding-block-start: 1.5rem;
     }
-    .\@2xl\:pt-8 {
+    .cq-2xl\:pt-8 {
       padding-block-start: 1.75rem;
     }
-    .\@2xl\:pt-9 {
+    .cq-2xl\:pt-9 {
       padding-block-start: 2rem;
     }
-    .\@2xl\:pt-10 {
+    .cq-2xl\:pt-10 {
       padding-block-start: 2.25rem;
     }
-    .\@2xl\:pt-11 {
+    .cq-2xl\:pt-11 {
       padding-block-start: 2.5rem;
     }
-    .\@2xl\:pt-12 {
+    .cq-2xl\:pt-12 {
       padding-block-start: 3rem;
     }
-    .\@2xl\:pe-0 {
+    .cq-2xl\:pe-0 {
       padding-inline-end: 0;
     }
-    .\@2xl\:pe-1 {
+    .cq-2xl\:pe-1 {
       padding-inline-end: 0.25rem;
     }
-    .\@2xl\:pe-2 {
+    .cq-2xl\:pe-2 {
       padding-inline-end: 0.375rem;
     }
-    .\@2xl\:pe-3 {
+    .cq-2xl\:pe-3 {
       padding-inline-end: 0.5rem;
     }
-    .\@2xl\:pe-4 {
+    .cq-2xl\:pe-4 {
       padding-inline-end: 0.75rem;
     }
-    .\@2xl\:pe-5 {
+    .cq-2xl\:pe-5 {
       padding-inline-end: 1rem;
     }
-    .\@2xl\:pe-6 {
+    .cq-2xl\:pe-6 {
       padding-inline-end: 1.25rem;
     }
-    .\@2xl\:pe-7 {
+    .cq-2xl\:pe-7 {
       padding-inline-end: 1.5rem;
     }
-    .\@2xl\:pe-8 {
+    .cq-2xl\:pe-8 {
       padding-inline-end: 1.75rem;
     }
-    .\@2xl\:pe-9 {
+    .cq-2xl\:pe-9 {
       padding-inline-end: 2rem;
     }
-    .\@2xl\:pe-10 {
+    .cq-2xl\:pe-10 {
       padding-inline-end: 2.25rem;
     }
-    .\@2xl\:pe-11 {
+    .cq-2xl\:pe-11 {
       padding-inline-end: 2.5rem;
     }
-    .\@2xl\:pe-12 {
+    .cq-2xl\:pe-12 {
       padding-inline-end: 3rem;
     }
-    .\@2xl\:pb-0 {
+    .cq-2xl\:pb-0 {
       padding-block-end: 0;
     }
-    .\@2xl\:pb-1 {
+    .cq-2xl\:pb-1 {
       padding-block-end: 0.25rem;
     }
-    .\@2xl\:pb-2 {
+    .cq-2xl\:pb-2 {
       padding-block-end: 0.375rem;
     }
-    .\@2xl\:pb-3 {
+    .cq-2xl\:pb-3 {
       padding-block-end: 0.5rem;
     }
-    .\@2xl\:pb-4 {
+    .cq-2xl\:pb-4 {
       padding-block-end: 0.75rem;
     }
-    .\@2xl\:pb-5 {
+    .cq-2xl\:pb-5 {
       padding-block-end: 1rem;
     }
-    .\@2xl\:pb-6 {
+    .cq-2xl\:pb-6 {
       padding-block-end: 1.25rem;
     }
-    .\@2xl\:pb-7 {
+    .cq-2xl\:pb-7 {
       padding-block-end: 1.5rem;
     }
-    .\@2xl\:pb-8 {
+    .cq-2xl\:pb-8 {
       padding-block-end: 1.75rem;
     }
-    .\@2xl\:pb-9 {
+    .cq-2xl\:pb-9 {
       padding-block-end: 2rem;
     }
-    .\@2xl\:pb-10 {
+    .cq-2xl\:pb-10 {
       padding-block-end: 2.25rem;
     }
-    .\@2xl\:pb-11 {
+    .cq-2xl\:pb-11 {
       padding-block-end: 2.5rem;
     }
-    .\@2xl\:pb-12 {
+    .cq-2xl\:pb-12 {
       padding-block-end: 3rem;
     }
-    .\@2xl\:ps-0 {
+    .cq-2xl\:ps-0 {
       padding-inline-start: 0;
     }
-    .\@2xl\:ps-1 {
+    .cq-2xl\:ps-1 {
       padding-inline-start: 0.25rem;
     }
-    .\@2xl\:ps-2 {
+    .cq-2xl\:ps-2 {
       padding-inline-start: 0.375rem;
     }
-    .\@2xl\:ps-3 {
+    .cq-2xl\:ps-3 {
       padding-inline-start: 0.5rem;
     }
-    .\@2xl\:ps-4 {
+    .cq-2xl\:ps-4 {
       padding-inline-start: 0.75rem;
     }
-    .\@2xl\:ps-5 {
+    .cq-2xl\:ps-5 {
       padding-inline-start: 1rem;
     }
-    .\@2xl\:ps-6 {
+    .cq-2xl\:ps-6 {
       padding-inline-start: 1.25rem;
     }
-    .\@2xl\:ps-7 {
+    .cq-2xl\:ps-7 {
       padding-inline-start: 1.5rem;
     }
-    .\@2xl\:ps-8 {
+    .cq-2xl\:ps-8 {
       padding-inline-start: 1.75rem;
     }
-    .\@2xl\:ps-9 {
+    .cq-2xl\:ps-9 {
       padding-inline-start: 2rem;
     }
-    .\@2xl\:ps-10 {
+    .cq-2xl\:ps-10 {
       padding-inline-start: 2.25rem;
     }
-    .\@2xl\:ps-11 {
+    .cq-2xl\:ps-11 {
       padding-inline-start: 2.5rem;
     }
-    .\@2xl\:ps-12 {
+    .cq-2xl\:ps-12 {
       padding-inline-start: 3rem;
     }
-    .\@2xl\:text-start {
+    .cq-2xl\:text-start {
       text-align: start;
     }
-    .\@2xl\:text-end {
+    .cq-2xl\:text-end {
       text-align: end;
     }
-    .\@2xl\:text-center {
+    .cq-2xl\:text-center {
       text-align: center;
     }
   }

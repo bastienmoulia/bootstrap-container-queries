@@ -11,8 +11,8 @@
 Bootstrap's responsive classes react to the _viewport_. This library adds classes that react to the width of a _parent container_ instead, using CSS [container queries](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries). A component behaves the same in a sidebar as on a full-width page.
 
 ```html
-<div class="bcq">
-  <div class="d-none @md:d-block">
+<div class="contains-inline">
+  <div class="d-none cq-md:d-block">
     Shown when the container is at least md wide
   </div>
 </div>
@@ -50,48 +50,48 @@ Add in your scss file:
 
 ## Usage
 
-Add the class `.bcq` to your parent container. It is a lightweight alias of Bootstrap's `.contains-inline`, which can be used as well.
+Make the parent a query container with Bootstrap's `.contains-inline` class (or `@include set-container()` in Sass, or any other Bootstrap container such as `.grid`).
 
-Classes use the container prefix `@{breakpoint}:`, for example `@md:d-none`. Breakpoints are `sm`, `md`, `lg`, `xl` and `2xl`. The base (`xs`) classes are the regular Bootstrap ones.
+Classes use the container prefix `cq-{breakpoint}:`, for example `cq-md:d-none`. Breakpoints are `sm`, `md`, `lg`, `xl` and `2xl`. The base (`xs`) classes are the regular Bootstrap ones.
 
 ### Grid
 
-Inside a `.row` you can use `.@{breakpoint}:col-{size}` like you will use a `.col-*` in Bootstrap.
+Inside a `.row` you can use `.cq-{breakpoint}:col-{size}` like you will use a `.col-*` in Bootstrap.
 
 ### Display
 
-You can hide or display items ([with any other display values](https://getbootstrap.com/docs/6.0/utilities/display/)) with `.@{breakpoint}:d-{value}` like `.d-*`.
+You can hide or display items ([with any other display values](https://getbootstrap.com/docs/6.0/utilities/display/)) with `.cq-{breakpoint}:d-{value}` like `.d-*`.
 
 ### Text align
 
-You can align text at `start`, `center` or `end` with `.@{breakpoint}:text-{value}` like `.text-*`.
+You can align text at `start`, `center` or `end` with `.cq-{breakpoint}:text-{value}` like `.text-*`.
 
 ### Float
 
-You can make the element float at `start` or `end` with `.@{breakpoint}:float-{value}` like `.float-*`.
+You can make the element float at `start` or `end` with `.cq-{breakpoint}:float-{value}` like `.float-*`.
 
 ### Margin and padding
 
-You can add the bootstrap margin or padding with `.@{breakpoint}:m{sides}-{value}` or `.@{breakpoint}:p{sides}-{value}`.
+You can add the bootstrap margin or padding with `.cq-{breakpoint}:m{sides}-{value}` or `.cq-{breakpoint}:p{sides}-{value}`.
 
 ### Flex direction
 
-You can add the flex direction `column`, `column-reverse`, `row` or `row-reverse` with `.@{breakpoint}:flex-{value}`.
+You can add the flex direction `column`, `column-reverse`, `row` or `row-reverse` with `.cq-{breakpoint}:flex-{value}`.
 
 ### Reference
 
 Default breakpoints (Bootstrap's `$breakpoints`): `sm` 576px, `md` 768px, `lg` 1024px, `xl` 1280px, `2xl` 1536px.
 
-| Feature        | Classes                                      | Example                    |
-| -------------- | -------------------------------------------- | -------------------------- |
-| Grid           | `.@{bp}:col-{1-12}`                          | `.@md:col-4`               |
-| Display        | `.@{bp}:d-{value}`                           | `.@lg:d-none`              |
-| Flex direction | `.@{bp}:flex-{value}`                        | `.@lg:flex-column-reverse` |
-| Text align     | `.@{bp}:text-{start\|center\|end}`           | `.@md:text-end`            |
-| Float          | `.@{bp}:float-{start\|end}`                  | `.@sm:float-end`           |
-| Margin/padding | `.@{bp}:m{sides}-{n}`, `.@{bp}:p{sides}-{n}` | `.@xl:mt-5`, `.@md:px-3`   |
+| Feature        | Classes                                          | Example                      |
+| -------------- | ------------------------------------------------ | ---------------------------- |
+| Grid           | `.cq-{bp}:col-{1-12}`                            | `.cq-md:col-4`               |
+| Display        | `.cq-{bp}:d-{value}`                             | `.cq-lg:d-none`              |
+| Flex direction | `.cq-{bp}:flex-{value}`                          | `.cq-lg:flex-column-reverse` |
+| Text align     | `.cq-{bp}:text-{start\|center\|end}`             | `.cq-md:text-end`            |
+| Float          | `.cq-{bp}:float-{start\|end}`                    | `.cq-sm:float-end`           |
+| Margin/padding | `.cq-{bp}:m{sides}-{n}`, `.cq-{bp}:p{sides}-{n}` | `.cq-xl:mt-5`, `.cq-md:px-3` |
 
-Utilities are generated from Bootstrap's own `$utilities`, so values and the spacing scale match Bootstrap 6. Class names contain `@` and `:`, so escape them in CSS selectors (`.\@md\:d-none`).
+Utilities are generated from Bootstrap's own `$utilities`, so values and the spacing scale match Bootstrap 6. Class names contain `@` and `:`, so escape them in CSS selectors (`.cq-md\:d-none`).
 
 ## Custom breakpoints and utilities
 
@@ -108,6 +108,23 @@ By default the container breakpoints are the Bootstrap `$breakpoints`. You can u
 );
 ```
 
+### Named container
+
+By default the classes react to the nearest query container. To target a specific one, name it and pass the name:
+
+```scss
+@use "bootstrap/scss/layout/breakpoints" as bp;
+@use "bootstrap-container-queries/scss/bootstrap-container-queries" with (
+  $container-queries-container-name: sidebar
+);
+
+.sidebar {
+  @include bp.set-container(inline-size, sidebar);
+}
+```
+
+The queries then use `@container sidebar (width >= …)`.
+
 The generated utilities are the Bootstrap utilities listed in `$container-queries-utilities` (display, flex-direction, text-align, float, margin and padding by default):
 
 ```scss
@@ -121,18 +138,21 @@ The generated utilities are the Bootstrap utilities listed in `$container-querie
 
 ## Migrating from 3.x
 
-| 3.x (Bootstrap 5)               | 4.x (Bootstrap 6)          |
-| ------------------------------- | -------------------------- |
-| `.bcq-md-4`                     | `.@md:col-4`               |
-| `.bcq-d-md-none`                | `.@md:d-none`              |
-| `.bcq-text-md-end`              | `.@md:text-end`            |
-| `.bcq-float-md-start`           | `.@md:float-start`         |
-| `.bcq-flex-md-column`           | `.@md:flex-column`         |
-| `.bcq-mt-md-3`, `.bcq-px-md-3`  | `.@md:mt-3`, `.@md:px-3`   |
-| `.bcq-xxl-*`                    | `.@2xl:*`                  |
-| `.bcq-d-none`, `.bcq-text-end`… | `.d-none`, `.text-end`…    |
-| breakpoints `30em`, `48em`…     | Bootstrap 6 px breakpoints |
-| `bootstrap-sass-modules`        | `bootstrap` 6              |
+| 3.x (Bootstrap 5)               | 4.x (Bootstrap 6)            |
+| ------------------------------- | ---------------------------- |
+| `.contains-inline` (container)  | `.contains-inline`           |
+| `.bcq-md-4`                     | `.cq-md:col-4`               |
+| `.bcq-d-md-none`                | `.cq-md:d-none`              |
+| `.bcq-text-md-end`              | `.cq-md:text-end`            |
+| `.bcq-float-md-start`           | `.cq-md:float-start`         |
+| `.bcq-flex-md-column`           | `.cq-md:flex-column`         |
+| `.bcq-mt-md-3`, `.bcq-px-md-3`  | `.cq-md:mt-3`, `.cq-md:px-3` |
+| `.bcq-xxl-*`                    | `.cq-2xl:*`                  |
+| `.bcq-d-none`, `.bcq-text-end`… | `.d-none`, `.text-end`…      |
+| breakpoints `30em`, `48em`…     | Bootstrap 6 px breakpoints   |
+| `bootstrap-sass-modules`        | `bootstrap` 6                |
+
+Coming from 4.0.0-alpha.1: `.@md:*` is now `.cq-md:*` and `.bcq` is now `.contains-inline`.
 
 Bootstrap 6 renamed its spacers (`.mt-3` is now `0.5rem`) and logical properties, see the [Bootstrap 6 migration guide](https://blog.getbootstrap.com/2026/10/08/bootstrap-6-alpha/).
 
@@ -160,7 +180,7 @@ The visual tests compare screenshots with the baselines in `tests/visual/__scree
 
 ## Warning
 
-The `.bcq` class will create a new [Stacking Context](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_context) that can result of z-index or transform: translate on the Z axis to not work.
+The `.contains-inline` class will create a new [Stacking Context](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_context) that can result of z-index or transform: translate on the Z axis to not work.
 
 # Contributors
 

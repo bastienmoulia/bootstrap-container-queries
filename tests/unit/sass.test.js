@@ -10,8 +10,9 @@ describe("default build", () => {
     );
   });
 
-  test("makes .bcq a query container", () => {
-    expect(css).toMatch(/\.bcq\s*{\s*container-type:\s*inline-size;/);
+  test("does not define its own container class", () => {
+    expect(css).not.toMatch(/\.bcq/);
+    expect(css).not.toMatch(/container-type/);
   });
 
   test("emits a container query for each Bootstrap breakpoint", () => {
@@ -22,24 +23,24 @@ describe("default build", () => {
 
   test("generates grid columns in the layout layer", () => {
     const query = css.split("@container (width >= 768px)")[1];
-    expect(query).toMatch(/@layer layout {\s*\.\\@md\\:col-1\s*{/);
-    expect(query).toMatch(/\.\\@md\\:col-4\s*{\s*width:\s*33\.3333333333cqw;/);
-    expect(css).toMatch(/\.\\@2xl\\:col-12\s*{/);
+    expect(query).toMatch(/@layer layout {\s*\.cq-md\\:col-1\s*{/);
+    expect(query).toMatch(/\.cq-md\\:col-4\s*{\s*width:\s*33\.3333333333cqw;/);
+    expect(css).toMatch(/\.cq-2xl\\:col-12\s*{/);
   });
 
   test("generates utilities in the utilities layer", () => {
     const query = css.split("@container (width >= 768px)")[1];
-    expect(query).toMatch(/@layer utilities {\s*\.\\@md\\:/);
-    expect(css).toMatch(/\.\\@md\\:d-none\s*{\s*display:\s*none;/);
-    expect(css).toMatch(/\.\\@sm\\:text-end\s*{\s*text-align:\s*end;/);
-    expect(css).toMatch(/\.\\@xl\\:float-start\s*{\s*float:\s*inline-start;/);
-    expect(css).toMatch(/\.\\@lg\\:flex-column-reverse\s*{/);
-    expect(css).toMatch(/\.\\@md\\:mt-3\s*{\s*margin-block-start:/);
-    expect(css).toMatch(/\.\\@lg\\:px-7\s*{\s*padding-inline:/);
+    expect(query).toMatch(/@layer utilities {\s*\.cq-md\\:/);
+    expect(css).toMatch(/\.cq-md\\:d-none\s*{\s*display:\s*none;/);
+    expect(css).toMatch(/\.cq-sm\\:text-end\s*{\s*text-align:\s*end;/);
+    expect(css).toMatch(/\.cq-xl\\:float-start\s*{\s*float:\s*inline-start;/);
+    expect(css).toMatch(/\.cq-lg\\:flex-column-reverse\s*{/);
+    expect(css).toMatch(/\.cq-md\\:mt-3\s*{\s*margin-block-start:/);
+    expect(css).toMatch(/\.cq-lg\\:px-7\s*{\s*padding-inline:/);
   });
 
   test("does not generate classes for the smallest breakpoint", () => {
-    expect(css).not.toMatch(/\.\\@xs\\:/);
+    expect(css).not.toMatch(/\.cq-xs\\:/);
   });
 
   test("does not rely on CSS custom properties", () => {
@@ -56,7 +57,7 @@ describe("custom breakpoints", () => {
     expect(css).toContain("@container (width >= 20em)");
     expect(css).toContain("@container (width >= 40em)");
     expect(css).not.toContain("@container (width >= 768px)");
-    expect(css).not.toMatch(/\.\\@lg\\:/);
+    expect(css).not.toMatch(/\.cq-lg\\:/);
   });
 });
 
@@ -66,9 +67,26 @@ describe("custom utilities", () => {
   );
 
   test("only generates the selected utilities", () => {
-    expect(css).toMatch(/\.\\@md\\:d-none\s*{/);
-    expect(css).toMatch(/\.\\@md\\:float-start\s*{/);
-    expect(css).not.toMatch(/\.\\@md\\:mt-3\s*{/);
-    expect(css).not.toMatch(/\.\\@md\\:text-end\s*{/);
+    expect(css).toMatch(/\.cq-md\\:d-none\s*{/);
+    expect(css).toMatch(/\.cq-md\\:float-start\s*{/);
+    expect(css).not.toMatch(/\.cq-md\\:mt-3\s*{/);
+    expect(css).not.toMatch(/\.cq-md\\:text-end\s*{/);
+  });
+});
+
+describe("named container", () => {
+  const css = compileLib(` with ($container-queries-container-name: sidebar)`);
+
+  test("queries the named container", () => {
+    expect(css).toContain("@container sidebar (width >= 768px)");
+    expect(css).not.toMatch(/@container \(/);
+    expect(css).toMatch(/\.cq-md\\:d-none\s*{/);
+  });
+});
+
+describe("Bootstrap compatibility", () => {
+  test("does not reuse Bootstrap's viewport class names", () => {
+    const css = compileLib();
+    expect(css).not.toMatch(/\.md\\:/);
   });
 });
