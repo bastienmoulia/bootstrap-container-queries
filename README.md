@@ -140,7 +140,7 @@ The generated utilities are the Bootstrap utilities listed in `$container-querie
 
 | 3.x (Bootstrap 5)               | 4.x (Bootstrap 6)            |
 | ------------------------------- | ---------------------------- |
-| `.contains-inline` (container)  | `.contains-inline`           |
+| `.bcq` (container)              | `.contains-inline`           |
 | `.bcq-md-4`                     | `.cq-md:col-4`               |
 | `.bcq-d-md-none`                | `.cq-md:d-none`              |
 | `.bcq-text-md-end`              | `.cq-md:text-end`            |
@@ -151,8 +151,6 @@ The generated utilities are the Bootstrap utilities listed in `$container-querie
 | `.bcq-d-none`, `.bcq-text-end`… | `.d-none`, `.text-end`…      |
 | breakpoints `30em`, `48em`…     | Bootstrap 6 px breakpoints   |
 | `bootstrap-sass-modules`        | `bootstrap` 6                |
-
-Coming from 4.0.0-alpha.1: `.@md:*` is now `.cq-md:*` and `.bcq` is now `.contains-inline`.
 
 Bootstrap 6 renamed its spacers (`.mt-3` is now `0.5rem`) and logical properties, see the [Bootstrap 6 migration guide](https://blog.getbootstrap.com/2026/10/08/bootstrap-6-alpha/).
 
