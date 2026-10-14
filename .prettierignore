@@ -1,1 +1,3 @@
 dist
+.vitest
+tests/visual/__screenshots__

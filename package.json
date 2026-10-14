@@ -15,7 +15,12 @@
     "stylelint": "stylelint '**/*.scss' --fix",
     "prettier:check": "prettier . --check",
     "stylelint:check": "stylelint \"**/*.scss\"",
-    "lint": "npm run prettier:check && npm run stylelint:check"
+    "lint": "npm run prettier:check && npm run stylelint:check",
+    "test": "vitest run",
+    "test:unit": "vitest run --project unit",
+    "test:visual": "vitest run --project vrt",
+    "test:visual:update": "vitest run --project vrt -u",
+    "test:visual:docker": "docker run --rm --ipc=host -v \"$PWD\":/work -v bcq_node_modules:/work/node_modules -w /work mcr.microsoft.com/playwright:v1.64.1-noble sh -c \"npm ci && npx vitest run --project vrt $VRT_ARGS\""
   },
   "keywords": [
     "container",
@@ -36,14 +41,17 @@
     }
   },
   "devDependencies": {
+    "@vitest/browser-playwright": "^5.0.4",
     "bootstrap": "^5.3.8",
     "concurrently": "^10.0.6",
     "http-server": "^14.1.1",
+    "playwright": "1.64.1",
     "prettier": "^3.9.10",
     "sass": "^1.105.1",
     "stylelint": "^16.26.1",
     "stylelint-config-prettier-scss": "^1.0.0",
-    "stylelint-config-twbs-bootstrap": "^16.1.0"
+    "stylelint-config-twbs-bootstrap": "^16.1.0",
+    "vitest": "^5.0.4"
   },
   "dependencies": {
     "bootstrap-sass-modules": "^3.1.0"
