@@ -8,11 +8,14 @@
   "style": "dist/bootstrap-container-queries.css",
   "scripts": {
     "start": "concurrently \"npm run serve\" \"npm run watch\"",
-    "build": "sass scss/build.scss dist/bootstrap-container-queries.min.css --style=compressed --load-path=node_modules && sass scss/build.scss dist/bootstrap-container-queries.css --load-path=node_modules",
+    "build": "sass scss/build.scss dist/bootstrap-container-queries.min.css --style=compressed --load-path=node_modules --quiet-deps && sass scss/build.scss dist/bootstrap-container-queries.css --load-path=node_modules --quiet-deps",
     "serve": "http-server ./docs -o -c-1",
-    "watch": "sass scss/build.scss docs/style.css --watch --load-path=node_modules",
+    "watch": "sass scss/build.scss docs/style.css --watch --load-path=node_modules --quiet-deps",
     "prettier": "prettier . --write",
-    "stylelint": "stylelint '**/*.scss' --fix"
+    "stylelint": "stylelint '**/*.scss' --fix",
+    "prettier:check": "prettier . --check",
+    "stylelint:check": "stylelint \"**/*.scss\"",
+    "lint": "npm run prettier:check && npm run stylelint:check"
   },
   "keywords": [
     "container",
@@ -33,15 +36,16 @@
     }
   },
   "devDependencies": {
-    "concurrently": "^8.2.2",
+    "bootstrap": "^5.3.8",
+    "concurrently": "^10.0.6",
     "http-server": "^14.1.1",
-    "prettier": "^3.2.5",
-    "sass": "^1.72.0",
-    "stylelint": "^16.2.1",
+    "prettier": "^3.9.10",
+    "sass": "^1.105.1",
+    "stylelint": "^16.26.1",
     "stylelint-config-prettier-scss": "^1.0.0",
-    "stylelint-config-twbs-bootstrap": "^14.0.0"
+    "stylelint-config-twbs-bootstrap": "^16.1.0"
   },
   "dependencies": {
-    "bootstrap-sass-modules": "^2.0.1"
+    "bootstrap-sass-modules": "^3.1.0"
   }
 }

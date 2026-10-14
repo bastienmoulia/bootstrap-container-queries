@@ -54,7 +54,7 @@
 // Makes the @content apply only to the given breakpoint, not viewports any wider or narrower.
 @mixin container-breakpoint-only($name, $breakpoints) {
   $min: breakpoints.breakpoint-min($name, $breakpoints);
-  $next: breakpoint-next($name, $breakpoints);
+  $next: breakpoints.breakpoint-next($name, $breakpoints);
   $max: breakpoints.breakpoint-max($next, $breakpoints);
 
   @if $min != null and $max != null {

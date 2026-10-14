@@ -1,3 +1,5 @@
+@use "sass:map";
+@use "sass:meta";
 @use "bootstrap-sass-modules/scss/mixins/breakpoints";
 @use "bootstrap-sass-modules/scss/mixins/utilities";
 @use "bootstrap-sass-modules/scss/vendor/rfs";
@@ -6,7 +8,7 @@
 
 @mixin generate-containers($grid-breakpoints, $container-queries-breakpoints) {
   // Loop over each breakpoint
-  @each $breakpoint in map-keys($grid-breakpoints) {
+  @each $breakpoint in map.keys($grid-breakpoints) {
     // Generate container query if needed
     @include bcq-breakpoints.container-breakpoint-up(
       $breakpoint,
@@ -24,9 +26,9 @@
       @each $key, $utility in bcq-utilities.$bcq-utilities {
         // The utility can be disabled with `false`, thus check if the utility is a map first
         // Only proceed if responsive container queries are enabled or if it's the base container query
-        @if type-of($utility) ==
+        @if meta.type-of($utility) ==
           "map" and
-          (map-get($utility, responsive) or $infix == "")
+          (map.get($utility, responsive) or $infix == "")
         {
           @include utilities.generate-utility($utility, $infix);
         }
@@ -36,20 +38,20 @@
 
   // RFS rescaling
   @media (min-width: rfs.$rfs-mq-value) {
-    @each $breakpoint in map-keys($grid-breakpoints) {
+    @each $breakpoint in map.keys($grid-breakpoints) {
       $infix: breakpoints.breakpoint-infix($breakpoint, $grid-breakpoints);
 
-      @if map-get($grid-breakpoints, $breakpoint) < rfs.$rfs-breakpoint {
+      @if map.get($grid-breakpoints, $breakpoint) < rfs.$rfs-breakpoint {
         // Loop over each utility property
         @each $key, $utility in bcq-utilities.$bcq-utilities {
           // The utility can be disabled with `false`, thus check if the utility is a map first
           // Only proceed if responsive media queries are enabled or if it's the base media query
-          @if type-of($utility) ==
+          @if meta.type-of($utility) ==
             "map" and
-            map-get($utility, rfs) and
-            (map-get($utility, responsive) or $infix == "")
+            map.get($utility, rfs) and
+            (map.get($utility, responsive) or $infix == "")
           {
-            @include generate-utility($utility, $infix, true);
+            @include utilities.generate-utility($utility, $infix, true);
           }
         }
       }

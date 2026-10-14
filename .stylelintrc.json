@@ -2,5 +2,8 @@
   "extends": [
     "stylelint-config-twbs-bootstrap",
     "stylelint-config-prettier-scss"
-  ]
+  ],
+  "rules": {
+    "@stylistic/indentation": null
+  }
 }
