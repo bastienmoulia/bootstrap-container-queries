@@ -25,6 +25,133 @@
       Version 4 (Bootstrap 6) &middot;
       <a href="./v3/">Version 3 (Bootstrap 5)</a>
     </p>
+    <main class="container mb-5">
+      <h2>What is it?</h2>
+      <p>
+        Bootstrap's responsive classes react to the <em>viewport</em>. This
+        library adds classes that react to the width of a
+        <em>parent container</em> instead, using CSS
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries"
+          >container queries</a
+        >. A component behaves the same whether it is in a sidebar or in a
+        full-width page.
+      </p>
+
+      <h2>Install</h2>
+      <pre><code>npm i bootstrap@next bootstrap-container-queries@next</code></pre>
+      <p>
+        With CSS, load the file
+        <strong>after</strong> Bootstrap 6 (it uses Bootstrap's cascade layers):
+      </p>
+      <pre><code>&lt;link href="bootstrap.min.css" rel="stylesheet" /&gt;
+&lt;link href="bootstrap-container-queries.min.css" rel="stylesheet" /&gt;</code></pre>
+      <p>
+        With Sass (Dart Sass 1.103+, <code>@import</code> is not supported):
+      </p>
+      <pre><code>@use "bootstrap-container-queries/scss/bootstrap-container-queries";</code></pre>
+
+      <h2>Usage</h2>
+      <p>
+        Add <code>.bcq</code> to the parent (an alias of Bootstrap's
+        <code>.contains-inline</code>), then use classes prefixed with
+        <code>@breakpoint:</code>:
+      </p>
+      <pre><code>&lt;div class="bcq"&gt;
+  &lt;div class="d-none @md:d-block"&gt;Visible when the container is at least md&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="bcq row"&gt;
+  &lt;div class="@sm:col-6 @lg:col-3"&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      <p>
+        Without prefix the class is plain Bootstrap and applies at every width.
+        The container must have a width of its own: it cannot size itself from
+        its content.
+      </p>
+
+      <h2>Reference</h2>
+      <p>
+        Breakpoints: <code>sm</code> 576px, <code>md</code> 768px,
+        <code>lg</code> 1024px, <code>xl</code> 1280px, <code>2xl</code> 1536px
+        (the Bootstrap <code>$breakpoints</code>).
+      </p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Classes</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Grid</td>
+            <td><code>@{bp}:col-{1-12}</code></td>
+            <td><code>@md:col-4</code></td>
+          </tr>
+          <tr>
+            <td>Display</td>
+            <td><code>@{bp}:d-{value}</code></td>
+            <td><code>@lg:d-none</code></td>
+          </tr>
+          <tr>
+            <td>Flex direction</td>
+            <td><code>@{bp}:flex-{value}</code></td>
+            <td><code>@lg:flex-column-reverse</code></td>
+          </tr>
+          <tr>
+            <td>Text align</td>
+            <td><code>@{bp}:text-{start|center|end}</code></td>
+            <td><code>@md:text-end</code></td>
+          </tr>
+          <tr>
+            <td>Float</td>
+            <td><code>@{bp}:float-{start|end}</code></td>
+            <td><code>@sm:float-end</code></td>
+          </tr>
+          <tr>
+            <td>Margin, padding</td>
+            <td>
+              <code>@{bp}:m{sides}-{n}</code>, <code>@{bp}:p{sides}-{n}</code>
+            </td>
+            <td><code>@xl:mt-5</code>, <code>@md:px-3</code></td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        Utilities are generated from Bootstrap's own <code>$utilities</code>, so
+        values (and spacing scale) match Bootstrap 6.
+      </p>
+
+      <h2>Customize</h2>
+      <pre><code>@use "bootstrap-container-queries/scss/bootstrap-container-queries" with (
+  $container-queries-breakpoints: (xs: 0, sm: 30em, md: 48em),
+  $container-queries-utilities: ("display", "gap")
+);</code></pre>
+
+      <h2>Good to know</h2>
+      <ul>
+        <li>
+          <code>.bcq</code> creates a stacking context, which can affect
+          <code>z-index</code> and Z-axis transforms of descendants.
+        </li>
+        <li>
+          Browsers: Chrome and Edge 130+, Firefox 132+, Safari 18+ (same as
+          Bootstrap 6).
+        </li>
+        <li>
+          Coming from 3.x? See the
+          <a
+            href="https://github.com/bastienmoulia/bootstrap-container-queries#migrating-from-3x"
+            >migration table</a
+          >.
+        </li>
+      </ul>
+
+      <h2>Live demo</h2>
+      <p>Resize the box below (drag its corner) or use the buttons.</p>
+    </main>
     <div class="text-center">
       <div class="btn-group mb-3" role="group">
         <button

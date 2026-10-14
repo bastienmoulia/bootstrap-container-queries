@@ -27,6 +27,100 @@
       Version 3 (Bootstrap 5) &middot;
       <a href="../">Version 4 (Bootstrap 6)</a>
     </p>
+    <main class="container mb-5">
+      <h2>What is it?</h2>
+      <p>
+        Bootstrap's responsive classes react to the <em>viewport</em>. This
+        library adds classes that react to the width of a
+        <em>parent container</em> instead, using CSS container queries. This is
+        the 3.x line, for <strong>Bootstrap 5</strong>.
+      </p>
+
+      <h2>Install</h2>
+      <pre><code>npm i bootstrap-container-queries@3</code></pre>
+      <p>With CSS, after Bootstrap 5:</p>
+      <pre><code>&lt;link href="bootstrap-container-queries.min.css" rel="stylesheet" /&gt;</code></pre>
+      <p>With Sass (<code>@use</code> or <code>@import</code>):</p>
+      <pre><code>@use "bootstrap-container-queries/scss/bootstrap-container-queries";</code></pre>
+
+      <h2>Usage</h2>
+      <p>
+        Add <code>.bcq</code> to the parent, then use the
+        <code>bcq-</code> classes. They follow the Bootstrap names with the
+        <code>bcq-</code> prefix, and <strong>base classes exist too</strong>
+        (<code>bcq-d-none</code>).
+      </p>
+      <pre><code>&lt;div class="bcq row"&gt;
+  &lt;div class="bcq-sm-6 bcq-lg-3"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="bcq"&gt;
+  &lt;div class="bcq-d-none bcq-d-md-block"&gt;Visible from md&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+      <h2>Reference</h2>
+      <p>
+        Breakpoints: <code>sm</code> 30em, <code>md</code> 48em,
+        <code>lg</code> 62em, <code>xl</code> 75em, <code>xxl</code> 90em (em of
+        the container).
+      </p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Classes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Grid</td>
+            <td><code>bcq-{size}</code>, <code>bcq-{bp}-{size}</code></td>
+          </tr>
+          <tr>
+            <td>Display</td>
+            <td><code>bcq-d-{value}</code>, <code>bcq-d-{bp}-{value}</code></td>
+          </tr>
+          <tr>
+            <td>Flex direction</td>
+            <td><code>bcq-flex-{bp}-{value}</code></td>
+          </tr>
+          <tr>
+            <td>Text align</td>
+            <td><code>bcq-text-{bp}-{start|center|end}</code></td>
+          </tr>
+          <tr>
+            <td>Float</td>
+            <td><code>bcq-float-{bp}-{start|end|none}</code></td>
+          </tr>
+          <tr>
+            <td>Margin, padding</td>
+            <td>
+              <code>bcq-m{sides}-{bp}-{n}</code>,
+              <code>bcq-p{sides}-{bp}-{n}</code>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Customize</h2>
+      <pre><code>$container-queries-breakpoints: (sm: 30em, md: 48em, lg: 62em, xl: 75em, xxl: 90em);</code></pre>
+      <p>
+        Frozen builds of this version are in the package:
+        <code
+          >bootstrap-container-queries/dist/v3/bootstrap-container-queries.css</code
+        >.
+      </p>
+
+      <h2>Good to know</h2>
+      <ul>
+        <li>
+          <code>.bcq</code> creates a stacking context, which can affect
+          <code>z-index</code> and Z-axis transforms of descendants.
+        </li>
+      </ul>
+
+      <h2>Live demo</h2>
+      <p>Resize the box below (drag its corner) or use the buttons.</p>
+    </main>
     <div class="text-center">
       <div class="btn-group mb-3" role="group">
         <button type="button" class="btn btn-outline-primary" data-size="28">

@@ -6,6 +6,20 @@
 
 [Demo](https://bastienmoulia.github.io/bootstrap-container-queries/)
 
+## What is it?
+
+Bootstrap's responsive classes react to the _viewport_. This library adds classes that react to the width of a _parent container_ instead, using CSS [container queries](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries). A component behaves the same in a sidebar as on a full-width page.
+
+```html
+<div class="bcq">
+  <div class="d-none @md:d-block">
+    Shown when the container is at least md wide
+  </div>
+</div>
+```
+
+The container needs a width of its own: it cannot size itself from its content.
+
 ## Install
 
 ```shell
@@ -64,6 +78,21 @@ You can add the bootstrap margin or padding with `.@{breakpoint}:m{sides}-{value
 
 You can add the flex direction `column`, `column-reverse`, `row` or `row-reverse` with `.@{breakpoint}:flex-{value}`.
 
+### Reference
+
+Default breakpoints (Bootstrap's `$breakpoints`): `sm` 576px, `md` 768px, `lg` 1024px, `xl` 1280px, `2xl` 1536px.
+
+| Feature        | Classes                                      | Example                    |
+| -------------- | -------------------------------------------- | -------------------------- |
+| Grid           | `.@{bp}:col-{1-12}`                          | `.@md:col-4`               |
+| Display        | `.@{bp}:d-{value}`                           | `.@lg:d-none`              |
+| Flex direction | `.@{bp}:flex-{value}`                        | `.@lg:flex-column-reverse` |
+| Text align     | `.@{bp}:text-{start\|center\|end}`           | `.@md:text-end`            |
+| Float          | `.@{bp}:float-{start\|end}`                  | `.@sm:float-end`           |
+| Margin/padding | `.@{bp}:m{sides}-{n}`, `.@{bp}:p{sides}-{n}` | `.@xl:mt-5`, `.@md:px-3`   |
+
+Utilities are generated from Bootstrap's own `$utilities`, so values and the spacing scale match Bootstrap 6. Class names contain `@` and `:`, so escape them in CSS selectors (`.\@md\:d-none`).
+
 ## Custom breakpoints and utilities
 
 By default the container breakpoints are the Bootstrap `$breakpoints`. You can use others:
@@ -106,6 +135,18 @@ The generated utilities are the Bootstrap utilities listed in `$container-querie
 | `bootstrap-sass-modules`        | `bootstrap` 6              |
 
 Bootstrap 6 renamed its spacers (`.mt-3` is now `0.5rem`) and logical properties, see the [Bootstrap 6 migration guide](https://blog.getbootstrap.com/2026/10/08/bootstrap-6-alpha/).
+
+## Version 3 (Bootstrap 5)
+
+The 3.x line stays available for Bootstrap 5:
+
+```shell
+npm i bootstrap-container-queries@3
+```
+
+Classes are prefixed with `bcq-` (`.bcq-md-4`, `.bcq-d-md-none`, `.bcq-text-md-end`, `.bcq-float-md-start`, `.bcq-flex-md-column`, `.bcq-mt-md-3`), base classes exist too (`.bcq-d-none`), and the default breakpoints are `sm` 30em, `md` 48em, `lg` 62em, `xl` 75em, `xxl` 90em, customizable with `$container-queries-breakpoints`.
+
+The v3 build is also shipped in this package as `bootstrap-container-queries/dist/v3/bootstrap-container-queries.css`. See the [v3 documentation and demo](https://bastienmoulia.github.io/bootstrap-container-queries/v3/).
 
 ## Development
 

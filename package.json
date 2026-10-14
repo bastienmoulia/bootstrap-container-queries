@@ -6,6 +6,12 @@
   "main": "scss/bootstrap-container-queries.scss",
   "sass": "scss/bootstrap-container-queries.scss",
   "style": "dist/bootstrap-container-queries.css",
+  "files": [
+    "scss",
+    "dist",
+    "README.md",
+    "CHANGELOG.md"
+  ],
   "scripts": {
     "start": "concurrently \"npm run serve\" \"npm run watch\"",
     "build": "sass scss/build.scss dist/bootstrap-container-queries.min.css --style=compressed --load-path=node_modules && sass scss/build.scss dist/bootstrap-container-queries.css --load-path=node_modules",
