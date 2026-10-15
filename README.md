@@ -28,15 +28,42 @@ npm i bootstrap@next bootstrap-container-queries@next
 
 Browser support follows Bootstrap 6 (Chrome and Edge 130+, Firefox 132+, Safari 18+). Building the Sass requires Dart Sass 1.103 or later.
 
+Bootstrap is a regular dependency of this package: `npm i bootstrap-container-queries@next` is enough, even if your app does not use Bootstrap. Its Sass is only read when compiling (breakpoints, spacers, utilities); no Bootstrap code ends up in the generated CSS. If your app already uses Bootstrap 6, the same copy is reused.
+
+### What comes from this library and what from Bootstrap
+
+| Item                                                                                                                         | Provided by                      |
+| ---------------------------------------------------------------------------------------------------------------------------- | -------------------------------- |
+| `.cq-{bp}:col-*`, `.cq-{bp}:d-*`, `.cq-{bp}:text-*`, `.cq-{bp}:float-*`, `.cq-{bp}:m*-*`, `.cq-{bp}:p*-*`, `.cq-{bp}:flex-*` | This library                     |
+| `@layer` order declaration and the `@container` queries                                                                      | This library                     |
+| `.contains-inline` (`container-type: inline-size`)                                                                           | Bootstrap CSS                    |
+| `.row` (flex wrapper needed by `.cq-{bp}:col-*`)                                                                             | Bootstrap CSS                    |
+| Base classes without prefix (`.d-none`, `.text-end`, `.mt-3`…)                                                               | Bootstrap CSS                    |
+| Breakpoints, spacers and utility values                                                                                      | Bootstrap Sass (read at compile) |
+
+Without Bootstrap's CSS, you must provide the Bootstrap parts yourself:
+
+```css
+.contains-inline {
+  container-type: inline-size;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+```
+
+and write your own base classes (`.d-none`, …) for the sizes below the first breakpoint.
+
 ### Using CSS
 
-Add in the `<head>` of your html file, after Bootstrap:
+Add in the `<head>` of your html file, after Bootstrap if you use it:
 
 ```html
 <link href="PATH_TO/bootstrap-container-queries.css" rel="stylesheet" />
 ```
 
-The CSS uses Bootstrap's cascade layers (`layout` and `utilities`), so Bootstrap must be loaded first.
+The CSS uses Bootstrap's cascade layers (`layout` and `utilities`), so load Bootstrap's CSS first if you use it.
 
 ### Importing SCSS
 
@@ -46,7 +73,7 @@ Add in your scss file:
 @use "bootstrap-container-queries/scss/bootstrap-container-queries";
 ```
 
-`@import` is not supported by Bootstrap 6.
+`@import` is not supported by Bootstrap 6. Compile with `node_modules` in the Sass load path (`--load-path=node_modules`) so Bootstrap's Sass is found.
 
 ## Usage
 

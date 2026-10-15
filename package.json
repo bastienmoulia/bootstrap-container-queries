@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-container-queries",
-  "version": "4.0.0-alpha.3",
+  "version": "4.0.0-alpha.4",
   "description": "Container queries for bootstrap",
   "homepage": "https://github.com/bastienmoulia/bootstrap-container-queries",
   "repository": {
@@ -73,9 +73,11 @@
       "default": "./dist/bootstrap-container-queries.min.css"
     }
   },
+  "dependencies": {
+    "bootstrap": "^6.0.0-alpha.1"
+  },
   "devDependencies": {
     "@vitest/browser-playwright": "^5.0.4",
-    "bootstrap": "^6.0.0-alpha.1",
     "concurrently": "^10.0.6",
     "http-server": "^14.1.1",
     "playwright": "1.64.1",
@@ -85,9 +87,6 @@
     "stylelint-config-prettier-scss": "^1.0.0",
     "stylelint-config-twbs-bootstrap": "^16.1.0",
     "vitest": "^5.0.4"
-  },
-  "peerDependencies": {
-    "bootstrap": "^6.0.0-alpha.1"
   },
   "publishConfig": {
     "access": "public",

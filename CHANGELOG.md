@@ -2,6 +2,16 @@
 
 # Changelog
 
+## [4.0.0-alpha.4] - 2026-10-15
+
+### Changed
+
+- `bootstrap` is now a regular dependency instead of a peer dependency, so apps without Bootstrap can use the Sass. Bootstrap is only read at compile time and never ends up in the generated CSS.
+
+### Added
+
+- README section explaining what the library provides and what comes from Bootstrap.
+
 ## [4.0.0-alpha.3] - 2026-10-14
 
 ### Added
