@@ -81,7 +81,7 @@
     "playwright": "1.64.1",
     "prettier": "^3.9.10",
     "sass": "^1.105.1",
-    "stylelint": "^16.26.1",
+    "stylelint": "^17.16.0",
     "stylelint-config-prettier-scss": "^1.0.0",
     "stylelint-config-twbs-bootstrap": "^16.1.0",
     "vitest": "^5.0.4"
